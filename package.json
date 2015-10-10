@@ -1,0 +1,17 @@
+{
+  "name": "bookyll",
+  "version": "0.0.1",
+  "description": "A starter interactive book template built using Jekyll, GulpJS, SASS, PostCSS & BrowserSync",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cosmin Cioacla",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-sass": "^0.7.3",
+    "browser-sync": "^1.3.7",
+    "gulp-autoprefixer": "1.0.0"
+  }
+}
