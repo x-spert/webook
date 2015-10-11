@@ -1,0 +1,103 @@
+/*------------------------------------*\
+  #Utilities
+  1. Functions
+  2. Mixins
+\*------------------------------------*/
+
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google); 
+}
+
+
+
+
+
+/*------------------------------------*\
+  1. Functions
+\*------------------------------------*/
+
+// Calculate em values
+
+@function em($target, $context: $base__font-size) {
+  @return ($target / $context) * 1em;
+}
+
+// Call the color palette modifiers
+
+@function palette($palette, $shade: 'base') {
+  @return map-get(map_get($palettes, $palette), $shade);
+}
+
+
+
+
+
+/*------------------------------------*\
+  2. Mixins
+\*------------------------------------*/
+
+// BEM selectors
+
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Generate modifier color classes
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin text-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      color: $color;
+    }
+  }
+}
+
+// Media queries
+
+@mixin size($break) {
+  @if $break == "xsmall" {
+    @media (min-width: $brkpoint-xs) and (max-width: $brkpoint-sm) {
+      @content;
+    }
+  }
+  @else if $break == "small" {
+    @media (min-width: $brkpoint-sm + 1) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint-md + 1) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint-lg + 1) {
+      @content;
+    }
+  }
+  @else if $break == "xlarge" {
+    @media (min-width: $brkpoint-xlg + 1) {
+      @content;
+    }
+  }
+  @else {
+    @error "Whoops! No value could be retrieved for `#{$break}`";
+  }
+}

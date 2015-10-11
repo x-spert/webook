@@ -2,10 +2,27 @@
 <html>
 <head>
   <title>This is the title</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+
 </head>
-<body>
-  <h1>Main heading</h1>
-  <script type="text/javascript" src="js/bundle.js"></script>
+<body id="app">
+  <section class="book">
+    <div class="left-page">
+      <img src="/assets/img/{{ leftpage }}.jpg">
+    </div>
+    <div class="right-page">
+      <img src="/assets/img/{{ rightpage }}.jpg">
+    </div>
+  </section>
+
+  <button v-on="click: prevPages" v-show="canGoBack">PREV PAGE</button>
+  <button v-on="click: nextPages" v-show="canGoForward">NEXT PAGE</button>
+
+  <pre>
+    {{ $data | json }}
+  </pre>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.16/vue.js"></script>
+  <script type="text/javascript" src="/assets/js/app.js"></script>
 </body>
 </html>

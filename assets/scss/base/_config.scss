@@ -1,0 +1,80 @@
+/*------------------------------------*\
+  #Global Config
+\*------------------------------------*/
+
+// Font Stacks
+
+$font-url--google        : '//fonts.googleapis.com/css?family=Lato:400,300,700,900&subset=latin,latin-ext';
+$font-family--primary    : "Lato", Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Descriptive Base Colors
+
+$white            : #fff;
+$black            : #0b0b0b;
+$grey             : #797e83;
+
+$zest             : #FAA401;
+$persimmon        : #FF5454;
+$catskill-white   : #f2f4f8;
+$alabaster        : #f8f8f8;
+$ghost            : #CACCD1;
+$rolling-stone    : #727375;
+$athens           : #E6E7EC;
+$mischka          : #d4d8de;
+$mystic           : #E1E6EF;
+$athens-gray      : #ebeef3;
+$snuff            : #e0ddf0;
+$prelude          : #C8C3E4;
+$blue-violet      : #7266ba;
+$astral           : #337AB7;
+$forest-green     : #2E972C;
+
+// Color Palette Modifiers
+
+$palettes: (
+  grey: (
+    xx-light  : lighten($grey, 43%),
+    x-light   : lighten($grey, 35%),
+    light     : lighten($grey, 12%),
+    base      : $grey,
+    dark      : darken($grey, 8%),
+    x-dark    : darken($grey, 16%)
+  ),
+  black: (
+    light     : lighten($black, 10%),
+    base      : $black,
+    dark      : darken($black, 10%)
+  )
+);
+
+// UI Colors
+
+$ui-colors: (
+  default     : $astral,
+  disabled    : $grey,
+  succes      : $forest-green,
+  error       : $persimmon,
+  warning     : $zest,
+  info        : $blue-violet,
+  accent      : $mischka
+);
+
+// Text
+
+$base__font-size  : 14px;
+$base__line       : 15.4px;
+
+// Breakpoints
+
+$brkpoint-xs      : 1px;
+$brkpoint-sm      : 767px;
+$brkpoint-md      : 991px;
+$brkpoint-lg      : 1199px;
+$brkpoint-xlg     : 1919px;
