@@ -1,4 +1,6 @@
 var gulp = require('gulp'),
+    browserify = require('browserify'),
+    source = require('vinyl-source-stream'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
@@ -46,6 +48,18 @@ gulp.task('styles', function () {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.reload({stream:true}))
+});
+
+/**
+ * Browserify task
+ */
+gulp.task('browserify', function() {
+    return browserify('./js/app.js')
+        .bundle()
+        //Pass desired output filename to vinyl-source-stream
+        .pipe(source('bundle.js'))
+        // Start piping stream to tasks!
+        .pipe(gulp.dest('./_site/js/'));
 });
 
 /**
