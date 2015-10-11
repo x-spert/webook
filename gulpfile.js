@@ -1,7 +1,10 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync');
-var sass        = require('gulp-sass');
-var prefix      = require('gulp-autoprefixer');
+var gulp = require('gulp'),
+    browserSync = require('browser-sync'),
+    sass = require('gulp-sass'),
+    postcss = require('gulp-postcss'),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('autoprefixer'),
+    lost = require('lost');
 
 /**
  * Build the Site
@@ -21,7 +24,7 @@ gulp.task('rebuild', ['build'], function () {
 /**
  * Wait for build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'build'], function() {
+gulp.task('browser-sync', ['styles', 'build'], function() {
   browserSync({
     server: {
       baseDir: '_site'
@@ -32,13 +35,15 @@ gulp.task('browser-sync', ['sass', 'build'], function() {
 /**
  * Compile files from _scss into _site/css (for live injecting) 
  */
-gulp.task('sass', function () {
+gulp.task('styles', function () {
   return gulp.src('_scss/main.scss')
-    .pipe(sass({
-      includePaths: ['scss'],
-      onError: browserSync.notify
-    }))
-    .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(postcss([
+      lost(),
+      autoprefixer()
+    ]))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.reload({stream:true}))
 });
@@ -48,7 +53,7 @@ gulp.task('sass', function () {
  * Watch html file, build & reload BrowserSync
  */
 gulp.task('watch', function () {
-  gulp.watch('_scss/*.scss', ['sass']);
+  gulp.watch('_scss/*.scss', ['styles']);
   gulp.watch('index.html', ['rebuild']);
 });
 
