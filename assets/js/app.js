@@ -1,3 +1,11 @@
+var $ = require('jquery');
+var Vue = require('vue');
+
+$(document).ready(function() {
+  // var viewportHeight = $(window).height();
+  // $('.wrapper').css({'height': viewportHeight});
+});
+
 new Vue({
   el: '#app',
 

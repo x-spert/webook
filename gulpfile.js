@@ -53,7 +53,7 @@ gulp.task('styles', function () {
 /**
  * Browserify task
  */
-gulp.task('browserifyold', function() {
+gulp.task('browserify', function() {
     return browserify('./assets/js/app.js')
         .bundle()
         //Pass desired output filename to vinyl-source-stream
@@ -62,7 +62,7 @@ gulp.task('browserifyold', function() {
         .pipe(gulp.dest('./_site/assets/js/'));
 });
 
-gulp.task('browserify', function() {
+gulp.task('browserifynew', function() {
     return gulp.src('./assets/js/app.js')
         .pipe(gulp.dest('./_site/assets/js/'));
 });

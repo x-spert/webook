@@ -1,0 +1,58 @@
+$wb-arrow-left: "\e800";
+$wb-arrow-right: "\e801";
+$wb-tv: "\e802";
+$wb-camera: "\e803";
+$wb-checkmark: "\e804";
+$wb-cancel: "\e805";
+$wb-smiley: "\e806";
+$wb-sad: "\e807";
+
+@font-face {
+  font-family: 'webook';
+  src:url('../font/webook.eot?iwsym3');
+  src:url('../font/webook.eot?iwsym3#iefix') format('embedded-opentype'),
+    url('../font/webook.ttf?iwsym3') format('truetype'),
+    url('../font/webook.woff?iwsym3') format('woff'),
+    url('../font/webook.svg?iwsym3#webook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="wb-"], [class*=" wb-"] {
+  font-family: 'webook';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wb-arrow-left:before {
+  content: "\e800";
+}
+.wb-arrow-right:before {
+  content: "\e801";
+}
+.wb-tv:before {
+  content: "\e802";
+}
+.wb-camera:before {
+  content: "\e803";
+}
+.wb-checkmark:before {
+  content: "\e804";
+}
+.wb-cancel:before {
+  content: "\e805";
+}
+.wb-smiley:before {
+  content: "\e806";
+}
+.wb-sad:before {
+  content: "\e807";
+}

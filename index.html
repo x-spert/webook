@@ -6,23 +6,23 @@
 
 </head>
 <body id="app">
-  <section class="book">
-    <div class="left-page">
-      <img src="/assets/img/{{ leftpage }}.jpg">
-    </div>
-    <div class="right-page">
-      <img src="/assets/img/{{ rightpage }}.jpg">
-    </div>
-  </section>
+  <div class="wrapper">
+    <section class="book">
+      <div class="left-page">
+        <img v-attr="src: '/assets/img/' + leftpage + '.jpg'">
+      </div>
+      <div class="right-page">
+        <img v-attr="src: '/assets/img/' + rightpage + '.jpg'">
+      </div>
+    </section>
 
-  <button v-on="click: prevPages" v-show="canGoBack">PREV PAGE</button>
-  <button v-on="click: nextPages" v-show="canGoForward">NEXT PAGE</button>
+    <button v-on="click: prevPages" v-show="canGoBack" class="button--pagenav button--previous"><span class="wb-arrow-left"></span></button>
+    <button v-on="click: nextPages" v-show="canGoForward" class="button--pagenav button--next"><span class="wb-arrow-right"></span></button>
 
-  <pre>
-    {{ $data | json }}
-  </pre>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.16/vue.js"></script>
-  <script type="text/javascript" src="/assets/js/app.js"></script>
+  </div>
+
+  <pre>{{ $data | json }}</pre>
+  <script type="text/javascript" src="/assets/js/bundle.js"></script>
 </body>
 </html>
