@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    plumber = require('gulp-plumber'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
     browserSync = require('browser-sync'),
@@ -14,6 +15,38 @@ var gulp = require('gulp'),
 gulp.task('build', function () {
   return gulp.src('index.html')
     .pipe(gulp.dest('_site'));
+});
+
+/**
+ * Copy images
+ */
+gulp.task('images', function () { 
+  return gulp.src('./assets/img/*.*')
+    .pipe(gulp.dest('./_site/assets/img/'));
+});
+
+/**
+ * Copy fonts
+ */
+gulp.task('fonts', function () { 
+  return gulp.src('./assets/font/*.*')
+    .pipe(gulp.dest('./_site/assets/font/'));
+});
+
+/**
+ * Copy video
+ */
+gulp.task('video', function () { 
+  return gulp.src('./assets/video/*.*')
+    .pipe(gulp.dest('./_site/assets/video/'));
+});
+
+/**
+ * Copy audio
+ */
+gulp.task('audio', function () { 
+  return gulp.src('./assets/audio/*.*')
+    .pipe(gulp.dest('./_site/assets/audio/'));
 });
 
 /**
@@ -40,6 +73,7 @@ gulp.task('browser-sync', ['styles', 'browserify', 'build'], function() {
 gulp.task('styles', function () {
   return gulp.src('./assets/scss/app.scss')
     .pipe(sourcemaps.init())
+    .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
       lost(),
@@ -88,4 +122,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['images', 'fonts', 'video', 'audio', 'browser-sync', 'watch']);

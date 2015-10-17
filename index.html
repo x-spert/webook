@@ -10,9 +10,19 @@
     <section class="book">
       <div class="left-page">
         <img v-attr="src: '/assets/img/' + leftpage + '.jpg'">
+        <div class="left-page__content">
+          <p>Video source: {{ leftPageObject.video }}</p>
+          <p>Audio source: {{ leftPageObject.audio }}</p>
+          <p>Excercise type: {{ leftPageObject.ex }}</p>
+        </div>
       </div>
       <div class="right-page">
         <img v-attr="src: '/assets/img/' + rightpage + '.jpg'">
+        <div class="right-page__content">
+          <p>Video source: {{ rightPageObject.video }}</p>
+          <p>Audio source: {{ rightPageObject.audio }}</p>
+          <p>Excercise type: {{ rightPageObject.ex }}</p>
+        </div>
       </div>
     </section>
 
@@ -22,7 +32,7 @@
 
   </div>
 
-  <pre>{{ $data | json }}</pre>
+  <pre>{{ $data | json 4 }}</pre>
   <script type="text/javascript" src="/assets/js/bundle.js"></script>
 </body>
 </html>

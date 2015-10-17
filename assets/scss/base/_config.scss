@@ -20,23 +20,8 @@ $white            : #fff;
 $black            : #0b0b0b;
 $grey             : #797e83;
 
-$zest             : #FAA401;
-$persimmon        : #FF5454;
-$catskill-white   : #f2f4f8;
-$alabaster        : #f8f8f8;
-$ghost            : #CACCD1;
-$rolling-stone    : #727375;
-$athens           : #E6E7EC;
-$mischka          : #d4d8de;
-$mystic           : #E1E6EF;
-$athens-gray      : #ebeef3;
-$snuff            : #e0ddf0;
-$prelude          : #C8C3E4;
-$blue-violet      : #7266ba;
-$astral           : #337AB7;
-$forest-green     : #2E972C;
 $tradewind        : #6CBEB0;
-$roof-terracotta  : #A41E29;
+$red-orange       : #ff5349;
 
 // Color Palette Modifiers
 
@@ -59,13 +44,8 @@ $palettes: (
 // UI Colors
 
 $ui-colors: (
-  default     : $astral,
-  disabled    : $grey,
-  succes      : $forest-green,
-  error       : $persimmon,
-  warning     : $zest,
-  info        : $blue-violet,
-  accent      : $mischka
+  primary    : $tradewind,
+  secondary  : $red-orange
 );
 
 // Text

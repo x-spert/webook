@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     font-size: em(50px);
-    color: $roof-terracotta;
+    color: map_get($ui-colors, secondary);
   }
 
   @include modifier(previous) {

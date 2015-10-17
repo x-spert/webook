@@ -1,17 +1,14 @@
 var $ = require('jquery');
 var Vue = require('vue');
-
-$(document).ready(function() {
-  // var viewportHeight = $(window).height();
-  // $('.wrapper').css({'height': viewportHeight});
-});
+var pageData = require('./pageData.js');
 
 new Vue({
   el: '#app',
 
   data: {
     leftpage: 2,
-    rightpage: 3
+    rightpage: 3,
+    pages: pageData()
   },
  
   computed: {
@@ -27,6 +24,20 @@ new Vue({
         return true
       } else {
         return false
+      }
+    },
+    leftPageObject: function() {
+      for (var i = 0; i < this.pages.length; i++) {
+        if (this.pages[i].no == this.leftpage) {
+          return this.pages[i];
+        }
+      }
+    },
+    rightPageObject: function() {
+      for (var i = 0; i < this.pages.length; i++) {
+        if (this.pages[i].no == this.rightpage) {
+          return this.pages[i];
+        }
       }
     }
   },
