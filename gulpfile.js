@@ -21,7 +21,7 @@ gulp.task('build', function () {
  * Copy images
  */
 gulp.task('images', function () { 
-  return gulp.src('./assets/img/*.*')
+  return gulp.src('./assets/img/**/*.*')
     .pipe(gulp.dest('./_site/assets/img/'));
 });
 
@@ -96,8 +96,8 @@ gulp.task('browserify', function() {
         .pipe(gulp.dest('./_site/assets/js/'));
 });
 
-gulp.task('browserifynew', function() {
-    return gulp.src('./assets/js/app.js')
+gulp.task('mediaelement', function() {
+    return gulp.src('./assets/js/mediaelement-and-player.min.js')
         .pipe(gulp.dest('./_site/assets/js/'));
 });
 
@@ -122,4 +122,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['images', 'fonts', 'video', 'audio', 'browser-sync', 'watch']);
+gulp.task('default', ['images', 'fonts', 'video', 'audio', 'mediaelement', 'browser-sync', 'watch']);
