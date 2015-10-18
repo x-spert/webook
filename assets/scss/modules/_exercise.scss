@@ -1,0 +1,45 @@
+.exercise {
+  position: relative;
+
+  @include element(container) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: tomato;
+    opacity: .1;
+  }
+
+  @include modifier(bigselect) {
+    .exercise__container {
+      padding-top: 3%;      
+    }
+
+    .exercise__row {
+      position: relative;
+      height: 24.25%;
+    }
+  }
+}
+
+.radio-input {
+  display: none;
+}
+
+.label {
+  @include element(answer) {
+    width: 50px;
+    height: 100px;
+    background-color: teal;
+    position: absolute;
+
+    @include modifier(true) {
+      left: 0;
+    }
+
+    @include modifier(false) {
+      right: 0;
+    }
+  }
+}

@@ -1,11 +1,12 @@
 $wb-arrow-left: "\e800";
 $wb-arrow-right: "\e801";
-$wb-tv: "\e802";
-$wb-camera: "\e803";
+$wb-video: "\e802";
+$wb-audio: "\e803";
 $wb-checkmark: "\e804";
 $wb-cancel: "\e805";
 $wb-smiley: "\e806";
 $wb-sad: "\e807";
+$wb-ex: "\e808";
 
 @font-face {
   font-family: 'webook';
@@ -38,10 +39,10 @@ $wb-sad: "\e807";
 .wb-arrow-right:before {
   content: "\e801";
 }
-.wb-tv:before {
+.wb-video:before {
   content: "\e802";
 }
-.wb-camera:before {
+.wb-audio:before {
   content: "\e803";
 }
 .wb-checkmark:before {
@@ -55,4 +56,7 @@ $wb-sad: "\e807";
 }
 .wb-sad:before {
   content: "\e807";
+}
+.wb-ex:before {
+  content: "\e808";
 }

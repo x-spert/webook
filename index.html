@@ -5,59 +5,52 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
 </head>
 <body>
-  <div id="app">
-    <!-- template for the modal component -->
-    <template id="modal-template">
-      <div class="modal-mask" v-show="show" v-transition="modal">
-        <div class="modal-wrapper">
-          <div class="modal-container">
-            <content select=".modal-header">
-              <div class="modal-header">
-                default header
-              </div>
-            </content>
-            <content select=".modal-body">
-              <div class="modal-body">
-                default body
-              </div>
-            </content>
-            <content select=".modal-footer">
-              <div class="modal-footer">
-                default footer
-                <button class="modal-default-button"
-                  v-on="click: show = false">
-                  OK
-                </button>
-              </div>
-            </content>
+  <div id="app" class="remodal-bg">
+    <div class="remodal" data-remodal-id="leftModal">
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h1 v-text="leftPageObject.ex.title"></h1>
+      <div class="exercise exercise--bigselect">
+        <img v-attr="src: './assets/img/' + leftPageObject.ex.bg + '.jpg'">
+<!--         <div class="exercise__container">
+          <div class="exercise__row">
+            <input class="radio-input" type="radio" name="erik" value="true" id="eriktrue">
+            <input class="radio-input" type="radio" name="erik" value="false" id="erikfalse">
+            <label class="label__answer label__answer--true" for="eriktrue"></label>
+            <label class="label__answer label__answer--false" for="erikfalse"></label>
           </div>
-        </div>
+          <div class="exercise__row">
+          </div>
+          <div class="exercise__row">
+            
+          </div>
+          <div class="exercise__row">
+            
+          </div>
+        </div> -->
       </div>
-    </template>
-
-    <!-- use the modal component, pass in the prop -->
-    <modal show="{{@showModal}}">
-      <!--
-        you can use custom content here to overwrite
-        default content
-      -->
-      <div class="modal-body">
-        <video v-if="selectedPageObject.video" src="./assets/video/{{ selectedPageObject.video }}" width="320" height="240"></video>
-      </div>
-    </modal>
+    </div>
 
     <div class="wrapper">
       <section class="book">
         <div class="left-page">
           <img v-attr="src: './assets/img/' + leftpage + '.jpg'">
           <div class="left-page__content">
-            <button v-on="click: showLeftModal">Show Modal</button>
+            <div class="left-page__interactions">
+              <span v-if="leftPageObject.video" class="wb-video" data-remodal-target="leftModal"></span>
+              <span v-if="leftPageObject.audio" class="wb-audio" data-remodal-target="leftModal"></span>
+              <span v-if="leftPageObject.ex" class="wb-ex" data-remodal-target="leftModal"></span>
+            </div>
+            <a data-remodal-target="leftModal">
+              <div class="left-page__actionable"></div>
+            </a>
           </div>
         </div>
         <div class="right-page">
           <img v-attr="src: './assets/img/' + rightpage + '.jpg'">
           <div class="right-page__content">
-            <button v-on="click: showRightModal">Show Modal</button>
+            <div class="right-page__interactions">
+              <span v-if="rightPageObject.video" class="wb-video"></span><span v-if="rightPageObject.audio" class="wb-audio"></span><span v-if="rightPageObject.ex" class="wb-ex"></span>
+            </div>
           </div>
         </div>
       </section>
@@ -71,17 +64,5 @@
     <pre>{{ $data | json 4 }}</pre>
   </div>
   <script type="text/javascript" src="./assets/js/bundle.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!-- // <script src="./assets/js/mediaelement-and-player.min.js"></script> -->
-  <script>
-    // $(document).ready(function(){
-    //   $('video,audio').mediaelementplayer({
-    //     defaultVideoWidth: 480,
-    //     defaultVideoHeight: 270,
-    //     enableAutosize: true,
-    //     features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
-    //   });
-    // });
-  </script>
 </body>
 </html>
