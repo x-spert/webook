@@ -16,6 +16,9 @@ module.exports = function() {
       ex: 'checkbox'
     },
     {
+      no: 4
+    },
+    {
       no: 10,
       ex: {
         title: 'WER SPRICHT? HOR ZU UND KREIS EIN!',

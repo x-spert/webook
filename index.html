@@ -6,7 +6,7 @@
 </head>
 <body>
   <div id="app" class="remodal-bg">
-    <div class="remodal" data-remodal-id="leftModal">
+    <div class="remodal" data-remodal-id="modal">
       <button data-remodal-action="close" class="remodal-close"></button>
       <h1 v-text="leftPageObject.ex.title"></h1>
       <div class="exercise exercise--bigselect">
@@ -36,11 +36,11 @@
           <img v-attr="src: './assets/img/' + leftpage + '.jpg'">
           <div class="left-page__content">
             <div class="left-page__interactions">
-              <span v-if="leftPageObject.video" class="wb-video" data-remodal-target="leftModal"></span>
-              <span v-if="leftPageObject.audio" class="wb-audio" data-remodal-target="leftModal"></span>
-              <span v-if="leftPageObject.ex" class="wb-ex" data-remodal-target="leftModal"></span>
+              <span v-if="leftPageObject.video" class="wb-video" data-remodal-target="modal"></span>
+              <span v-if="leftPageObject.audio" class="wb-audio" data-remodal-target="modal"></span>
+              <span v-if="leftPageObject.ex" class="wb-ex" data-remodal-target="modal"></span>
             </div>
-            <a data-remodal-target="leftModal">
+            <a v-on="click: showLeftModal" data-remodal-target="modal">
               <div class="left-page__actionable"></div>
             </a>
           </div>

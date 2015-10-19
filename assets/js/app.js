@@ -12,7 +12,7 @@ new Vue({
     pages: pageData(),
     selectedPageObject: {}
   },
- 
+
   computed: {
     canGoBack: function() {
       if (this.leftpage - 2 > 1) {
@@ -33,6 +33,13 @@ new Vue({
     leftPageObject: function() {
       for (var i = 0; i < this.pages.length; i++) {
         if (this.pages[i].no == this.leftpage) {
+          // Check to see if there is media on the page
+          if (!this.pages[i].video && !this.pages[i].audio && !this.pages[i].ex) {
+            this.pages[i].hasMedia = false;
+          } else {
+            this.pages[i].hasMedia = true;
+          }
+          // Return page object with added info ^
           return this.pages[i];
         }
       }
@@ -41,6 +48,13 @@ new Vue({
     rightPageObject: function() {
       for (var i = 0; i < this.pages.length; i++) {
         if (this.pages[i].no == this.rightpage) {
+          // Check to see if there is media on the page
+          if (!this.pages[i].video && !this.pages[i].audio && !this.pages[i].ex) {
+            this.pages[i].hasMedia = false;
+          } else {
+            this.pages[i].hasMedia = true;
+          }
+          // Return page object with added info ^
           return this.pages[i];
         }
       }
@@ -58,11 +72,9 @@ new Vue({
     },
     showLeftModal: function() {
       this.selectedPageObject = this.leftPageObject
-      this.showModal = true
     },
     showRightModal: function() {
       this.selectedPageObject = this.rightPageObject
-      this.showModal = true
     }
   }
 });
