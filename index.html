@@ -36,9 +36,9 @@
           <img v-attr="src: './assets/img/' + leftpage + '.jpg'">
           <div class="left-page__content">
             <div class="left-page__interactions">
-              <span v-if="leftPageObject.video" class="wb-video" data-remodal-target="modal"></span>
-              <span v-if="leftPageObject.audio" class="wb-audio" data-remodal-target="modal"></span>
-              <span v-if="leftPageObject.ex" class="wb-ex" data-remodal-target="modal"></span>
+              <span v-if="leftPageObject.video" v-on="click: showLeftModal" class="wb-video" data-remodal-target="modal"></span>
+              <span v-if="leftPageObject.audio" v-on="click: showLeftModal" class="wb-audio" data-remodal-target="modal"></span>
+              <span v-if="leftPageObject.ex" v-on="click: showLeftModal" class="wb-ex" data-remodal-target="modal"></span>
             </div>
             <a v-on="click: showLeftModal" data-remodal-target="modal">
               <div class="left-page__actionable"></div>
@@ -49,8 +49,13 @@
           <img v-attr="src: './assets/img/' + rightpage + '.jpg'">
           <div class="right-page__content">
             <div class="right-page__interactions">
-              <span v-if="rightPageObject.video" class="wb-video"></span><span v-if="rightPageObject.audio" class="wb-audio"></span><span v-if="rightPageObject.ex" class="wb-ex"></span>
+              <span v-if="rightPageObject.video" v-on="click: showRightModal" class="wb-video" data-remodal-target="modal"></span>
+              <span v-if="rightPageObject.audio" v-on="click: showRightModal" class="wb-audio" data-remodal-target="modal"></span>
+              <span v-if="rightPageObject.ex" v-on="click: showRightModal" class="wb-ex" data-remodal-target="modal"></span>
             </div>
+            <a v-on="click: showRightModal" data-remodal-target="modal">
+              <div class="right-page__actionable"></div>
+            </a>
           </div>
         </div>
       </section>

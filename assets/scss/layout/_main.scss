@@ -71,4 +71,21 @@
   @include element(interactions) {
     padding-right: 20%;
   }
+
+  @include element(actionable) {
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    right: 8%;
+    top: 14%;
+    border-radius: 10px;
+    background: transparent;
+    opacity: 0;
+
+    &:hover {
+      background: map_get($ui-colors, secondary);
+      opacity: .1;
+      transition: background .5s ease-in-out;
+    }
+  }
 }
