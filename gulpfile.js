@@ -121,7 +121,7 @@ gulp.task('rebuild2', ['browserify'], function () {
 gulp.task('watch', function () {
   gulp.watch('./assets/scss/**/*.scss', ['styles']);
   gulp.watch('./assets/js/**/*.js', ['rebuild2']);
-  gulp.watch('index.html', ['rebuild']);
+  gulp.watch(['index.html', './partials/*.html'], ['rebuild']);
 });
 
 /**
