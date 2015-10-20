@@ -1,0 +1,63 @@
+<div id="app" class="remodal-bg">
+  <div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1 v-text="leftPageObject.ex.title"></h1>
+    <div class="exercise exercise--bigselect">
+      <img v-attr="src: './assets/img/' + leftPageObject.ex.bg + '.jpg'">
+<!--         <div class="exercise__container">
+        <div class="exercise__row">
+          <input class="radio-input" type="radio" name="erik" value="true" id="eriktrue">
+          <input class="radio-input" type="radio" name="erik" value="false" id="erikfalse">
+          <label class="label__answer label__answer--true" for="eriktrue"></label>
+          <label class="label__answer label__answer--false" for="erikfalse"></label>
+        </div>
+        <div class="exercise__row">
+        </div>
+        <div class="exercise__row">
+          
+        </div>
+        <div class="exercise__row">
+          
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <section class="book">
+      <div class="left-page">
+        <img v-attr="src: './assets/img/' + leftpage + '.jpg'">
+        <div class="left-page__content">
+          <div class="left-page__interactions">
+            <span v-if="leftPageObject.video" v-on="click: showLeftModal" class="wb-video" data-remodal-target="modal"></span>
+            <span v-if="leftPageObject.audio" v-on="click: showLeftModal" class="wb-audio" data-remodal-target="modal"></span>
+            <span v-if="leftPageObject.ex" v-on="click: showLeftModal" class="wb-ex" data-remodal-target="modal"></span>
+          </div>
+          <a v-on="click: showLeftModal" data-remodal-target="modal">
+            <div class="left-page__actionable"></div>
+          </a>
+        </div>
+      </div>
+      <div class="right-page">
+        <img v-attr="src: './assets/img/' + rightpage + '.jpg'">
+        <div class="right-page__content">
+          <div class="right-page__interactions">
+            <span v-if="rightPageObject.video" v-on="click: showRightModal" class="wb-video" data-remodal-target="modal"></span>
+            <span v-if="rightPageObject.audio" v-on="click: showRightModal" class="wb-audio" data-remodal-target="modal"></span>
+            <span v-if="rightPageObject.ex" v-on="click: showRightModal" class="wb-ex" data-remodal-target="modal"></span>
+          </div>
+          <a v-on="click: showRightModal" data-remodal-target="modal">
+            <div class="right-page__actionable"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <button v-on="click: prevPages" v-show="canGoBack" class="button--pagenav button--previous"><span class="wb-arrow-left"></span></button>
+    <button v-on="click: nextPages" v-show="canGoForward" class="button--pagenav button--next"><span class="wb-arrow-right"></span></button>
+
+
+  </div>
+
+  <pre>{{ $data | json 4 }}</pre>
+</div>

@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    fileinclude = require('gulp-file-include'),
     plumber = require('gulp-plumber'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
@@ -14,6 +15,11 @@ var gulp = require('gulp'),
  */
 gulp.task('build', function () {
   return gulp.src('index.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file',
+      indent: true
+    }))
     .pipe(gulp.dest('_site'));
 });
 
