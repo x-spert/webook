@@ -1,25 +1,17 @@
 module.exports = function() {
   return [
     {
-      no: 1,
-      ex: 'drag'
+      no: 8,
+      audio: '8.mp3',
+      video: '8.mp4'
     },
     {
-      no: 2,
-      video: 'myvideo.mp4',
-      ex: 'input'
-    },
-    {
-      no: 3,
-      video: 'other.mp4',
-      audio: '3.wav',
-      ex: 'checkbox'
-    },
-    {
-      no: 4
+      no: 9,
+      audio: '9.mp3'
     },
     {
       no: 10,
+      audio: '10.mp3',
       ex: {
         title: 'WER SPRICHT? HOR ZU UND KREIS EIN!',
         name: 'select',
@@ -28,9 +20,7 @@ module.exports = function() {
     },
     {
       no: 11,
-      video: 'other.mp4',
-      audio: '3.wav',
-      ex: 'checkbox'
+      audio: '11.mp3'
     }
   ]
 } 

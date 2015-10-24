@@ -76,3 +76,19 @@ html.remodal-is-locked {
   /* Disable Anti-FOUC */
   display: inline-block;
 }
+
+/* Custom styles */
+
+.remodal {
+  @include element(video) {
+    margin: em(30px) 0;
+  }
+
+  @include element(audio) {
+    margin: em(30px) 0;
+  }
+
+  @include element(exercise) {
+    margin: em(30px) 0;
+  }
+}

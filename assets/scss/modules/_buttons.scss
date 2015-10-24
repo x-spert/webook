@@ -1,12 +1,59 @@
 .button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @include modifier(default) {
+    border-radius: $br--small;
+    line-height: (20px / 14px);
+    padding: em(2px) em(8px);
+    border: 2px solid $white;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: map_get($ui-colors, secondary);
+    }
+  }
+
+  @include modifier(reversed) {
+    border-radius: $br--small;
+    line-height: (20px / 14px);
+    padding: em(2px) em(8px);
+    border: 2px solid map_get($ui-colors, secondary);
+    color: map_get($ui-colors, secondary);
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: map_get($ui-colors, secondary);
+      color: $white;
+    }
+  }
+
+  @include modifier(large) {
+    font-size: em(17px);
+    line-height: (22px / 18px);
+    padding: em(4px) em(10px);
+  }
+
+  @include modifier(menunav) {
+    font-size: em(30px);
+    color: $white;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+
   @include modifier(pagenav) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
     font-size: em(50px);
     color: map_get($ui-colors, secondary);
   }
@@ -19,5 +66,10 @@
   @include modifier(next) {
     right: em(-60px, 50px);
     text-shadow: 1px 1px 5px rgba(50, 50, 50, 0.9); 
+  }
+
+  @include modifier(block) {
+    display: block;
+    width: 100%;
   }
 }

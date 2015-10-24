@@ -1,3 +1,5 @@
+$wb-chevron-left: "\e900";
+$wb-chevron-right: "\e901";
 $wb-arrow-left: "\e800";
 $wb-arrow-right: "\e801";
 $wb-video: "\e802";
@@ -33,6 +35,12 @@ $wb-ex: "\e808";
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wb-chevron-left:before {
+  content: "\e900";
+}
+.wb-chevron-right:before {
+  content: "\e901";
+}
 .wb-arrow-left:before {
   content: "\e800";
 }
