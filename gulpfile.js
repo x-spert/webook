@@ -25,13 +25,13 @@ gulp.task('build', function () {
 });
 
 /**
- * Copy images
+ * Copy images (sig file path: ./assets/img/.tinypng-sigs)
  */
 gulp.task('images', function () { 
   return gulp.src('./assets/img/**/*.{png,jpg,jpeg}')
     .pipe(tinypng({
       key: 'o4E5Kyx3E7JQZ_ooOjvruWfj_SHJhokC',
-      sigFile: './assets/img/.tinypng-sigs',
+      sigFile: '',
       log: true
     }))
     .pipe(gulp.dest('./_site/assets/img/'));
