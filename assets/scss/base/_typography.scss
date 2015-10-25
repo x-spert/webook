@@ -8,6 +8,7 @@ $wb-checkmark: "\e804";
 $wb-cancel: "\e805";
 $wb-smiley: "\e806";
 $wb-sad: "\e807";
+$wb-reset: "\e902";
 $wb-ex: "\e808";
 
 @font-face {
@@ -64,6 +65,9 @@ $wb-ex: "\e808";
 }
 .wb-sad:before {
   content: "\e807";
+}
+.wb-reset:before {
+  content: "\e902";
 }
 .wb-ex:before {
   content: "\e808";

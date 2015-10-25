@@ -7,8 +7,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: tomato;
-    opacity: .1;
   }
 
   @include modifier(bigselect) {
@@ -25,21 +23,29 @@
 
 .radio-input {
   display: none;
+
+  &:checked + label {
+    opacity: 1;
+  }
 }
 
-.label {
+.labelBigselect {
   @include element(answer) {
-    width: 50px;
-    height: 100px;
-    background-color: teal;
+    width: 14.5%;
+    height: 80%;
     position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 
     @include modifier(true) {
-      left: 0;
+      background-image: url(../img/bigselect--true.png);
     }
 
     @include modifier(false) {
-      right: 0;
+      background-image: url(../img/bigselect--false.png);
     }
   }
 }

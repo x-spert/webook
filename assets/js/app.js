@@ -4,6 +4,8 @@ var remodal = require('remodal');
 var siteData = require('./siteData.js');
 var pageData = require('./pageData.js');
 
+Vue.config.debug = true;
+
 new Vue({
   el: '#app',
 
@@ -62,18 +64,6 @@ new Vue({
           return this.pages[i];
         }
       }
-    },
-
-    modalContent: function() {
-      if (this.selectedPageObject.hasMedia) {
-        if (this.selectedPageObject.video) {
-          return 'video';
-        } else if (selectedPageObject.audio) {
-          return 'audio';
-        } else {
-          return 'exercise';
-        }
-      }
     }
   },
 
@@ -119,7 +109,7 @@ new Vue({
         } else if (this.selectedPageObject.audio) {
           this.currentModalContent = 'audio';
         } else {
-          this.currentModalContent = 'exercise';
+          this.currentModalContent = 'ex';
         }
       }
     }

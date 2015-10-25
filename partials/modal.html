@@ -1,36 +1,21 @@
 <div class="remodal" data-remodal-id="modal">
   <button data-remodal-action="close" class="remodal-close"></button>
 
-  <div v-show="currentModalContent == 'video'" class="remodal__video">
-    <video v-attr="src: './assets/video/' + leftPageObject.video" width="630" controls preload></video>
+  <h1 v-if="selectedPageObject.title" v-text="selectedPageObject.title"></h1>
+
+  <div v-if="selectedPageObject.video" v-show="currentModalContent == 'video'" class="remodal__video">
+    <video v-attr="src: './assets/video/' + selectedPageObject.video" width="630" controls preload></video>
   </div>
 
-  <div v-show="currentModalContent == 'audio'" class="remodal__audio">
-    <audio v-attr="src: './assets/audio/' + leftPageObject.audio" width="630" controls preload></audio>
+  <div v-if="selectedPageObject.audio" v-show="currentModalContent == 'audio'" class="remodal__audio">
+    <audio v-attr="src: './assets/audio/' + selectedPageObject.audio" width="630" controls preload></audio>
   </div>
 
-  <div v-show="currentModalContent == 'ex'" class="remodal__exercise">
-    <h1 v-text="leftPageObject.ex.title"></h1>
-    <div class="exercise exercise--bigselect">
-      <!-- <img v-attr="src: './assets/img/' + leftPageObject.ex.bg + '.jpg'"> -->
-      <!-- <div class="exercise__container">
-        <div class="exercise__row">
-          <input class="radio-input" type="radio" name="erik" value="true" id="eriktrue">
-          <input class="radio-input" type="radio" name="erik" value="false" id="erikfalse">
-          <label class="label__answer label__answer--true" for="eriktrue"></label>
-          <label class="label__answer label__answer--false" for="erikfalse"></label>
-        </div>
-        <div class="exercise__row">
-        </div>
-        <div class="exercise__row">
-          
-        </div>
-        <div class="exercise__row">
-          
-        </div>
-      </div> -->
+  <div v-if="selectedPageObject.ex" v-show="currentModalContent == 'ex'" class="remodal__exercise">
+    <div v-if="selectedPageObject.ex.name == 'bigselect'">
+      @@include('./exercise--bigselect.html')
     </div>
   </div>
-  
+
   @@include('./modal-navigation.html')
 </div>

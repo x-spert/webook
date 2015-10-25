@@ -14,10 +14,13 @@
     "browserify": "^11.2.0",
     "gulp": "^3.9.0",
     "gulp-file-include": "^0.13.7",
+    "gulp-imagemin": "^2.3.0",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^6.0.1",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-tinypng-compress": "^1.1.8",
+    "imagemin-pngquant": "^4.2.0",
     "lost": "^6.6.2",
     "vinyl-source-stream": "^1.1.0"
   },

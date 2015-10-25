@@ -42,6 +42,9 @@
   @include modifier(menunav) {
     font-size: em(30px);
     color: $white;
+  }
+
+  @include modifier(scale) {
     transition: transform 0.2s ease-in-out;
 
     &:hover,
@@ -66,6 +69,14 @@
   @include modifier(next) {
     right: em(-60px, 50px);
     text-shadow: 1px 1px 5px rgba(50, 50, 50, 0.9); 
+  }
+
+  @include modifier(reset) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: em(30px);
+    color: map_get($ui-colors, secondary);
   }
 
   @include modifier(block) {

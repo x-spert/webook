@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
+    tinypng = require('gulp-tinypng-compress'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
@@ -27,7 +28,12 @@ gulp.task('build', function () {
  * Copy images
  */
 gulp.task('images', function () { 
-  return gulp.src('./assets/img/**/*.*')
+  return gulp.src('./assets/img/**/*.{png,jpg,jpeg}')
+    .pipe(tinypng({
+      key: 'o4E5Kyx3E7JQZ_ooOjvruWfj_SHJhokC',
+      sigFile: './assets/img/.tinypng-sigs',
+      log: true
+    }))
     .pipe(gulp.dest('./_site/assets/img/'));
 });
 
@@ -102,11 +108,6 @@ gulp.task('browserify', function() {
         .pipe(gulp.dest('./_site/assets/js/'));
 });
 
-gulp.task('mediaelement', function() {
-    return gulp.src('./assets/js/mediaelement-and-player.min.js')
-        .pipe(gulp.dest('./_site/assets/js/'));
-});
-
 /**
  * Rebuild html & do page reload
  */
@@ -128,4 +129,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['images', 'fonts', 'video', 'audio', 'mediaelement', 'browser-sync', 'watch']);
+gulp.task('default', ['images', 'fonts', 'video', 'audio', 'browser-sync', 'watch']);
