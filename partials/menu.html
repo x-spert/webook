@@ -1,0 +1,38 @@
+<!-- The drop down slider box -->
+<section class="main-menu">
+
+  <!-- The checkbox, we will do a litle hacking on this -->
+  <input type="checkbox" id="js--main-menu__toggle">
+ <!-- We will make this label into our toggle button. -->
+  <label for="js--main-menu__toggle">
+    <!-- This is an icon for which I use entypo. You can change this to anything -->
+    <span>m<br>e<br>n<br>u</span><br>&nbsp;
+    <span class="wb-chevron-right"></span>
+  </label>
+
+  <!-- This will be the content of our drop down slider box -->
+  <section class="main-menu__content">
+    <div class="page-buttons">
+      <div>
+        <span v-show="! canGoBack">&nbsp;</span>
+        <span v-show="canGoBack" v-text="site.menu.prev"></span>
+        <button v-on="click: prevPages" v-show="canGoBack" class="button button--menunav"><span class="wb-arrow-left"></span></button>
+      </div>
+      <div>
+        <span v-show="canGoForward" v-text="site.menu.next"></span>
+        <button v-on="click: nextPages" v-show="canGoForward" class="button button--menunav"><span class="wb-arrow-right"></span></button>
+      </div>
+    </div>
+    <div class="navigator">
+      <form v-on="submit: jumpToPage">
+        <label class="navigator__label" for="goToPage" v-text="site.menu.jump"></label>
+        <input class="navigator__input" id="goToPage" type="text" v-model="jumpPage">&#8195;<button class="button button--default" type="submit" v-text="site.menu.search"></button>
+      </form>
+    </div>
+    <div class="info-pages">
+      <button class="button button--block button--default" v-text="site.menu.toc"></button>
+      <button class="button button--block button--default" v-text="site.menu.help"></button>
+    </div>
+  </section>
+
+</section>

@@ -1,0 +1,28 @@
+<section class="remodal__navigation">
+  <button 
+    v-show="currentModalContent != 'video'"
+    v-if="selectedPageObject.video"
+    v-on="click: currentModalContent = 'video'"
+    class="button button--reversed button--large"
+  >
+    Go to VIDEO
+  </button>
+
+  <button 
+    v-show="currentModalContent != 'audio'"
+    v-if="selectedPageObject.audio"
+    v-on="click: currentModalContent = 'audio'"
+    class="button button--reversed button--large"
+  >
+    Go to AUDIO
+  </button>
+
+  <button
+    v-show="currentModalContent != 'ex'"
+    v-if="selectedPageObject.ex"
+    v-on="click: currentModalContent = 'ex'"
+    class="button button--reversed button--large"
+  >
+    Go to EXERCISE
+  </button>
+</section>
