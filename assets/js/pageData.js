@@ -2,13 +2,10 @@ module.exports = function() {
   return [
     {no: 2},{no: 3},{no: 4},{no: 5},{no: 6},{no: 7},
     {
-      no: 8,
-      audio: '8.mp3',
-      video: '8.mp4'
+      no: 8
     },
     {
-      no: 9,
-      audio: '9.mp3'
+      no: 9
     },
     {
       no: 10,
@@ -41,10 +38,42 @@ module.exports = function() {
       }
     },
     {
-      no: 11,
-      title: 'Hoe zu und sing! Mal die buchstaben aus!',
-      audio: '11.mp3'
+      no: 11
     },
-    {no: 12},{no: 13},{no: 14},{no: 15},{no: 16},{no: 17}
+    {
+      no: 12
+    },
+    {
+      no: 13,
+      title: 'Kreuze sinngemass an!',
+      audio: '13.mp3',
+      ex: {
+        name: 'mediumselect',
+        bg: '13ex',
+        data: [
+          {
+            identifier: 'yellow',
+            answerTrue: 'top: 26.4%; right: 15.8%',
+            answerFalse: 'top: 13.7%; right: 9.5%'
+          },
+          {
+            identifier: 'green',
+            answerTrue: 'top: 26.4%; right: 32.4%',
+            answerFalse: 'top: 13.7%; right: 26.1%'
+          },
+          {
+            identifier: 'blue',
+            answerTrue: 'top: 9.6%; right: 3.1%',
+            answerFalse: 'top: 22.15%; right: 8.1%'
+          },
+          {
+            identifier: 'pink',
+            answerTrue: 'top: 22.15%; right: 29.5%',
+            answerFalse: 'top: 9.6%; right: 23.7%'
+          }
+        ]
+      }
+    },
+    {no: 14},{no: 15},{no: 16},{no: 17}
   ]
 } 

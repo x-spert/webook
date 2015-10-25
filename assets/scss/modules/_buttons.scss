@@ -75,6 +75,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
     font-size: em(30px);
     color: map_get($ui-colors, secondary);
   }

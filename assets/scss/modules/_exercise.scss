@@ -9,6 +9,17 @@
     right: 0;
   }
 
+  @include modifier(mediumselect) {
+    .exercise__waffle {
+      height: 100%;      
+    }
+
+    .exercise__row {
+      position: relative;
+      lost-waffle: 1/2;
+    }
+  }
+
   @include modifier(bigselect) {
     .exercise__container {
       padding-top: 3%;      
@@ -46,6 +57,27 @@
 
     @include modifier(false) {
       background-image: url(../img/bigselect--false.png);
+    }
+  }
+}
+
+.labelMediumselect {
+  @include element(answer) {
+    width: 6.8%;
+    height: 5.6%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    @include modifier(true) {
+      background-image: url(../img/mediumselect--true.png);
+    }
+
+    @include modifier(false) {
+      background-image: url(../img/mediumselect--false.png);
     }
   }
 }
