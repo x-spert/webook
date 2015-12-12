@@ -29,7 +29,7 @@ new Vue({
     },
 
     canGoForward: function() {
-      if (this.rightpage + 2 < 57) {
+      if (this.rightpage + 2 < 85) {
         return true
       } else {
         return false
@@ -87,15 +87,15 @@ new Vue({
     jumpToPage: function(event) {
       event.preventDefault();
       if (! this.jumpPage) {
-        return false; 
+        return false;
       } else {
-        if (this.jumpPage > 1 && this.jumpPage < 53) {
+        if (this.jumpPage > 1 && this.jumpPage < 87) {
           if (this.jumpPage % 2 == 0) {
-            this.leftpage = parseInt(this.jumpPage) + 2;
-            this.rightpage = parseInt(this.jumpPage) + 3;
+            this.leftpage = parseInt(this.jumpPage);
+            this.rightpage = parseInt(this.jumpPage) + 1;
           } else {
-            this.leftpage = parseInt(this.jumpPage) + 1;
-            this.rightpage = parseInt(this.jumpPage) + 2;
+            this.leftpage = parseInt(this.jumpPage) - 1;
+            this.rightpage = parseInt(this.jumpPage);
           }
         } else {
           return false;

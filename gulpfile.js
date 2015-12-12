@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
-    tinypng = require('gulp-tinypng-compress'),
+    imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
@@ -27,20 +28,20 @@ gulp.task('build', function () {
 /**
  * Copy images (sig file path: ./assets/img/.tinypng-sigs)
  */
-gulp.task('images', function () { 
+gulp.task('images', function () {
   return gulp.src('./assets/img/**/*.{png,jpg,jpeg}')
-    .pipe(tinypng({
-      key: 'o4E5Kyx3E7JQZ_ooOjvruWfj_SHJhokC',
-      sigFile: '',
-      log: true
-    }))
+    .pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		}))
     .pipe(gulp.dest('./_site/assets/img/'));
 });
 
 /**
  * Copy fonts
  */
-gulp.task('fonts', function () { 
+gulp.task('fonts', function () {
   return gulp.src('./assets/font/*.*')
     .pipe(gulp.dest('./_site/assets/font/'));
 });
@@ -48,7 +49,7 @@ gulp.task('fonts', function () {
 /**
  * Copy video
  */
-gulp.task('video', function () { 
+gulp.task('video', function () {
   return gulp.src('./assets/video/*.*')
     .pipe(gulp.dest('./_site/assets/video/'));
 });
@@ -56,7 +57,7 @@ gulp.task('video', function () {
 /**
  * Copy audio
  */
-gulp.task('audio', function () { 
+gulp.task('audio', function () {
   return gulp.src('./assets/audio/*.*')
     .pipe(gulp.dest('./_site/assets/audio/'));
 });
@@ -80,7 +81,7 @@ gulp.task('browser-sync', ['styles', 'browserify', 'build'], function() {
 });
 
 /**
- * Compile files from _scss into _site/css (for live injecting) 
+ * Compile files from _scss into _site/css (for live injecting)
  */
 gulp.task('styles', function () {
   return gulp.src('./assets/scss/app.scss')
