@@ -11,7 +11,7 @@
 
   @include modifier(mediumselect) {
     .exercise__waffle {
-      height: 100%;      
+      height: 100%;
     }
 
     .exercise__row {
@@ -22,7 +22,7 @@
 
   @include modifier(bigselect) {
     .exercise__container {
-      padding-top: 3%;      
+      padding-top: 3%;
     }
 
     .exercise__row {
@@ -79,5 +79,20 @@
     @include modifier(false) {
       background-image: url(../img/mediumselect--false.png);
     }
+  }
+}
+
+.typer {
+  @include element(wrapper) {
+    display: inline-block;
+    position: absolute;
+    font-family: Arial, sans-serif;
+  }
+
+  @include element(input) {
+    width: 170px;
+    border: none;
+    background: transparent;
+    text-align: center;
   }
 }

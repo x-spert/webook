@@ -64,6 +64,22 @@ new Vue({
           return this.pages[i];
         }
       }
+    },
+
+    typerTrue: function(a, b) {
+      var parsedA = a.replace(/\s+/g, '').toLowerCase();
+
+      if (parsedA.length == b.length && parsedA == b) {
+        return true;
+      }
+    },
+
+    typerFalse: function(a, b) {
+      var parsedA = a.replace(/\s+/g, '').toLowerCase();
+
+      if (parsedA.length == b.length && parsedA != b) {
+        return true;
+      }
     }
   },
 
@@ -111,6 +127,11 @@ new Vue({
         } else {
           this.currentModalContent = 'ex';
         }
+      }
+    },
+    resetForm: function() {
+      for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
+        this.selectedPageObject.ex.data[i].model = ''
       }
     }
   }

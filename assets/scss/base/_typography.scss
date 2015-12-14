@@ -56,9 +56,11 @@ $wb-ex: "\e808";
 }
 .wb-checkmark:before {
   content: "\e804";
+  color: $tradewind;
 }
 .wb-cancel:before {
   content: "\e805";
+  color: $red-orange;
 }
 .wb-smiley:before {
   content: "\e806";
