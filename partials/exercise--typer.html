@@ -14,12 +14,12 @@
       <input
         type="text"
         name="{{ row.identifier }}"
-        class="typer__input"
+        class="typer__input typer--{{ this.selectedPageObject.no }}"
         v-model="row.model"
       >
 
       <span v-if="row.model.length == row.solution.length && row.model.toLowerCase() == row.solution" class="wb-checkmark"></span>
-      
+
       <span v-if="row.model.length == row.solution.length && row.model.toLowerCase() != row.solution" class="wb-cancel"></span>
     </div>
   </form>

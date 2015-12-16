@@ -90,9 +90,31 @@
   }
 
   @include element(input) {
-    width: 170px;
     border: none;
     background: transparent;
     text-align: center;
+  }
+
+  @include modifier(9) {
+    width: 170px;
+  }
+
+  @include modifier(14) {
+    width: 120px;
+  }
+
+  @include modifier(15) {
+    width: 240px;
+  }
+
+  @include modifier(23) {
+    width: 140px;
+  }
+
+  @include modifier(27) {
+    width: 100px;
+    -ms-transform: rotate(6.5deg); /* IE 9 */
+    -webkit-transform: rotate(6.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(6.5deg);
   }
 }
