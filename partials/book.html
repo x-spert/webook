@@ -4,7 +4,7 @@
     <div class="left-page__content">
       <div v-if="leftPageObject.hasMedia" class="left-page__interactions">
         <span v-if="leftPageObject.video" v-on="click: showLeftModal" class="wb-video" data-remodal-target="modal"></span>
-        <span v-if="leftPageObject.audio" v-on="click: showLeftModal" class="wb-audio" data-remodal-target="modal"></span>
+        <span v-if="leftPageObject.static" v-on="click: showLeftModal" class="wb-audio" data-remodal-target="modal"></span>
         <span v-if="leftPageObject.ex" v-on="click: showLeftModal" class="wb-ex" data-remodal-target="modal"></span>
       </div>
       <a v-if="leftPageObject.hasMedia" v-on="click: showLeftModal" data-remodal-target="modal">
@@ -17,7 +17,7 @@
     <div class="right-page__content">
       <div v-if="rightPageObject.hasMedia" class="right-page__interactions">
         <span v-if="rightPageObject.video" v-on="click: showRightModal" class="wb-video" data-remodal-target="modal"></span>
-        <span v-if="rightPageObject.audio" v-on="click: showRightModal" class="wb-audio" data-remodal-target="modal"></span>
+        <span v-if="rightPageObject.static" v-on="click: showRightModal" class="wb-audio" data-remodal-target="modal"></span>
         <span v-if="rightPageObject.ex" v-on="click: showRightModal" class="wb-ex" data-remodal-target="modal"></span>
       </div>
       <a v-if="rightPageObject.hasMedia" v-on="click: showRightModal" data-remodal-target="modal">

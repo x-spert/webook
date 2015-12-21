@@ -6,27 +6,26 @@
       <span class="wb-reset"></span>
     </button>
 
-    <div class="exercise__waffle">
-      <div
-        v-repeat="row in selectedPageObject.ex.data"
-        class="exercise__row"
-      >
-        <input class="radio-input" type="radio" name="{{ row.identifier }}" value="true" id="{{ row.identifier }}true">
+    <div
+      v-repeat="row in selectedPageObject.ex.data"
+      class="exercise__row"
+      v-attr="style: row.position"
+    >
+      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="true" id="{{ row.identifier }}true">
 
-        <label 
-          v-attr="style: row.answerTrue"
-          class="labelMediumselect__answer labelMediumselect__answer--true"
-          for="{{ row.identifier }}true"
-        ></label>
+      <label
+        v-attr="style: row.answerTrue"
+        class="labelMediumselect__answer labelMediumselect__answer--true"
+        for="{{ row.identifier }}true"
+      ></label>
 
-        <input class="radio-input" type="radio" name="{{ row.identifier }}" value="false" id="{{ row.identifier }}false">
+      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="false" id="{{ row.identifier }}false">
 
-        <label
-          v-attr="style: row.answerFalse"
-          class="labelMediumselect__answer labelMediumselect__answer--false"
-          for="{{ row.identifier }}false"
-        ></label>
-      </div>
+      <label
+        v-attr="style: row.answerFalse"
+        class="labelMediumselect__answer labelMediumselect__answer--false"
+        for="{{ row.identifier }}false"
+      ></label>
     </div>
   </form>
 </div>

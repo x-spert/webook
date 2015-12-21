@@ -7,8 +7,22 @@
     <video v-attr="src: './assets/video/' + selectedPageObject.video" width="630" controls preload></video>
   </div>
 
-  <div v-if="selectedPageObject.audio" v-show="currentModalContent == 'audio'" class="remodal__audio">
-    <audio v-attr="src: './assets/audio/' + selectedPageObject.audio" width="630" controls preload></audio>
+  <div v-if="selectedPageObject.static" v-show="currentModalContent == 'static'" class="remodal__static">
+    <!-- If single static image -->
+    <div v-if="typeof selectedPageObject.static === 'string'">
+      <img v-attr="src: './assets/img/' + selectedPageObject.static + '.jpg'">
+    </div>
+
+    <!-- If multiple static images -->
+    <div v-if="typeof selectedPageObject.static != 'string'">
+      <select v-model="selected" class="">
+        <option v-repeat="static in selectedPageObject.static">{{ static }}</option>
+      </select>
+
+      <br>&nbsp;<br>
+
+      <img v-attr="src: './assets/img/' + selected + '.jpg'">
+    </div>
   </div>
 
   <div v-if="selectedPageObject.ex" v-show="currentModalContent == 'ex'" class="remodal__exercise">

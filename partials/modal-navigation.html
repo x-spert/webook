@@ -1,5 +1,5 @@
 <section class="remodal__navigation">
-  <button 
+  <button
     v-show="currentModalContent != 'video'"
     v-if="selectedPageObject.video"
     v-on="click: currentModalContent = 'video'"
@@ -8,13 +8,13 @@
     Go to VIDEO
   </button>
 
-  <button 
-    v-show="currentModalContent != 'audio'"
-    v-if="selectedPageObject.audio"
-    v-on="click: currentModalContent = 'audio'"
+  <button
+    v-show="currentModalContent != 'static'"
+    v-if="selectedPageObject.static"
+    v-on="click: currentModalContent = 'static'"
     class="button button--reversed button--large"
   >
-    Go to AUDIO
+    Go to PICTURE
   </button>
 
   <button

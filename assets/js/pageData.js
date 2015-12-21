@@ -1,6 +1,15 @@
 module.exports = function() {
   return [
-    {no: 2},{no: 3},{no: 4},{no: 5},{no: 6},{no: 7},{no: 8},
+    {no: 2},{no: 3},{no: 4},
+    {
+      no: 5,
+      static: 'pg5'
+    },
+    {no: 6},{no: 7},
+    {
+      no: 8,
+      static: 'pg8ex3'
+    },
     {
       no: 9,
       title: 'Hor zü, ergänze und sing!',
@@ -59,7 +68,27 @@ module.exports = function() {
         ]
       }
     },
-    {no: 10},{no: 11},{no: 12},{no: 13},
+    {
+      no: 10,
+      static: [
+        'pg10ex6s1',
+        'pg10ex6s2',
+        'pg10ex6s3',
+        'pg10ex6s4'
+      ]
+    },
+    {
+      no: 11,
+      static: 'pg11ex8'
+    },
+    {
+      no: 12,
+      static: 'pg12ex10'
+    },
+    {
+      no: 13,
+      static: 'pg13ex10'
+    },
     {
       no: 14,
       title: 'Sieh die Bilder an und antworte!',
@@ -152,10 +181,19 @@ module.exports = function() {
         ]
       }
     },
-    {no: 16},{no: 17},{no: 18},{no: 19},{no: 20},{no: 21},{no: 22},
+    {no: 16},
+    {
+      no: 17,
+      static: [
+        'pg17s1',
+        'pg17s2'
+      ]
+    },
+      {no: 18},{no: 19},{no: 20},{no: 21},{no: 22},
     {
       no: 23,
       title: 'Wo sind die Lebensmittel? Ergänze!',
+      static: 'pg23ex5',
       ex: {
         name: 'typer',
         bg: '23ex',
@@ -217,7 +255,15 @@ module.exports = function() {
         ]
       }
     },
-    {no: 24},{no: 25},{no: 26},
+    {no: 24},
+    {
+      no: 25,
+      static: [
+        'pg25ex8s1',
+        'pg25ex8s2'
+      ]
+    },
+    {no: 26},
     {
       no: 27,
       title: 'Hör zu und schreib die Namen!',
@@ -263,6 +309,209 @@ module.exports = function() {
           }
         ]
       }
+    },
+    {
+      no: 29,
+      static: 'pg29ex14'
+    },
+    {
+      no: 30,
+      static: 'pg30ex15'
+    },
+    {
+      no: 31,
+      static: 'pg31'
+    },
+    {
+      no: 32,
+      static: 'pg32ex17'
+    },
+    {
+      no: 33,
+      static: 'pg33ex19'
+    },
+    {
+      no: 38,
+      static: 'pg38ex5'
+    },
+    {
+      no: 39,
+      static: 'pg39'
+    },
+    {
+      no: 44,
+      static: [
+        'pg44ex6s1',
+        'pg44ex6s2'
+      ]
+    },
+    {
+      no: 45,
+      static: 'pg45ex7'
+    },
+    {
+      no: 46,
+      static: 'pg46ex8'
+    },
+    {
+      no: 52,
+      static: 'pg52ex2a'
+    },
+    {
+      no: 54,
+      title: 'Hör zu und kreuze die richtige Antwort an!',
+      ex: {
+        name: 'mediumselect',
+        bg: '54ex',
+        data: [
+          {
+            identifier: 'one',
+            position: 'margin-top: 13%; height: 6%',
+            answerTrue: 'right: 16.2%',
+            answerFalse: 'right: 8%'
+          },
+          {
+            identifier: 'two',
+            position: 'margin-top: 1.2%; height: 6%',
+            answerFalse: 'right: 16.2%',
+            answerTrue: 'right: 8%'
+          },
+          {
+            identifier: 'three',
+            position: 'margin-top: 1.2%; height: 6%',
+            answerFalse: 'right: 16.2%',
+            answerTrue: 'right: 8%'
+          },
+          {
+            identifier: 'four',
+            position: 'margin-top: 1.1%; height: 6%',
+            answerTrue: 'right: 16.2%',
+            answerFalse: 'right: 8%'
+          },
+          {
+            identifier: 'five',
+            position: 'margin-top: 1.1%; height: 6%',
+            answerFalse: 'right: 16.2%',
+            answerTrue: 'right: 8%'
+          },
+          {
+            identifier: 'six',
+            position: 'margin-top: 1%; height: 6%',
+            answerTrue: 'right: 16.2%',
+            answerFalse: 'right: 8%'
+          },
+          {
+            identifier: 'seven',
+            position: 'margin-top: 1%; height: 6%',
+            answerTrue: 'right: 16.2%',
+            answerFalse: 'right: 8%'
+          },
+          {
+            identifier: 'eight',
+            position: 'margin-top: 0.9%; height: 6%',
+            answerTrue: 'right: 16.2%',
+            answerFalse: 'right: 8%'
+          }
+        ]
+      }
+    },
+    {
+      no: 55,
+      static: 'pg55'
+    },
+    {
+      no: 60,
+      static: 'pg60ex4'
+    },
+    {
+      no: 61,
+      static: 'pg61ex7'
+    },
+    {
+      no: 62,
+      static: 'pg62ex8'
+    },
+    {
+      no: 69,
+      static: 'pg69ex3'
+    },
+    {
+      no: 70,
+      title: 'Ergänze bei / beim / bei der und zum / zur!',
+      ex: {
+        name: 'typer',
+        bg: '70ex',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 8.2%; left: 33.3%',
+            model: '',
+            solution: 'zur'
+          },
+          {
+            identifier: 'two',
+            position: 'top: 15%; left: 17.3%',
+            model: '',
+            solution: 'zur'
+          },
+          {
+            identifier: 'three',
+            position: 'top: 22%; left: 33.3%',
+            model: '',
+            solution: 'beim'
+          },
+          {
+            identifier: 'four',
+            position: 'top: 30%; left: 15%',
+            model: '',
+            solution: 'zum'
+          },
+          {
+            identifier: 'five',
+            position: 'top: 39%; left: 45%',
+            model: '',
+            solution: 'beim'
+          },
+          {
+            identifier: 'six',
+            position: 'top: 47%; left: 62%',
+            model: '',
+            solution: 'zum'
+          },
+          {
+            identifier: 'seven',
+            position: 'top: 62%; left: 31%',
+            model: '',
+            solution: 'zur'
+          },
+          {
+            identifier: 'eight',
+            position: 'top: 70.2%; left: 13%',
+            model: '',
+            solution: 'beim'
+          },
+          {
+            identifier: 'nine',
+            position: 'top: 77.6%; left: 38%',
+            model: '',
+            solution: 'bei'
+          },
+          {
+            identifier: 'ten',
+            position: 'top: 85.1%; left: 37.5%',
+            model: '',
+            solution: 'zum'
+          }
+        ]
+      }
+    },
+    {
+      no: 74,
+      static: 'pg74ex3'
+    },
+    {
+      no: 75,
+      static: 'pg75ex5'
     }
   ]
 }

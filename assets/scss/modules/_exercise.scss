@@ -10,13 +10,8 @@
   }
 
   @include modifier(mediumselect) {
-    .exercise__waffle {
-      height: 100%;
-    }
-
     .exercise__row {
       position: relative;
-      lost-waffle: 1/2;
     }
   }
 
@@ -63,8 +58,8 @@
 
 .labelMediumselect {
   @include element(answer) {
-    width: 6.8%;
-    height: 5.6%;
+    width: 4%;
+    height: 100%;
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -116,5 +111,9 @@
     -ms-transform: rotate(6.5deg); /* IE 9 */
     -webkit-transform: rotate(6.5deg); /* Chrome, Safari, Opera */
     transform: rotate(6.5deg);
+  }
+
+  @include modifier(70) {
+    width: 40px;
   }
 }

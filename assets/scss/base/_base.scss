@@ -20,14 +20,17 @@ img,
 video,
 audio {
   max-width: 100%;
-  height: auto; 
-} 
+  height: auto;
+}
 
 [data-remodal-target] {
   cursor: pointer;
 }
 
+select {
+  font-size: 125%;
+}
+
 input:focus {
   outline: none;
 }
-

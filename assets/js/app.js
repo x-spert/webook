@@ -16,7 +16,8 @@ new Vue({
     currentModalContent: '',
     pages: pageData(),
     site: siteData(),
-    selectedPageObject: {}
+    selectedPageObject: {},
+    selected: ''
   },
 
   computed: {
@@ -40,7 +41,7 @@ new Vue({
       for (var i = 0; i < this.pages.length; i++) {
         if (this.pages[i].no == this.leftpage) {
           // Check to see if there is media on the page
-          if (!this.pages[i].video && !this.pages[i].audio && !this.pages[i].ex) {
+          if (!this.pages[i].video && !this.pages[i].static && !this.pages[i].ex) {
             this.pages[i].hasMedia = false;
           } else {
             this.pages[i].hasMedia = true;
@@ -55,7 +56,7 @@ new Vue({
       for (var i = 0; i < this.pages.length; i++) {
         if (this.pages[i].no == this.rightpage) {
           // Check to see if there is media on the page
-          if (!this.pages[i].video && !this.pages[i].audio && !this.pages[i].ex) {
+          if (!this.pages[i].video && !this.pages[i].static && !this.pages[i].ex) {
             this.pages[i].hasMedia = false;
           } else {
             this.pages[i].hasMedia = true;
@@ -122,8 +123,9 @@ new Vue({
       if (this.selectedPageObject.hasMedia) {
         if (this.selectedPageObject.video) {
           this.currentModalContent = 'video';
-        } else if (this.selectedPageObject.audio) {
-          this.currentModalContent = 'audio';
+        } else if (this.selectedPageObject.static) {
+          this.currentModalContent = 'static';
+          this.selected = this.selectedPageObject.static[0];
         } else {
           this.currentModalContent = 'ex';
         }
