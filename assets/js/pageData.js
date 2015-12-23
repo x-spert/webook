@@ -354,6 +354,20 @@ module.exports = function() {
       static: 'pg46ex8'
     },
     {
+      no: 48,
+      static: [
+        'pg48ex12',
+        'pg48nicht'
+      ]
+    },
+    {
+      no: 50,
+      static: [
+        'pg50imdeutschens1',
+        'pg50imdeutschens2'
+      ]
+    },
+    {
       no: 52,
       static: 'pg52ex2a'
     },
@@ -420,6 +434,13 @@ module.exports = function() {
       static: 'pg55'
     },
     {
+      no: 59,
+      static: [
+        'pg59ex3s1',
+        'pg59ex3s2'
+      ]
+    },
+    {
       no: 60,
       static: 'pg60ex4'
     },
@@ -430,6 +451,21 @@ module.exports = function() {
     {
       no: 62,
       static: 'pg62ex8'
+    },
+    {
+      no: 63,
+      static: [
+        'pg63nicht1s1',
+        'pg63nicht2s2'
+      ]
+    },
+    {
+      no: 64,
+      static: [
+        'pg64ex10s1',
+        'pg64ex10s2',
+        'pg64ex10s3'
+      ]
     },
     {
       no: 69,
@@ -504,6 +540,20 @@ module.exports = function() {
           }
         ]
       }
+    },
+    {
+      no: 71,
+      static: [
+        'pg71s1',
+        'pg71s2'
+      ]
+    },
+    {
+      no: 72,
+      static: [
+        'pg72ex1',
+        'pg72ex2'
+      ]
     },
     {
       no: 74,
