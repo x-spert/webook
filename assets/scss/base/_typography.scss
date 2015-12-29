@@ -1,3 +1,4 @@
+$wb-static: "\e903";
 $wb-chevron-left: "\e900";
 $wb-chevron-right: "\e901";
 $wb-arrow-left: "\e800";
@@ -36,41 +37,70 @@ $wb-ex: "\e808";
   -moz-osx-font-smoothing: grayscale;
 }
 
-.wb-chevron-left:before {
-  content: "\e900";
+.wb-static {
+    &:before {
+        content: $wb-static;
+    }
 }
-.wb-chevron-right:before {
-  content: "\e901";
+.wb-chevron-left {
+    &:before {
+        content: $wb-chevron-left;
+    }
 }
-.wb-arrow-left:before {
-  content: "\e800";
+.wb-chevron-right {
+    &:before {
+        content: $wb-chevron-right;
+    }
 }
-.wb-arrow-right:before {
-  content: "\e801";
+.wb-arrow-left {
+    &:before {
+        content: $wb-arrow-left;
+    }
 }
-.wb-video:before {
-  content: "\e802";
+.wb-arrow-right {
+    &:before {
+        content: $wb-arrow-right;
+    }
 }
-.wb-audio:before {
-  content: "\e803";
+.wb-video {
+    &:before {
+        content: $wb-video;
+    }
 }
-.wb-checkmark:before {
-  content: "\e804";
-  color: $tradewind;
+.wb-audio {
+    &:before {
+        content: $wb-audio;
+    }
 }
-.wb-cancel:before {
-  content: "\e805";
-  color: $red-orange;
+.wb-checkmark {
+    &:before {
+        content: $wb-checkmark;
+        color: $tradewind;
+    }
 }
-.wb-smiley:before {
-  content: "\e806";
+.wb-cancel {
+    &:before {
+        content: $wb-cancel;
+        color: $red-orange;
+    }
 }
-.wb-sad:before {
-  content: "\e807";
+.wb-smiley {
+    &:before {
+        content: $wb-smiley;
+    }
 }
-.wb-reset:before {
-  content: "\e902";
+.wb-sad {
+    &:before {
+        content: $wb-sad;
+    }
 }
-.wb-ex:before {
-  content: "\e808";
+.wb-reset {
+    &:before {
+        content: $wb-reset;
+    }
+}
+.wb-ex {
+    &:before {
+        content: $wb-ex;
+    }
 }

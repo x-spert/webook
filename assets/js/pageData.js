@@ -1,11 +1,9 @@
 module.exports = function() {
   return [
-    {no: 2},{no: 3},{no: 4},
     {
       no: 5,
       static: 'pg5'
     },
-    {no: 6},{no: 7},
     {
       no: 8,
       static: 'pg8ex3'
@@ -19,49 +17,49 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
-            position: 'top: 9.5%; left: 35%',
+            position: 'top: 18%; left: 35%; width: 30%',
             model: '',
             solution: 'kalt'
           },
           {
             identifier: 'two',
-            position: 'top: 20%; left: 14%',
+            position: 'top: 26%; left: 14%; width: 30%',
             model: '',
             solution: 'regnerisch'
           },
           {
             identifier: 'three',
-            position: 'top: 35.5%; left: 34%',
+            position: 'top: 38.5%; left: 34%; width: 30%',
             model: '',
             solution: 'warm'
           },
           {
             identifier: 'four',
-            position: 'top: 51%; left: 14.5%',
+            position: 'top: 51%; left: 14.5%; width: 30%',
             model: '',
             solution: 'heiß'
           },
           {
             identifier: 'five',
-            position: 'top: 66.5%; left: 65%',
+            position: 'top: 64%; left: 65%; width: 24%',
             model: '',
             solution: 'windig'
           },
           {
             identifier: 'six',
-            position: 'top: 71%; left: 34.5%',
+            position: 'top: 67.5%; left: 34.5%; width: 30%',
             model: '',
             solution: 'kühl'
           },
           {
             identifier: 'seven',
-            position: 'top: 82%; left: 29%',
+            position: 'top: 76%; left: 29%; width: 30%',
             model: '',
             solution: 'kalt'
           },
           {
             identifier: 'eight',
-            position: 'top: 86.5%; left: 33%',
+            position: 'top: 80%; left: 33%; width: 30%',
             model: '',
             solution: 'kalt'
           }
@@ -98,51 +96,61 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
-            position: 'top: 74%; left: 40%',
+            position: 'top: 74%; left: 44%; width: 15%',
             model: '',
             solution: 'regnerisch'
           },
           {
             identifier: 'two',
-            position: 'top: 74%; left: 70%',
+            position: 'top: 74%; left: 64%; width: 15%',
             model: '',
             solution: 'windig'
           },
           {
             identifier: 'three',
-            position: 'top: 78.5%; left: 40%',
+            position: 'top: 78.5%; left: 44%; width: 15%',
             model: '',
             solution: 'es schneit'
           },
           {
             identifier: 'four',
-            position: 'top: 78.5%; left: 70%',
+            position: 'top: 78.5%; left: 64%; width: 15%',
             model: '',
             solution: 'es ist kalt'
           },
           {
             identifier: 'five',
-            position: 'top: 83%; left: 40%',
+            position: 'top: 83%; left: 44%; width: 15%',
             model: '',
             solution: 'es ist wolkig'
           },
           {
             identifier: 'six',
-            position: 'top: 83%; left: 70%',
+            position: 'top: 83%; left: 64%; width: 15%',
             model: '',
             solution: 'warm'
           },
           {
             identifier: 'seven',
-            position: 'top: 87.5%; left: 40%',
+            position: 'top: 87.5%; left: 44%; width: 15%',
             model: '',
             solution: 'es ist sonnig'
           },
           {
             identifier: 'eight',
-            position: 'top: 87.5%; left: 70%',
+            position: 'top: 87.5%; left: 64%; width: 15%',
             model: '',
             solution: 'heiß'
+          },
+          {
+            identifier: 'nine',
+            position: 'top: 92%; left: 44%; width: 15%',
+            model: ''
+          },
+          {
+            identifier: 'ten',
+            position: 'top: 92%; left: 64%; width: 15%',
+            model: ''
           }
         ]
       }
@@ -156,32 +164,137 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
-            position: 'top: 12%; left: 11.5%',
+            position: 'top: 12%; left: 24.5%; width: 30%',
             model: '',
             solution: 'brauche einen schirm'
           },
           {
             identifier: 'two',
-            position: 'top: 38%; left: 11.5%',
+            position: 'top: 38%; left: 24.5%; width: 30%',
             model: '',
             solution: 'ziehe die stiefel an'
           },
           {
             identifier: 'three',
-            position: 'top: 63.5%; left: 11.5%',
+            position: 'top: 64%; left: 24.5%; width: 30%',
             model: '',
             solution: 'gehe nach hause'
           },
           {
             identifier: 'four',
-            position: 'top: 89.5%; left: 10.5%',
+            position: 'top: 90%; left: 23.5%; width: 30%',
             model: '',
             solution: 'im herbst ist es neblig und windig'
           }
         ]
       }
     },
-    {no: 16},
+    {
+      no: 16,
+      title: 'Was macht Erik im Winter? Ergänze die Wörter in den Ketten!',
+      ex: {
+        name: 'typer',
+        bg: '16ex',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 4.6%; left: 38.2%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'two',
+            position: 'top: 13.1%; left: 71.7%',
+            model: '',
+            solution: 'g'
+          },
+          {
+            identifier: 'three',
+            position: 'top: 9.6%; left: 21.6%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'four',
+            position: 'top: 24.3%; left: 32.4%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'five',
+            position: 'top: 27.3%; left: 56.6%',
+            model: '',
+            solution: 'h'
+          },
+          {
+            identifier: 'six',
+            position: 'top: 35.1%; left: 46.7%',
+            model: '',
+            solution: 't'
+          },
+          {
+            identifier: 'seven',
+            position: 'top: 41.6%; left: 47.8%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'eight',
+            position: 'top: 48.7%; left: 27%',
+            model: '',
+            solution: 'k'
+          },
+          {
+            identifier: 'nine',
+            position: 'top: 51.4%; left: 67.4%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'ten',
+            position: 'top: 65.1%; left: 22.3%',
+            model: '',
+            solution: 'f'
+          },
+          {
+            identifier: 'eleven',
+            position: 'top: 69%; left: 35.3%',
+            model: '',
+            solution: 'a'
+          },
+          {
+            identifier: 'twelve',
+            position: 'top: 73.9%; left: 60.8%',
+            model: '',
+            solution: 'h'
+          },
+          {
+            identifier: 'thirteen',
+            position: 'top: 79.6%; left: 64.2%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'fourteen',
+            position: 'top: 84%; left: 32.8%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'fifteen',
+            position: 'top: 88.1%; left: 65.7%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'sixteen',
+            position: 'top: 88.1%; left: 65.7%; width: 40%',
+            model: '',
+            solution: 'geht ski fahren'
+          }
+        ]
+      }
+    },
     {
       no: 17,
       static: [
@@ -189,7 +302,6 @@ module.exports = function() {
         'pg17s2'
       ]
     },
-      {no: 18},{no: 19},{no: 20},{no: 21},{no: 22},
     {
       no: 23,
       title: 'Wo sind die Lebensmittel? Ergänze!',
@@ -200,62 +312,61 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
-            position: 'top: 10%; left: 27.5%',
+            position: 'top: 13.5%; left: 31.5%',
             model: '',
             solution: 'kühlschrank'
           },
           {
             identifier: 'two',
-            position: 'top: 19%; left: 27.5%',
+            position: 'top: 22.5%; left: 31.5%',
             model: '',
             solution: 'pfanne'
           },
           {
             identifier: 'three',
-            position: 'top: 28.5%; left: 27.5%',
+            position: 'top: 31.5%; left: 31.5%',
             model: '',
             solution: 'backofen'
           },
           {
             identifier: 'four',
-            position: 'top: 38%; left: 27.5%',
+            position: 'top: 40.5%; left: 31.5%',
             model: '',
             solution: 'schüssel'
           },
           {
             identifier: 'five',
-            position: 'top: 47.5%; left: 27.5%',
+            position: 'top: 49.5%; left: 31.5%',
             model: '',
             solution: 'boden'
           },
           {
             identifier: 'six',
-            position: 'top: 57%; left: 27.5%',
+            position: 'top: 58.5%; left: 31.5%',
             model: '',
             solution: 'teller'
           },
           {
             identifier: 'seven',
-            position: 'top: 66.5%; left: 27.5%',
+            position: 'top: 67.5%; left: 31.5%',
             model: '',
             solution: 'glas'
           },
           {
             identifier: 'eight',
-            position: 'top: 76%; left: 27.5%',
+            position: 'top: 76.3%; left: 31.5%',
             model: '',
             solution: 'flasche'
           },
           {
             identifier: 'nine',
-            position: 'top: 85.5%; left: 58.5%',
+            position: 'top: 85.5%; left: 55.5%; width: 35%',
             model: '',
             solution: 'tablett'
           }
         ]
       }
     },
-    {no: 24},
     {
       no: 25,
       static: [
@@ -263,7 +374,6 @@ module.exports = function() {
         'pg25ex8s2'
       ]
     },
-    {no: 26},
     {
       no: 27,
       title: 'Hör zu und schreib die Namen!',
@@ -273,37 +383,37 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
-            position: 'top: 17.5%; left: 21.5%',
+            position: 'top: 17%; left: 32%; width: 12%',
             model: '',
             solution: 'paul'
           },
           {
             identifier: 'two',
-            position: 'top: 39.5%; left: 21.5%',
+            position: 'top: 39%; left: 32%; width: 12%',
             model: '',
             solution: 'sandra'
           },
           {
             identifier: 'three',
-            position: 'top: 63%; left: 21.5%',
+            position: 'top: 62.5%; left: 32%; width: 12%',
             model: '',
             solution: 'stefan'
           },
           {
             identifier: 'four',
-            position: 'top: 17.5%; left: 65.5%',
+            position: 'top: 17%; left: 59.5%; width: 12%',
             model: '',
             solution: 'marie'
           },
           {
             identifier: 'five',
-            position: 'top: 39.5%; left: 65.5%',
+            position: 'top: 39%; left: 59.5%; width: 12%',
             model: '',
             solution: 'robert'
           },
           {
             identifier: 'six',
-            position: 'top: 63%; left: 65.5%',
+            position: 'top: 62.5%; left: 59.5%; width: 12%',
             model: '',
             solution: 'lara'
           }
