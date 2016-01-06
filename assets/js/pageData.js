@@ -13,7 +13,7 @@ module.exports = function() {
       title: 'Hor zü, ergänze und sing!',
       ex: {
         name: 'typer',
-        bg: '09ex',
+        bg: '9ex',
         data: [
           {
             identifier: 'one',
@@ -439,6 +439,22 @@ module.exports = function() {
     {
       no: 33,
       static: 'pg33ex19'
+    },
+    {
+      no: 35,
+      title: 'Schreib die Wörter ins Kreuzworträtsel!',
+      ex: {
+        name: 'typerbg',
+        bg: '35ex',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 26.5%; left: 48.4%',
+            model: '',
+            solution: 'e'
+          }
+        ]
+      }
     },
     {
       no: 38,

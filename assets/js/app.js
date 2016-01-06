@@ -6,13 +6,21 @@ var pageData = require('./pageData.js');
 
 Vue.config.debug = true;
 
+function blurAll(){
+ var tmp = document.createElement("input");
+ document.body.appendChild(tmp);
+ tmp.focus();
+ document.body.removeChild(tmp);
+}
+
 new Vue({
   el: '#app',
 
   data: {
     jumpPage: '',
-    leftpage: 2,
-    rightpage: 3,
+    leftpage: -2,
+    rightpage: -1,
+    staticpage: false,
     currentModalContent: '',
     pages: pageData(),
     site: siteData(),
@@ -22,18 +30,22 @@ new Vue({
 
   computed: {
     canGoBack: function() {
-      if (this.leftpage - 2 > 1) {
-        return true
-      } else {
-        return false
+      if (this.leftpage.length != 0) {
+        if (this.leftpage - 2 > -3) {
+          return true
+        } else {
+          return false
+        }
       }
     },
 
     canGoForward: function() {
-      if (this.rightpage + 2 < 85) {
-        return true
-      } else {
-        return false
+      if (this.rightpage.length != 0) {
+        if (this.rightpage + 2 < 90) {
+          return true
+        } else {
+          return false
+        }
       }
     },
 
@@ -88,10 +100,12 @@ new Vue({
     prevPages: function() {
       this.leftpage = this.leftpage - 2;
       this.rightpage = this.rightpage - 2;
+      blurAll();
     },
     nextPages: function() {
       this.leftpage = this.leftpage + 2;
       this.rightpage = this.rightpage + 2;
+      blurAll();
     },
     showLeftModal: function() {
       this.selectedPageObject = this.leftPageObject;
@@ -103,9 +117,11 @@ new Vue({
     },
     jumpToPage: function(event) {
       event.preventDefault();
+
       if (! this.jumpPage) {
         return false;
       } else {
+        this.staticpage = false;
         if (this.jumpPage > 1 && this.jumpPage < 87) {
           if (this.jumpPage % 2 == 0) {
             this.leftpage = parseInt(this.jumpPage);
@@ -134,6 +150,22 @@ new Vue({
     resetForm: function() {
       for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
         this.selectedPageObject.ex.data[i].model = ''
+      }
+    },
+    goStatic: function(page) {
+      this.leftpage = '';
+      this.rightpage = '';
+      this.staticpage = page;
+    },
+    goToPage: function(page) {
+      this.staticpage = false;
+
+      if (page % 2 == 0) {
+        this.leftpage = parseInt(page);
+        this.rightpage = parseInt(page) + 1;
+      } else {
+        this.leftpage = parseInt(page) - 1;
+        this.rightpage = parseInt(page);
       }
     }
   }

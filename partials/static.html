@@ -1,0 +1,25 @@
+<section
+  v-if="staticpage"
+  class="static"
+>
+  <div class="static__inner">
+    <div
+      v-if="staticpage == 'toc'"
+    >
+      <h1 v-text="site.pages.toc.title" class="static__heading"></h1>
+
+      <ul class="static__chapters">
+        <li
+          v-repeat="chapter in site.pages.toc.chapters"
+        >
+          <a
+            v-on="click: goToPage(chapter.pageno)"
+            href="#"
+          >
+            {{ chapter.title }} <span class="static__page">{{ chapter.pageno }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

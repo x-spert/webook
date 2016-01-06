@@ -147,8 +147,19 @@
     -ms-transform: rotate(6.5deg); /* IE 9 */
     -webkit-transform: rotate(6.5deg); /* Chrome, Safari, Opera */
     transform: rotate(6.5deg);
+  }
 
-    background-color: rgba(tomato, .2);
+  @include modifier(35) {
+    font-size: 12px;
+    width: 16px;
+
+    &.correct {
+      background-color: rgba($tradewind, .3)
+    }
+
+    &.incorrect {
+      background-color: rgba($red-orange, .3)
+    }
   }
 
   @include modifier(70) {
