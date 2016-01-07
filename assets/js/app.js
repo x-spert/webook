@@ -53,7 +53,7 @@ new Vue({
       for (var i = 0; i < this.pages.length; i++) {
         if (this.pages[i].no == this.leftpage) {
           // Check to see if there is media on the page
-          if (!this.pages[i].video && !this.pages[i].static && !this.pages[i].ex) {
+          if (!this.pages[i].video && !this.pages[i].static && !this.pages[i].ex && !this.pages[i].ex2) {
             this.pages[i].hasMedia = false;
           } else {
             this.pages[i].hasMedia = true;
@@ -68,7 +68,7 @@ new Vue({
       for (var i = 0; i < this.pages.length; i++) {
         if (this.pages[i].no == this.rightpage) {
           // Check to see if there is media on the page
-          if (!this.pages[i].video && !this.pages[i].static && !this.pages[i].ex) {
+          if (!this.pages[i].video && !this.pages[i].static && !this.pages[i].ex && !this.pages[i].ex2) {
             this.pages[i].hasMedia = false;
           } else {
             this.pages[i].hasMedia = true;
@@ -142,14 +142,19 @@ new Vue({
         } else if (this.selectedPageObject.static) {
           this.currentModalContent = 'static';
           this.selected = this.selectedPageObject.static[0];
-        } else {
+        } else if (this.selectedPageObject.ex) {
           this.currentModalContent = 'ex';
+        } else {
+          this.currentModalContent = 'ex2';
         }
       }
     },
     resetForm: function() {
       for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
         this.selectedPageObject.ex.data[i].model = ''
+      }
+      for (var i = 0; i < this.selectedPageObject.ex2.data.length; i++) {
+        this.selectedPageObject.ex2.data[i].model = ''
       }
     },
     goStatic: function(page) {

@@ -487,6 +487,113 @@ module.exports = function() {
       ]
     },
     {
+      no: 49,
+      title: 'Ergänze und lies der Klasse vor!',
+      title2: 'Schreib über einen Freund / eine Freund/in!',
+      ex: {
+        name: 'typer',
+        bg: '49ex1',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 35.2%; left: 42.3%; width: 41%',
+            model: '',
+            solution: 'kriminalfilme'
+          },
+          {
+            identifier: 'two',
+            position: 'top: 40.5%; left: 25.3%; width: 24%',
+            model: '',
+            solution: 'fernsehen'
+          },
+          {
+            identifier: 'three',
+            position: 'top: 40.5%; left: 59.3%; width: 30%',
+            model: '',
+            solution: 'montag'
+          },
+          {
+            identifier: 'four',
+            position: 'top: 46.3%; left: 14.3%; width: 36%',
+            model: '',
+            solution: '20 uhr'
+          },
+          {
+            identifier: 'five',
+            position: 'top: 50.7%; left: 37.3%; width: 22%',
+            model: '',
+            solution: 'oft'
+          },
+          {
+            identifier: 'six',
+            position: 'top: 55.8%; left: 19.3%; width: 35%',
+            model: '',
+            solution: 'spannend'
+          }
+        ]
+      },
+      ex2: {
+        name: 'typer',
+        bg: '49ex2',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 37.9%; left: 18.3%; width: 31%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'two',
+            position: 'top: 37.9%; left: 58.3%; width: 37.5%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'three',
+            position: 'top: 43.2%; left: 18.3%; width: 80%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'four',
+            position: 'top: 48.2%; left: 18.3%; width: 11%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'five',
+            position: 'top: 53.3%; left: 18.3%; width: 11%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'six',
+            position: 'top: 48.2%; left: 35.3%; width: 26%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'seven',
+            position: 'top: 53.3%; left: 35.3%; width: 26%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'eight',
+            position: 'top: 48.2%; left: 61.8%; width: 38%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'nine',
+            position: 'top: 53.3%; left: 61.8%; width: 38%',
+            model: '',
+            solution: null
+          }
+        ]
+      }
+    },
+    {
       no: 50,
       static: [
         'pg50imdeutschens1',
@@ -500,57 +607,88 @@ module.exports = function() {
     {
       no: 54,
       title: 'Hör zu und kreuze die richtige Antwort an!',
+      title2: 'Welches ist die richtige Reihenfolge',
       ex: {
         name: 'mediumselect',
-        bg: '54ex',
+        bg: '54ex1',
         data: [
           {
             identifier: 'one',
-            position: 'margin-top: 13%; height: 6%',
+            position: 'margin-top: 24.8%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'two',
-            position: 'margin-top: 1.2%; height: 6%',
+            position: 'margin-top: 1%; height: 4.3%',
             answerFalse: 'right: 16.2%',
             answerTrue: 'right: 8%'
           },
           {
             identifier: 'three',
-            position: 'margin-top: 1.2%; height: 6%',
+            position: 'margin-top: 1%; height: 4.3%',
             answerFalse: 'right: 16.2%',
             answerTrue: 'right: 8%'
           },
           {
             identifier: 'four',
-            position: 'margin-top: 1.1%; height: 6%',
+            position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'five',
-            position: 'margin-top: 1.1%; height: 6%',
+            position: 'margin-top: 1%; height: 4.3%',
             answerFalse: 'right: 16.2%',
             answerTrue: 'right: 8%'
           },
           {
             identifier: 'six',
-            position: 'margin-top: 1%; height: 6%',
+            position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'seven',
-            position: 'margin-top: 1%; height: 6%',
+            position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'eight',
-            position: 'margin-top: 0.9%; height: 6%',
+            position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
+          }
+        ]
+      },
+      ex2: {
+        name: 'typerbg',
+        bg: '54ex2',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 16.5%; left: 20.8%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '1'
+          },
+          {
+            identifier: 'two',
+            position: 'top: 16.5%; left: 68.3%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '2'
+          },
+          {
+            identifier: 'three',
+            position: 'top: 16.5%; left: 82.7%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '3'
+          },
+          {
+            identifier: 'four',
+            position: 'top: 16.5%; left: 47.7%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '4'
           }
         ]
       }
@@ -606,61 +744,61 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
-            position: 'top: 8.2%; left: 33.3%',
+            position: 'top: 17.2%; left: 30.3%; width: 14%',
             model: '',
             solution: 'zur'
           },
           {
             identifier: 'two',
-            position: 'top: 15%; left: 17.3%',
+            position: 'top: 22.6%; left: 17.8%; width: 9%',
             model: '',
             solution: 'zur'
           },
           {
             identifier: 'three',
-            position: 'top: 22%; left: 33.3%',
+            position: 'top: 29%; left: 33.3%; width: 9%',
             model: '',
             solution: 'beim'
           },
           {
             identifier: 'four',
-            position: 'top: 30%; left: 15%',
+            position: 'top: 35%; left: 15%; width: 9%',
             model: '',
             solution: 'zum'
           },
           {
             identifier: 'five',
-            position: 'top: 39%; left: 45%',
+            position: 'top: 42.5%; left: 44%; width: 14%',
             model: '',
             solution: 'beim'
           },
           {
             identifier: 'six',
-            position: 'top: 47%; left: 62%',
+            position: 'top: 48.5%; left: 60%; width: 15%',
             model: '',
             solution: 'zum'
           },
           {
             identifier: 'seven',
-            position: 'top: 62%; left: 31%',
+            position: 'top: 60.7%; left: 32%; width: 9%',
             model: '',
             solution: 'zur'
           },
           {
             identifier: 'eight',
-            position: 'top: 70.2%; left: 13%',
+            position: 'top: 67.2%; left: 11%; width: 14%',
             model: '',
             solution: 'beim'
           },
           {
             identifier: 'nine',
-            position: 'top: 77.6%; left: 38%',
+            position: 'top: 73%; left: 38%; width: 11%',
             model: '',
             solution: 'bei'
           },
           {
             identifier: 'ten',
-            position: 'top: 85.1%; left: 37.5%',
+            position: 'top: 79.1%; left: 36%; width: 13%',
             model: '',
             solution: 'zum'
           }

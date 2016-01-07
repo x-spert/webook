@@ -25,4 +25,13 @@
   >
     Go to EXERCISE
   </button>
+
+  <button
+    v-show="currentModalContent != 'ex2'"
+    v-if="selectedPageObject.ex2"
+    v-on="click: currentModalContent = 'ex2'"
+    class="button button--reversed button--large"
+  >
+    Go to EXERCISE 2
+  </button>
 </section>

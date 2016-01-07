@@ -1,0 +1,29 @@
+<div
+  class="exercise exercise--typer"
+>
+  <img v-attr="src: './assets/img/' + selectedPageObject.ex2.bg + '.jpg'">
+
+  <form class="exercise__container">
+    <button class="button button--reset button--scale" type="reset" v-on="click: resetForm">
+      <span class="wb-reset"></span>
+    </button>
+
+    <div
+      v-repeat="row in selectedPageObject.ex2.data"
+      class="typer__wrapper"
+      v-attr="style: row.position"
+    >
+      <input
+        type="text"
+        name="{{ row.identifier }}"
+        class="typer__input typer--{{ this.selectedPageObject.no }}_2"
+        v-class="
+          correct: row.model.length == row.solution.length && row.model.toLowerCase() == row.solution,
+          incorrect: row.model.length == row.solution.length && row.model.toLowerCase() != row.solution
+        "
+        v-model="row.model"
+        maxlength="1"
+      >
+    </div>
+  </form>
+</div>

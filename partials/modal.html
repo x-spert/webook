@@ -10,18 +10,20 @@
   <div v-if="selectedPageObject.static" v-show="currentModalContent == 'static'" class="remodal__static">
     <!-- If single static image -->
     <div v-if="typeof selectedPageObject.static === 'string'">
-      <img v-attr="src: './assets/img/' + selectedPageObject.static + '.jpg'">
+      <div class="static-asset static-asset--single">
+        <img v-attr="src: './assets/img/' + selectedPageObject.static + '.jpg'">
+      </div>
     </div>
 
     <!-- If multiple static images -->
     <div v-if="typeof selectedPageObject.static != 'string'">
-      <select v-model="selected" class="">
-        <option v-repeat="static in selectedPageObject.static">{{ static }}</option>
-      </select>
+      <div class="static-asset static-asset--multiple">
+        <select v-model="selected">
+          <option v-repeat="static in selectedPageObject.static">{{ static }}</option>
+        </select>
 
-      <br>&nbsp;<br>
-
-      <img v-attr="src: './assets/img/' + selected + '.jpg'">
+        <img v-attr="src: './assets/img/' + selected + '.jpg'">
+      </div>
     </div>
   </div>
 
@@ -40,6 +42,24 @@
 
     <div v-if="selectedPageObject.ex.name == 'typerbg'">
       @@include('./exercise--typerbg.html')
+    </div>
+  </div>
+
+  <div v-if="selectedPageObject.ex2" v-show="currentModalContent == 'ex2'" class="remodal__exercise">
+    <div v-if="selectedPageObject.ex2.name == 'bigselect'">
+      <!-- @@include('./exercise--bigselect2.html') -->
+    </div>
+
+    <div v-if="selectedPageObject.ex2.name == 'mediumselect'">
+      <!-- @@include('./exercise--mediumselect2.html') -->
+    </div>
+
+    <div v-if="selectedPageObject.ex2.name == 'typer'">
+      @@include('./exercise--typer2.html')
+    </div>
+
+    <div v-if="selectedPageObject.ex2.name == 'typerbg'">
+      @@include('./exercise--typerbg2.html')
     </div>
   </div>
 
