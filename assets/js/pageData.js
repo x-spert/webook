@@ -2,7 +2,8 @@ module.exports = function() {
   return [
     {
       no: 5,
-      static: 'pg5'
+      static: 'pg5',
+      staticTrigger: ''
     },
     {
       no: 8,
