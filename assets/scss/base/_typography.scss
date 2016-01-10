@@ -1,3 +1,4 @@
+$wb-solve: "\e904";
 $wb-static: "\e903";
 $wb-chevron-left: "\e900";
 $wb-chevron-right: "\e901";
@@ -37,6 +38,11 @@ $wb-ex: "\e808";
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wb-solve {
+    &:before {
+        content: $wb-solve;
+    }
+}
 .wb-static {
     &:before {
         content: $wb-static;

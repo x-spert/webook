@@ -95,4 +95,11 @@ html.remodal-is-locked {
   @include element(exercise) {
     margin: em(30px) 0 0;
   }
+
+  @include element(title) {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+  }
 }

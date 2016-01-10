@@ -3,35 +3,35 @@
     v-show="currentModalContent != 'video'"
     v-if="selectedPageObject.video"
     v-on="click: currentModalContent = 'video'"
+    v-text="site.modal.video"
     class="button button--reversed button--large"
   >
-    Go to VIDEO
   </button>
 
   <button
     v-show="currentModalContent != 'static'"
     v-if="selectedPageObject.static"
     v-on="click: currentModalContent = 'static'"
+    v-text="site.modal.static"
     class="button button--reversed button--large"
   >
-    Go to PICTURE
   </button>
 
   <button
     v-show="currentModalContent != 'ex'"
     v-if="selectedPageObject.ex"
     v-on="click: currentModalContent = 'ex'"
+    v-text="site.modal.exercise"
     class="button button--reversed button--large"
   >
-    Go to EXERCISE
   </button>
 
   <button
     v-show="currentModalContent != 'ex2'"
     v-if="selectedPageObject.ex2"
     v-on="click: currentModalContent = 'ex2'"
+    v-text="site.modal.exercise2"
     class="button button--reversed button--large"
   >
-    Go to EXERCISE 2
   </button>
 </section>

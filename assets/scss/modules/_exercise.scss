@@ -54,6 +54,23 @@
       position: absolute;
     }
   }
+
+  @include modifier(dnd) {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      margin: auto;
+      position: absolute;
+    }
+  }
 }
 
 .static-asset {
@@ -243,4 +260,110 @@
   @include modifier(70) {
     width: 70%;
   }
+}
+
+.dnd {
+  @include element(checkmark) {
+    display: none;
+  }
+
+  @include element(dropzone-row) {
+    lost-utility: clearfix;
+    padding: 0.5rem;
+
+    &:nth-of-type(2n) {
+      background-color: rgba($grey, .1);
+    }
+
+    > div {
+      lost-column: 1/2;
+    }
+  }
+
+  @include element(dropzone-def) {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid transparent;
+    line-height: 20px;
+  }
+
+  @include element(dropzone-a) {
+    line-height: 32px;
+
+    .dnd__sandbox-a {
+      background-color: rgba($tradewind, .3);
+    }
+
+    .dnd__checkmark {
+      display: inline;
+    }
+  }
+
+  @include element(sandbox) {
+    line-height: 3;
+    padding: 1em;
+  }
+
+  @include element(answer-container) {
+    display: inline-block;
+  }
+
+  @include element(sandbox-a) {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid lighten($grey, 30%);
+    cursor: grab;
+    line-height: 20px;
+  }
+
+  @include element(label) {
+    display: inline-block;
+    background-color: $amber;
+    border-radius: 50%;
+    color: $white;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @include element(solution) {
+    text-transform: uppercase;
+
+    &::after {
+      content: " | ";
+    }
+
+    &:last-of-type::after {
+      content: '';
+    }
+  }
+}
+
+// dragula styles
+
+.gu-mirror {
+  position: fixed !important;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0 !important;
+  z-index: 10001 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }

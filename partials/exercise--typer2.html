@@ -4,6 +4,10 @@
   <img v-attr="src: './assets/img/' + selectedPageObject.ex2.bg + '.jpg'">
 
   <form class="exercise__container">
+    <button class="button button--solve button--scale" type="button" v-on="click: solveForm">
+      <span class="wb-solve"></span>
+    </button>
+
     <button class="button button--reset button--scale" type="reset" v-on="click: resetForm">
       <span class="wb-reset"></span>
     </button>
@@ -18,6 +22,7 @@
         name="{{ row.identifier }}"
         class="typer__input typer--{{ this.selectedPageObject.no }}_2"
         v-model="row.model"
+        maxlength="{{ row.solution.length }}"
       >
 
       <span v-if="row.model.length == row.solution.length && row.model.toLowerCase() == row.solution" class="wb-checkmark"></span>

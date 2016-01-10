@@ -22,6 +22,11 @@ $grey             : #797e83;
 $tradewind        : #6CBEB0;
 $red-orange       : #ff5349;
 $log-cabin        : #192419;
+$amber            : #FDC100;
+$affair           : #733D88;
+$cerulean         : #0093E5;
+$la-palma         : #1D9116;
+$razzmatazz       : #E60A78;
 
 // Color Palette Modifiers
 
@@ -46,6 +51,15 @@ $palettes: (
 $ui-colors: (
   primary    : $tradewind,
   secondary  : $red-orange
+);
+
+// Label Colors
+
+$labels: (
+  purple    : $affair,
+  lightblue : $cerulean,
+  green     : $la-palma,
+  pink      : $razzmatazz
 );
 
 // Text

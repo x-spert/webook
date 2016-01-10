@@ -1,0 +1,64 @@
+<div
+  class="exercise exercise--dnd"
+>
+  <!-- <img v-attr="src: './assets/img/' + selectedPageObject.ex.bg + '.jpg'"> -->
+  <img v-attr="src: './assets/img/-2.jpg'">
+
+  <form class="exercise__container">
+    <button class="button button--solve button--scale" type="button" v-on="click: selectedPageObject.ex.solution = true">
+      <span class="wb-solve"></span>
+    </button>
+
+    <button class="button button--reset button--scale" type="reset" v-on="click: resetDnd">
+      <span class="wb-reset"></span>
+    </button>
+
+    <section class="remodal__navigation">
+      <button
+        v-on="click: interactNow"
+        v-text="'Start'"
+        v-el="startButton"
+        class="button button--reversed button--large"
+      >
+      </button>
+    </section>
+
+    <p>Gaseste raspunsurile corecte</p>
+
+    <div v-el="sandbox" class="dnd__sandbox">
+      <div
+        v-repeat="row in selectedPageObject.ex.data | orderBy 'answerID'"
+        class="dnd__answer-container launch--{{row.rowID }}"
+      >
+        <div style="display: inline-block">
+          <span class="dnd__sandbox-a"><span v-text="row.answerID" class="dnd__label"></span> <span v-html="row.answerText"></span></span>&#8195;<span class="dnd__checkmark wb-checkmark"></span>
+        </div>
+      </div>
+    </div>
+
+    <div v-el="dropzone" class="dnd_dropzone">
+      <div
+        v-repeat="row in selectedPageObject.ex.data"
+        class="dnd__dropzone-row"
+      >
+        <div class="dnd__dropzone-q">
+          <span class="dnd__dropzone-def"><span v-text="row.questionID" class="dnd__label"></span> <span v-html="row.questionText"></span></span>
+        </div>
+
+        <div class="dnd__dropzone-a target--{{row.rowID }}">
+          <span>&nbsp;</span>
+        </div>
+      </div>
+    </div>
+
+    <p v-show="selectedPageObject.ex.solution">
+      <strong>Solutie:</strong>
+      <span
+        v-repeat="row in selectedPageObject.ex.data"
+        v-text="row.questionID + '-' + row.answerID"
+        class="dnd__solution"
+      >
+      </span>
+    </p>
+  </form>
+</div>

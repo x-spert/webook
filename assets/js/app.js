@@ -1,6 +1,8 @@
 // var $ = require('jquery');
 var Vue = require('vue');
 var remodal = require('remodal');
+var Howl = require('howler');
+var dragula = require('dragula');
 var siteData = require('./siteData.js');
 var pageData = require('./pageData.js');
 
@@ -25,7 +27,9 @@ new Vue({
     pages: pageData(),
     site: siteData(),
     selectedPageObject: {},
-    selected: ''
+    selected: '',
+    sandboxContent: '',
+    dropzoneContent: ''
   },
 
   computed: {
@@ -156,6 +160,49 @@ new Vue({
       for (var i = 0; i < this.selectedPageObject.ex2.data.length; i++) {
         this.selectedPageObject.ex2.data[i].model = ''
       }
+    },
+    solveForm: function() {
+      if (this.selectedPageObject.ex.name != 'mediumselect') {
+        for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
+          this.selectedPageObject.ex.data[i].model = this.selectedPageObject.ex.data[i].solution;
+        }
+      }
+      if (this.selectedPageObject.ex2.name != 'mediumselect') {
+        for (var i = 0; i < this.selectedPageObject.ex2.data.length; i++) {
+          this.selectedPageObject.ex2.data[i].model = this.selectedPageObject.ex2.data[i].solution;
+        }
+      }
+    },
+    solveCheck: function() {
+      if (this.selectedPageObject.ex.name == 'mediumselect') {
+        for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
+          this.selectedPageObject.ex.data[i].model = 'true';
+        }
+      }
+      if (this.selectedPageObject.ex2.name == 'mediumselect') {
+        for (var i = 0; i < this.selectedPageObject.ex2.data.length; i++) {
+          this.selectedPageObject.ex2.data[i].model = 'true';
+        }
+      }
+    },
+    interactNow: function() {
+      this.sandboxContent = this.$$.sandbox.innerHTML;
+      this.dropzoneContent = this.$$.dropzone.innerHTML;
+      this.$$.startButton.setAttribute('disabled', 'disabled');
+
+      for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
+        dragula([document.querySelector('.launch--' + this.selectedPageObject.ex.data[i].rowID), document.querySelector('.target--' + this.selectedPageObject.ex.data[i].rowID)]);
+      }
+    },
+    resetDnd: function() {
+      if (this.sandboxContent) {
+        this.$$.sandbox.innerHTML = this.sandboxContent;
+      }
+      if (this.dropzoneContent) {
+        this.$$.dropzone.innerHTML = this.dropzoneContent;
+      }
+
+      this.$$.startButton.removeAttribute('disabled');
     },
     goStatic: function(page) {
       this.leftpage = '';

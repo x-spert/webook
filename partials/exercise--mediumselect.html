@@ -2,7 +2,11 @@
   <img v-attr="src: './assets/img/' + selectedPageObject.ex.bg + '.jpg'">
 
   <form class="exercise__container">
-    <button class="button button--reset button--scale" type="reset">
+    <button class="button button--solve button--scale" type="button" v-on="click: solveCheck">
+      <span class="wb-solve"></span>
+    </button>
+
+    <button class="button button--reset button--scale" type="reset" v-on="click: resetForm">
       <span class="wb-reset"></span>
     </button>
 
@@ -11,7 +15,7 @@
       class="exercise__row"
       v-attr="style: row.position"
     >
-      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="true" id="{{ row.identifier }}true">
+      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="true" id="{{ row.identifier }}true" v-model="row.model">
 
       <label
         v-attr="style: row.answerTrue"
@@ -19,7 +23,7 @@
         for="{{ row.identifier }}true"
       ></label>
 
-      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="false" id="{{ row.identifier }}false">
+      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="false" id="{{ row.identifier }}false" v-model="row.model">
 
       <label
         v-attr="style: row.answerFalse"

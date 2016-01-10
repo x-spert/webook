@@ -1,32 +1,38 @@
 module.exports = function() {
   return {
     menu: {
-      name: "menu",
-      next: "Next",
-      prev: "Previous",
-      jump: "Jump to page",
-      search: "Go!",
-      toc: "Table of Contents",
-      help: "Help"
+      name: "Meniu",
+      next: "Inainte",
+      prev: "Inapoi",
+      jump: "Mergi la pagina",
+      search: "Hai!",
+      toc: "Cuprins",
+      help: "Ajutor"
+    },
+    modal: {
+      video: "Mergi la VIDEO",
+      static: "Mergi la POZA(E)",
+      exercise: "Mergi la EXERCITIU",
+      exercise2: "Mergi la EXERCITIU 2"
     },
     pages: {
       toc: {
-        title: 'Table of Contents',
+        title: 'Cuprins',
         chapters: [
           {
-            title: 'Chapter 1: Das Wetter',
+            title: 'Capitolul 1: Das Wetter',
             pageno: '5'
           },
           {
-            title: 'Chapter 2: Mein Lieblingsessen',
+            title: 'Capitolul 2: Mein Lieblingsessen',
             pageno: '17'
           },
           {
-            title: 'Chapter 3: Fernsehen',
+            title: 'Capitolul 3: Fernsehen',
             pageno: '39'
           },
           {
-            title: 'Chapter 4: Wie geht\'s dir?',
+            title: 'Capitolul 4: Wie geht\'s dir?',
             pageno: '55'
           },
           {

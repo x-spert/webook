@@ -4,6 +4,10 @@
   <img v-attr="src: './assets/img/' + selectedPageObject.ex.bg + '.jpg'">
 
   <form class="exercise__container">
+    <button class="button button--solve button--scale" type="button" v-on="click: solveForm">
+      <span class="wb-solve"></span>
+    </button>
+
     <button class="button button--reset button--scale" type="reset" v-on="click: resetForm">
       <span class="wb-reset"></span>
     </button>
@@ -22,7 +26,7 @@
           incorrect: row.model.length == row.solution.length && row.model.toLowerCase() != row.solution
         "
         v-model="row.model"
-        maxlength="1"
+        maxlength="{{ row.solution.length }}"
       >
     </div>
   </form>

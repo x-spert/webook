@@ -614,48 +614,56 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
+            model: '',
             position: 'margin-top: 24.8%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'two',
+            model: '',
             position: 'margin-top: 1%; height: 4.3%',
             answerFalse: 'right: 16.2%',
             answerTrue: 'right: 8%'
           },
           {
             identifier: 'three',
+            model: '',
             position: 'margin-top: 1%; height: 4.3%',
             answerFalse: 'right: 16.2%',
             answerTrue: 'right: 8%'
           },
           {
             identifier: 'four',
+            model: '',
             position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'five',
+            model: '',
             position: 'margin-top: 1%; height: 4.3%',
             answerFalse: 'right: 16.2%',
             answerTrue: 'right: 8%'
           },
           {
             identifier: 'six',
+            model: '',
             position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'seven',
+            model: '',
             position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
           },
           {
             identifier: 'eight',
+            model: '',
             position: 'margin-top: 1%; height: 4.3%',
             answerTrue: 'right: 16.2%',
             answerFalse: 'right: 8%'
@@ -821,7 +829,56 @@ module.exports = function() {
     },
     {
       no: 74,
-      static: 'pg74ex3'
+      static: 'pg74ex3',
+      ex: {
+        name: 'dnd',
+        bg: '',
+        solution: false,
+        data: [
+          {
+            rowID: 'one',
+            questionID: '1',
+            questionText: 'Wie spat is est?',
+            answerID: 'd',
+            answerText: 'Es ist halb neun.'
+          },
+          {
+            rowID: 'two',
+            questionID: '2',
+            questionText: 'Was liest Anna gern?',
+            answerID: 'c',
+            answerText: 'Sie liest gern <span class="text--green">Gruselgeschichten</span>.'
+          },
+          {
+            rowID: 'three',
+            questionID: '3',
+            questionText: 'Was is <span class="text--purple">das Lieblingsfach</span> von Alex?"',
+            answerID: 'e',
+            answerText: '<span class="text--purple">Sein Lieblingsfach</span> ist <span class="text--pink">Erdkunde</span>.'
+          },
+          {
+            rowID: 'four',
+            questionID: '4',
+            questionText: 'Hat Lisa <span class="text--lightblue">einen Lieblingstag</span>?',
+            answerID: 'b',
+            answerText: 'Ja, <span class="text--lightblue">Samstag</span> ist ihr <span class="text--lightblue">Lieblingstag</span>.'
+          },
+          {
+            rowID: 'five',
+            questionID: '5',
+            questionText: 'Wo können wir <span class="text--purple">ein T-Shirt</span> kaufen?',
+            answerID: 'f',
+            answerText: '<span class="text--purple">Im Bekleidungsgeschäft</span>.'
+          },
+          {
+            rowID: 'six',
+            questionID: '6',
+            questionText: 'Wie ist <span class="text--purple">das Wetter</span> heute?',
+            answerID: 'a',
+            answerText: 'Es ist sonnig.'
+          }
+        ]
+      }
     },
     {
       no: 75,

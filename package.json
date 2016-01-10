@@ -24,6 +24,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "dragula": "^3.6.2",
+    "howler": "^1.1.28",
     "jquery": "^2.1.4",
     "remodal": "^1.0.4",
     "vue": "^0.12.16"

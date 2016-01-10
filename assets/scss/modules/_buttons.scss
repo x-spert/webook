@@ -135,6 +135,15 @@
     text-shadow: 1px 1px 5px rgba(50, 50, 50, 0.9);
   }
 
+  @include modifier(solve) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-size: em(30px);
+    color: map_get($ui-colors, secondary);
+  }
+
   @include modifier(reset) {
     position: absolute;
     top: 0;
