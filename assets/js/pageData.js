@@ -65,16 +65,31 @@ module.exports = function() {
             solution: 'kalt'
           }
         ]
-      }
+      },
+      exTrigger: 'bottom: 4%; top: 14%;'
     },
     {
       no: 10,
-      static: [
-        'pg10ex6s1',
-        'pg10ex6s2',
-        'pg10ex6s3',
-        'pg10ex6s4'
-      ]
+      static: 'pg10ex6s1',
+      staticTrigger: {
+        bottom: '65.5%',
+        top: '8%'
+      },
+      static2: 'pg10ex6s2',
+      static2Trigger: {
+        bottom: '47%',
+        top: '34.5%'
+      },
+      static3: 'pg10ex6s3',
+      static3Trigger: {
+        bottom: '25%',
+        top: '53%'
+      },
+      static4: 'pg10ex6s4',
+      static4Trigger: {
+        bottom: '4%',
+        top: '75%'
+      }
     },
     {
       no: 11,
@@ -91,6 +106,10 @@ module.exports = function() {
     {
       no: 14,
       title: 'Sieh die Bilder an und antworte!',
+      exTrigger: {
+        bottom: '4%',
+        top: '14%'
+      },
       ex: {
         name: 'typer',
         bg: '14ex',
@@ -603,12 +622,24 @@ module.exports = function() {
     },
     {
       no: 52,
-      static: 'pg52ex2a'
+      static: 'pg52ex2a',
+      staticTrigger: {
+        bottom: '6.5%',
+        top: '7.5%'
+      }
     },
     {
       no: 54,
       title: 'Hör zu und kreuze die richtige Antwort an!',
       title2: 'Welches ist die richtige Reihenfolge',
+      exTrigger: {
+        bottom: '61.5%',
+        top: '8%'
+      },
+      ex2Trigger: {
+        bottom: '4%',
+        top: '39%'
+      },
       ex: {
         name: 'mediumselect',
         bg: '54ex1',
@@ -698,6 +729,12 @@ module.exports = function() {
             position: 'top: 16.5%; left: 47.7%; width: 3.5%; height: 4.9%',
             model: '',
             solution: '4'
+          },
+          {
+            identifier: 'five',
+            position: 'top: 30%; left: 17%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '3'
           }
         ]
       }

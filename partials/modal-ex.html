@@ -1,0 +1,27 @@
+<div class="remodal" data-remodal-id="modal-ex">
+  <button data-remodal-action="close" class="remodal-close"></button>
+
+  <div class="remodal__exercise">
+    <h1 v-if="selectedPageObject.title" v-text="selectedPageObject.title" class="remodal__title"></h1>
+
+    <div v-if="selectedPageObject.ex.name == 'bigselect'">
+      @@include('./exercise--bigselect.html')
+    </div>
+
+    <div v-if="selectedPageObject.ex.name == 'mediumselect'">
+      @@include('./exercise--mediumselect.html')
+    </div>
+
+    <div v-if="selectedPageObject.ex.name == 'typer'">
+      @@include('./exercise--typer.html')
+    </div>
+
+    <div v-if="selectedPageObject.ex.name == 'typerbg'">
+      @@include('./exercise--typerbg.html')
+    </div>
+
+    <div v-if="selectedPageObject.ex.name == 'dnd'">
+      @@include('./exercise--dnd.html')
+    </div>
+  </div>
+</div>

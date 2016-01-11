@@ -4,27 +4,96 @@
 >
   <div class="left-page">
     <img v-attr="src: './assets/img/' + leftpage + '.jpg'">
-    <div class="left-page__content">
-      <div v-if="leftPageObject.hasMedia" class="left-page__interactions">
-        <button v-if="leftPageObject.video" v-on="click: showLeftModal" class="button button--scale button--animated" data-remodal-target="modal"><span class="wb-audio"></span></button>
-        <button v-if="leftPageObject.static" v-on="click: showLeftModal" class="button button--scale button--animated" data-remodal-target="modal"><span class="wb-static"></span></button>
-        <button v-if="leftPageObject.ex" v-on="click: showLeftModal" class="button button--scale button--animated" data-remodal-target="modal"><span class="wb-ex"></span></button>
-      </div>
-      <a v-if="leftPageObject.hasMedia" v-on="click: showLeftModal" data-remodal-target="modal">
-        <div class="left-page__actionable"></div>
+
+    <div v-if="leftPageObject.hasMedia" class="left-page__content">
+      <a v-if="leftPageObject.static" v-on="click: showLeftModal" data-remodal-target="modal-static">
+        <button v-on="click: showLeftModal" v-attr="style: 'top: ' + leftPageObject.staticTrigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static"><span class="wb-static"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.staticTrigger.bottom + '; top: ' + leftPageObject.staticTrigger.top"></div>
+      </a>
+
+      <a v-if="leftPageObject.static2" v-on="click: showLeftModal" data-remodal-target="modal-static2">
+        <button v-on="click: showLeftModal" v-attr="style: 'top: ' + leftPageObject.static2Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static2"><span class="wb-static"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.static2Trigger.bottom + '; top: ' + leftPageObject.static2Trigger.top"></div>
+      </a>
+
+      <a v-if="leftPageObject.static3" v-on="click: showLeftModal" data-remodal-target="modal-static3">
+        <button v-on="click: showLeftModal" v-attr="style: 'top: ' + leftPageObject.static3Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static3"><span class="wb-static"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.static3Trigger.bottom + '; top: ' + leftPageObject.static3Trigger.top"></div>
+      </a>
+
+      <a v-if="leftPageObject.static4" v-on="click: showLeftModal" data-remodal-target="modal-static4">
+        <button v-on="click: showLeftModal" v-attr="style: 'top: ' + leftPageObject.static4Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static4"><span class="wb-static"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.static4Trigger.bottom + '; top: ' + leftPageObject.static4Trigger.top"></div>
+      </a>
+
+      <a v-if="leftPageObject.video" v-on="click: showLeftModal" data-remodal-target="modal-video">
+        <button v-on="click: showLeftModal" v-attr="style: 'top: ' + leftPageObject.videoTrigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-video"><span class="wb-audio"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.videoTrigger.bottom + '; top: ' + leftPageObject.videoTrigger.top"></div>
+      </a>
+
+      <a v-if="leftPageObject.ex" v-on="click: showLeftModal" data-remodal-target="modal-ex">
+        <button v-on="click: showLeftModal" v-attr="style: 'top: ' + leftPageObject.exTrigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-ex"><span class="wb-ex"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.exTrigger.bottom + '; top: ' + leftPageObject.exTrigger.top"></div>
+      </a>
+
+      <a v-if="leftPageObject.ex2" v-on="click: showLeftModal" data-remodal-target="modal-ex2">
+        <button v-on="click: showLeftModal" v-attr="style: 'top: ' + leftPageObject.ex2Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-ex2"><span class="wb-ex"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.ex2Trigger.bottom + '; top: ' + leftPageObject.ex2Trigger.top"></div>
       </a>
     </div>
   </div>
+
   <div class="right-page">
     <img v-attr="src: './assets/img/' + rightpage + '.jpg'">
-    <div class="right-page__content">
-      <div v-if="rightPageObject.hasMedia" class="right-page__interactions">
-        <button v-if="rightPageObject.video" v-on="click: showRightModal" class="button button--scale button--animated" data-remodal-target="modal"><span class="wb-audio"></span></button>
-        <button v-if="rightPageObject.static" v-on="click: showRightModal" class="button button--scale button--animated" data-remodal-target="modal"><span class="wb-static"></span></button>
-        <button v-if="rightPageObject.ex" v-on="click: showRightModal" class="button button--scale button--animated" data-remodal-target="modal"><span class="wb-ex"></span></button>
-      </div>
-      <a v-if="rightPageObject.hasMedia" v-on="click: showRightModal" data-remodal-target="modal">
-        <div class="right-page__actionable"></div>
+
+    <div v-if="rightPageObject.hasMedia" class="right-page__content">
+      <a v-if="rightPageObject.static" v-on="click: showRightModal" data-remodal-target="modal-static">
+        <button v-on="click: showRightModal" v-attr="style: 'top: ' + rightPageObject.staticTrigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static"><span class="wb-static"></span></button>
+
+        <div class="right-page__actionable" v-attr="style: 'bottom: ' + rightPageObject.staticTrigger.bottom + '; top: ' + rightPageObject.staticTrigger.top"></div>
+      </a>
+
+      <a v-if="rightPageObject.static2" v-on="click: showRightModal" data-remodal-target="modal-static2">
+        <button v-on="click: showRightModal" v-attr="style: 'top: ' + rightPageObject.static2Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static2"><span class="wb-static"></span></button>
+
+        <div class="right-page__actionable" v-attr="style: 'bottom: ' + rightPageObject.static2Trigger.bottom + '; top: ' + rightPageObject.static2Trigger.top"></div>
+      </a>
+
+      <a v-if="rightPageObject.static3" v-on="click: showRightModal" data-remodal-target="modal-static3">
+        <button v-on="click: showRightModal" v-attr="style: 'top: ' + rightPageObject.static3Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static3"><span class="wb-static"></span></button>
+
+        <div class="right-page__actionable" v-attr="style: 'bottom: ' + rightPageObject.static3Trigger.bottom + '; top: ' + rightPageObject.static3Trigger.top"></div>
+      </a>
+
+      <a v-if="rightPageObject.static4" v-on="click: showRightModal" data-remodal-target="modal-static4">
+        <button v-on="click: showRightModal" v-attr="style: 'top: ' + rightPageObject.static4Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static4"><span class="wb-static"></span></button>
+
+        <div class="right-page__actionable" v-attr="style: 'bottom: ' + rightPageObject.static4Trigger.bottom + '; top: ' + rightPageObject.static4Trigger.top"></div>
+      </a>
+
+      <a v-if="rightPageObject.video" v-on="click: showRightModal" data-remodal-target="modal-video">
+        <button v-on="click: showRightModal" v-attr="style: 'top: ' + rightPageObject.videoTrigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-video"><span class="wb-audio"></span></button>
+
+        <div class="right-page__actionable" v-attr="style: 'bottom: ' + rightPageObject.videoTrigger.bottom + '; top: ' + rightPageObject.videoTrigger.top"></div>
+      </a>
+
+      <a v-if="rightPageObject.ex" v-on="click: showRightModal" data-remodal-target="modal-ex">
+        <button v-on="click: showRightModal" v-attr="style: 'top: ' + rightPageObject.exTrigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-ex"><span class="wb-ex"></span></button>
+
+        <div class="right-page__actionable" v-attr="style: 'bottom: ' + rightPageObject.exTrigger.bottom + '; top: ' + rightPageObject.exTrigger.top"></div>
+      </a>
+
+      <a v-if="rightPageObject.ex2" v-on="click: showRightModal" data-remodal-target="modal-ex2">
+        <button v-on="click: showRightModal" v-attr="style: 'top: ' + rightPageObject.ex2Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-ex2"><span class="wb-ex"></span></button>
+
+        <div class="right-page__actionable" v-attr="style: 'bottom: ' + rightPageObject.ex2Trigger.bottom + '; top: ' + rightPageObject.ex2Trigger.top"></div>
       </a>
     </div>
   </div>
