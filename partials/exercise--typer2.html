@@ -18,12 +18,24 @@
       v-attr="style: row.position"
     >
       <input
+        v-if="row.textarea == undefined"
         type="text"
         name="{{ row.identifier }}"
         class="typer__input typer--{{ this.selectedPageObject.no }}_2"
         v-model="row.model"
         maxlength="{{ row.solution.length }}"
+        v-on="keyup:checkSolution(row.model, row.solution)"
       >
+
+      <textarea
+        v-if="row.textarea != undefined"
+        name="{{ row.identifier }}"
+        class="typer__input typer__textarea typer--{{ this.selectedPageObject.no }}_2"
+        v-model="row.model"
+        maxlength="{{ row.solution.length }}"
+        v-on="keyup:checkSolution(row.model, row.solution)"
+        rows="3"
+      ></textarea>
 
       <span v-if="row.model.length == row.solution.length && row.model.toLowerCase() == row.solution" class="wb-checkmark"></span>
 

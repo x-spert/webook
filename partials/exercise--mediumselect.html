@@ -15,7 +15,15 @@
       class="exercise__row"
       v-attr="style: row.position"
     >
-      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="true" id="{{ row.identifier }}true" v-model="row.model">
+      <input
+        class="radio-input"
+        type="radio"
+        name="{{ row.identifier }}"
+        value="true"
+        id="{{ row.identifier }}true"
+        v-model="row.model"
+        v-on="click: playStaticSound('true')"
+      >
 
       <label
         v-attr="style: row.answerTrue"
@@ -23,7 +31,15 @@
         for="{{ row.identifier }}true"
       ></label>
 
-      <input class="radio-input" type="radio" name="{{ row.identifier }}" value="false" id="{{ row.identifier }}false" v-model="row.model">
+      <input
+        class="radio-input"
+        type="radio"
+        name="{{ row.identifier }}"
+        value="false"
+        id="{{ row.identifier }}false"
+        v-model="row.model"
+        v-on="click: playStaticSound('false')"
+      >
 
       <label
         v-attr="style: row.answerFalse"

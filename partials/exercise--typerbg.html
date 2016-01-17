@@ -27,6 +27,7 @@
         "
         v-model="row.model"
         maxlength="{{ row.solution.length }}"
+        v-on="keyup:checkSolution(row.model, row.solution)"
       >
     </div>
   </form>

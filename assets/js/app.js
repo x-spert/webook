@@ -1,10 +1,13 @@
-// var $ = require('jquery');
+var $ = require('jquery');
 var Vue = require('vue');
 var remodal = require('remodal');
-var Howl = require('howler');
-var dragula = require('dragula');
+var howler = require('howler');
+// var dragula = require('dragula');
 var siteData = require('./siteData.js');
 var pageData = require('./pageData.js');
+
+require('jquery-ui/draggable');
+require('jquery-ui/droppable');
 
 Vue.config.debug = true;
 
@@ -14,6 +17,22 @@ function blurAll(){
  tmp.focus();
  document.body.removeChild(tmp);
 }
+
+window.staticSound = new Howl({
+  urls: ['assets/audio/img_zoom.mp3'],
+  loop: true,
+  volume: 0.1
+});
+
+window.staticSoundTrue = new Howl({
+  urls: ['assets/audio/true.mp3'],
+  volume: 0.2
+});
+
+window.staticSoundFalse = new Howl({
+  urls: ['assets/audio/false.mp3'],
+  volume: 0.2
+});
 
 new Vue({
   el: '#app',
@@ -29,7 +48,8 @@ new Vue({
     selectedPageObject: {},
     selected: '',
     sandboxContent: '',
-    dropzoneContent: ''
+    dropzoneContent: '',
+    staticSound: ''
   },
 
   computed: {
@@ -87,6 +107,8 @@ new Vue({
       var parsedA = a.replace(/\s+/g, '').toLowerCase();
 
       if (parsedA.length == b.length && parsedA == b) {
+        window.staticSoundTrue.play();
+        console.log('true');
         return true;
       }
     },
@@ -95,6 +117,8 @@ new Vue({
       var parsedA = a.replace(/\s+/g, '').toLowerCase();
 
       if (parsedA.length == b.length && parsedA != b) {
+        window.staticSoundFalse.play();
+        console.log('false');
         return true;
       }
     }
@@ -115,9 +139,22 @@ new Vue({
       this.selectedPageObject = this.leftPageObject;
       this.selectModalContent();
     },
+    showLeftStaticModal: function() {
+      this.selectedPageObject = this.leftPageObject;
+      this.selectModalContent();
+      staticSound.play();
+    },
     showRightModal: function() {
       this.selectedPageObject = this.rightPageObject;
       this.selectModalContent();
+    },
+    showRightStaticModal: function() {
+      this.selectedPageObject = this.rightPageObject;
+      this.selectModalContent();
+      staticSound.play();
+    },
+    muteStaticSound: function() {
+      staticSound.stop();
     },
     jumpToPage: function(event) {
       event.preventDefault();
@@ -189,9 +226,25 @@ new Vue({
       this.sandboxContent = this.$$.sandbox.innerHTML;
       this.dropzoneContent = this.$$.dropzone.innerHTML;
       this.$$.startButton.setAttribute('disabled', 'disabled');
-
       for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
-        dragula([document.querySelector('.launch--' + this.selectedPageObject.ex.data[i].rowID), document.querySelector('.target--' + this.selectedPageObject.ex.data[i].rowID)]);
+        // dragula([document.querySelector('.launch--' + this.selectedPageObject.ex.data[i].rowID), document.querySelector('.target--' + this.selectedPageObject.ex.data[i].rowID)]);
+        var launch = '.launch--' + this.selectedPageObject.ex.data[i].rowID;console.log(launch);
+        var target = '.target--' + this.selectedPageObject.ex.data[i].rowID;console.log(target);
+        var targetScope = this.selectedPageObject.ex.data[i].rowID;
+
+        $(launch).draggable({
+          addClasses: false,
+          scope: targetScope
+        });
+
+        $(target).droppable({
+          accept: launch,
+          scope: targetScope,
+          drop: function( event, ui ) {
+            $(this).addClass( "dropped");
+            window.staticSoundTrue.play();
+          }
+        });
       }
     },
     resetDnd: function() {
@@ -218,6 +271,23 @@ new Vue({
       } else {
         this.leftpage = parseInt(page) - 1;
         this.rightpage = parseInt(page);
+      }
+    },
+    checkSolution: function(model, solution) {
+      if (model.length == solution.length && model.toLowerCase() == solution) {
+        window.staticSoundTrue.play();
+      }
+      if (model.length == solution.length && model.toLowerCase() != solution) {
+        window.staticSoundFalse.play();
+      }
+    },
+    playStaticSound: function(bool) {
+      if (bool == 'true') {
+        console.log(bool + 'should be true');
+        window.staticSoundTrue.play();
+      } else if (bool == 'false') {
+        console.log(bool + 'should be false');
+        window.staticSoundFalse.play();
       }
     }
   }

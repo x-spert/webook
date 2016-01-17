@@ -1,7 +1,6 @@
 <div
   class="exercise exercise--dnd"
 >
-  <!-- <img v-attr="src: './assets/img/' + selectedPageObject.ex.bg + '.jpg'"> -->
   <img v-attr="src: './assets/img/-2.jpg'">
 
   <form class="exercise__container">
@@ -28,7 +27,7 @@
     <div v-el="sandbox" class="dnd__sandbox">
       <div
         v-repeat="row in selectedPageObject.ex.data | orderBy 'answerID'"
-        class="dnd__answer-container launch--{{row.rowID }}"
+        class="dnd__answer-container launch--{{ row.rowID }}"
       >
         <div style="display: inline-block">
           <span class="dnd__sandbox-a"><span v-text="row.answerID" class="dnd__label"></span> <span v-html="row.answerText"></span></span>&#8195;<span class="dnd__checkmark wb-checkmark"></span>
@@ -36,7 +35,7 @@
       </div>
     </div>
 
-    <div v-el="dropzone" class="dnd_dropzone">
+    <div v-el="dropzone" class="dnd__dropzone">
       <div
         v-repeat="row in selectedPageObject.ex.data"
         class="dnd__dropzone-row"
@@ -45,7 +44,7 @@
           <span class="dnd__dropzone-def"><span v-text="row.questionID" class="dnd__label"></span> <span v-html="row.questionText"></span></span>
         </div>
 
-        <div class="dnd__dropzone-a target--{{row.rowID }}">
+        <div class="dnd__dropzone-a target--{{ row.rowID }}">
           <span>&nbsp;</span>
         </div>
       </div>

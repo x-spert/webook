@@ -1,5 +1,10 @@
-<div class="remodal" data-remodal-id="modal-static">
-  <button data-remodal-action="close" class="remodal-close"></button>
+<div class="remodal" data-remodal-id="modal-static" data-remodal-options="closeOnOutsideClick: false">
+  <button
+    v-on="click: muteStaticSound"
+    data-remodal-action="close"
+    class="remodal-close"
+  >
+  </button>
 
   <div class="static-asset static-asset--single">
     <img v-attr="src: './assets/img/' + selectedPageObject.static + '.jpg'">

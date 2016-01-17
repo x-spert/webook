@@ -242,6 +242,15 @@
     width: 70%;
   }
 
+  @include modifier(51) {
+    width: 80%;
+    font-size: 14px;
+
+    &.typer__textarea {
+      line-height: 1.55;
+    }
+  }
+
   @include modifier(54_2) {
     font-size: 12px;
     width: 100%;
@@ -255,6 +264,10 @@
     &.incorrect {
       background-color: rgba($red-orange, .3);
     }
+  }
+
+  @include modifier(65) {
+    width: 70%;
   }
 
   @include modifier(70) {
@@ -290,7 +303,7 @@
   @include element(dropzone-a) {
     line-height: 32px;
 
-    .dnd__sandbox-a {
+    &.dropped {
       background-color: rgba($tradewind, .3);
     }
 
@@ -348,7 +361,7 @@
   font-size: 16px;
   font-family: Arial, sans-serif;
   margin: 0 !important;
-  z-index: 10001 !important;
+  z-index: 10101 !important;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);

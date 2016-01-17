@@ -3,15 +3,26 @@ module.exports = function() {
     {
       no: 5,
       static: 'pg5',
-      staticTrigger: ''
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 8,
-      static: 'pg8ex3'
+      static: 'pg8ex3',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 9,
       title: 'Hor zü, ergänze und sing!',
+      exTrigger: {
+        bottom: '4%',
+        top: '14%'
+      },
       ex: {
         name: 'typer',
         bg: '9ex',
@@ -65,8 +76,7 @@ module.exports = function() {
             solution: 'kalt'
           }
         ]
-      },
-      exTrigger: 'bottom: 4%; top: 14%;'
+      }
     },
     {
       no: 10,
@@ -93,15 +103,27 @@ module.exports = function() {
     },
     {
       no: 11,
-      static: 'pg11ex8'
+      static: 'pg11ex8',
+      staticTrigger: {
+        bottom: '4%',
+        top: '42%'
+      }
     },
     {
       no: 12,
-      static: 'pg12ex10'
+      static: 'pg12ex10',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 13,
-      static: 'pg13ex10'
+      static: 'pg13ex10',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 14,
@@ -178,6 +200,10 @@ module.exports = function() {
     {
       no: 15,
       title: 'Antworte!',
+      exTrigger: {
+        bottom: '4%',
+        top: '14%'
+      },
       ex: {
         name: 'typer',
         bg: '15ex',
@@ -212,6 +238,10 @@ module.exports = function() {
     {
       no: 16,
       title: 'Was macht Erik im Winter? Ergänze die Wörter in den Ketten!',
+      exTrigger: {
+        bottom: '4%',
+        top: '14%'
+      },
       ex: {
         name: 'typer',
         bg: '16ex',
@@ -317,15 +347,29 @@ module.exports = function() {
     },
     {
       no: 17,
-      static: [
-        'pg17s1',
-        'pg17s2'
-      ]
+      static: 'pg17s2',
+      staticTrigger: {
+        bottom: '41%',
+        top: '14%'
+      },
+      static2: 'pg17s1',
+      static2Trigger: {
+        bottom: '4%',
+        top: '60%'
+      }
     },
     {
       no: 23,
       title: 'Wo sind die Lebensmittel? Ergänze!',
       static: 'pg23ex5',
+      staticTrigger: {
+        bottom: '4%',
+        top: '57%'
+      },
+      exTrigger: {
+        bottom: '44%',
+        top: '14%'
+      },
       ex: {
         name: 'typer',
         bg: '23ex',
@@ -389,14 +433,24 @@ module.exports = function() {
     },
     {
       no: 25,
-      static: [
-        'pg25ex8s1',
-        'pg25ex8s2'
-      ]
+      static: 'pg25ex8s1',
+      staticTrigger: {
+        bottom: '41%',
+        top: '14%'
+      },
+      static2: 'pg25ex8s2',
+      static2Trigger: {
+        bottom: '4%',
+        top: '60%'
+      }
     },
     {
       no: 27,
       title: 'Hör zu und schreib die Namen!',
+      exTrigger: {
+        bottom: '4%',
+        top: '14%'
+      },
       ex: {
         name: 'typer',
         bg: '27ex',
@@ -442,27 +496,51 @@ module.exports = function() {
     },
     {
       no: 29,
-      static: 'pg29ex14'
+      static: 'pg29ex14',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 30,
-      static: 'pg30ex15'
+      static: 'pg30ex15',
+      staticTrigger: {
+        bottom: '26%',
+        top: '14%'
+      }
     },
     {
       no: 31,
-      static: 'pg31'
+      static: 'pg31',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 32,
-      static: 'pg32ex17'
+      static: 'pg32ex17',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 33,
-      static: 'pg33ex19'
+      static: 'pg33ex19',
+      staticTrigger: {
+        bottom: '4%',
+        top: '33%'
+      }
     },
     {
       no: 35,
       title: 'Schreib die Wörter ins Kreuzworträtsel!',
+      exTrigger: {
+        bottom: '4%',
+        top: '14%'
+      },
       ex: {
         name: 'typerbg',
         bg: '35ex',
@@ -478,38 +556,70 @@ module.exports = function() {
     },
     {
       no: 38,
-      static: 'pg38ex5'
+      static: 'pg38ex5',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 39,
-      static: 'pg39'
+      static: 'pg39',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 44,
-      static: [
-        'pg44ex6s1',
-        'pg44ex6s2'
-      ]
+      static: 'pg44ex6s1',
+      staticTrigger: {
+        bottom: '31%',
+        top: '14%'
+      },
+      static2: 'pg44ex6s2',
+      static2Trigger: {
+        bottom: '4%',
+        top: '69%'
+      }
     },
     {
       no: 45,
-      static: 'pg45ex7'
+      static: 'pg45ex7',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 46,
-      static: 'pg46ex8'
+      static: 'pg46ex8',
+      staticTrigger: {
+        bottom: '65%',
+        top: '14%'
+      }
     },
     {
       no: 48,
-      static: [
-        'pg48ex12',
-        'pg48nicht'
-      ]
+      static: 'pg48ex12',
+      staticTrigger: {
+        bottom: '35%',
+        top: '14%'
+      },
+      static2: 'pg48nicht',
+      static2Trigger: {
+        bottom: '4%',
+        top: '65%'
+      }
     },
     {
       no: 49,
       title: 'Ergänze und lies der Klasse vor!',
       title2: 'Schreib über einen Freund / eine Freund/in!',
+      exTrigger: {
+        bottom: '63%',
+        top: '14%'
+      },
       ex: {
         name: 'typer',
         bg: '49ex1',
@@ -551,6 +661,10 @@ module.exports = function() {
             solution: 'spannend'
           }
         ]
+      },
+      ex2Trigger: {
+        bottom: '40%',
+        top: '38%'
       },
       ex2: {
         name: 'typer',
@@ -615,10 +729,86 @@ module.exports = function() {
     },
     {
       no: 50,
-      static: [
-        'pg50imdeutschens1',
-        'pg50imdeutschens2'
-      ]
+      static: 'pg50imdeutschens1',
+      staticTrigger: {
+        bottom: '40%',
+        top: '14%'
+      },
+      static2: 'pg50imdeutschens2',
+      static2Trigger: {
+        bottom: '4%',
+        top: '63%'
+      }
+    },
+    {
+      no: 51,
+      title: 'Ergänze!',
+      exTrigger: {
+        bottom: '4%',
+        top: '14%'
+      },
+      ex: {
+        name: 'typer',
+        bg: '51ex',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 26.3%; left: 21.3%; width: 24%',
+            model: '',
+            solution: 'musiksendung'
+          },
+          {
+            identifier: 'two',
+            position: 'top: 29.8%; left: 30.3%; width: 16%',
+            model: '',
+            solution: 'viertel nach vier'
+          },
+          {
+            identifier: 'three',
+            position: 'top: 26.3%; left: 56.3%; width: 20%',
+            model: '',
+            solution: 'liebesfilme'
+          },
+          {
+            identifier: 'four',
+            position: 'top: 29.8%; left: 65.6%; width: 9%',
+            model: '',
+            solution: 'halb acht'
+          },
+          {
+            identifier: 'five',
+            textarea: true,
+            textareaRows: 3,
+            position: 'top: 52.8%; left: 26.6%; width: 25%',
+            model: '',
+            solution: 'lieblingssendung ist eine sportsendung. sie kommt um viertel nach sechs.'
+          },
+          {
+            identifier: 'six',
+            textarea: true,
+            textareaRows: 4,
+            position: 'top: 52.8%; left: 58.6%; width: 28%',
+            model: '',
+            solution: 'lieblingssendung ist eine dokumentarsendung. heute gibt es um halb neun einen dokumentarfilm.'
+          },
+          {
+            identifier: 'seven',
+            textarea: true,
+            textareaRows: 4,
+            position: 'top: 84.2%; left: 24.6%; width: 32%',
+            model: '',
+            solution: 'lieblingsfilme sind krimis. heute kommt ein krimi um zehn nach neun. heute gibt es um zehn nach neun einen.'
+          },
+          {
+            identifier: 'eight',
+            textarea: true,
+            textareaRows: 3,
+            position: 'top: 84.2%; left: 63.6%; width: 24%',
+            model: '',
+            solution: 'lieblingssendung ist die tagesschau. sie kommt immer um acht uhr.'
+          }
+        ]
+      }
     },
     {
       no: 52,
@@ -741,49 +931,160 @@ module.exports = function() {
     },
     {
       no: 55,
-      static: 'pg55'
+      static: 'pg55',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 59,
-      static: [
-        'pg59ex3s1',
-        'pg59ex3s2'
-      ]
+      static: 'pg59ex3s1',
+      staticTrigger: {
+        bottom: '36%',
+        top: '14%'
+      },
+      static2: 'pg59ex3s2',
+      static2Trigger: {
+        bottom: '4%',
+        top: '64%'
+      }
     },
     {
       no: 60,
-      static: 'pg60ex4'
+      static: 'pg60ex4',
+      staticTrigger: {
+        bottom: '25.5%',
+        top: '14%'
+      },
+      exTrigger: {
+        bottom: '4%',
+        top: '74.5%'
+      },
+      ex: {
+        name: 'dnd',
+        bg: '',
+        solution: false,
+        data: [
+          {
+            rowID: 'one',
+            questionID: '1',
+            questionText: '<span class="text--pink">Mama</span>, mir geht\'s nicht gut, ich habe <span class="text--green">Rückenschmerzen</span>.',
+            answerID: 'b',
+            answerText: 'Dahn gehen wir <span class="text--lightblue">zum Arzt</span>.'
+          },
+          {
+            rowID: 'two',
+            questionID: '2',
+            questionText: '<span class="text--lightblue">Mein Zahn</span> tut weh.',
+            answerID: 'c',
+            answerText: 'Dahan gehen wir <span class="text--pink">zur Zahnarztin</span>.'
+          },
+          {
+            rowID: 'three',
+            questionID: '3',
+            questionText: '<span class="text--lightblue">Papa</span>, <span class="text--pink">die Katze</span> ist krank.',
+            answerID: 'd',
+            answerText: 'Dahn gehen wir <span class="text--lightblue">zum Tierarzt</span>.'
+          },
+          {
+            rowID: 'four',
+            questionID: '4',
+            questionText: 'Ich brauche <span class="text--pink">eine Spritze</span>, <span class="text--lightblue">der Arzt</span> hat es gesagt.',
+            answerID: 'a',
+            answerText: 'Dahn gehen wir <span class="text--pink">zu einer Krankenschwester</span>.'
+          }
+        ]
+      }
     },
     {
       no: 61,
-      static: 'pg61ex7'
+      static: 'pg61ex7',
+      staticTrigger: {
+        bottom: '4%',
+        top: '42%'
+      }
     },
     {
       no: 62,
-      static: 'pg62ex8'
+      static: 'pg62ex8',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 63,
-      static: [
-        'pg63nicht1s1',
-        'pg63nicht2s2'
-      ]
+      static: 'pg63nicht1s1',
+      staticTrigger: {
+        bottom: '38%',
+        top: '37%'
+      },
+      static2: 'pg63nicht2s2',
+      static2Trigger: {
+        bottom: '4%',
+        top: '62%'
+      }
     },
     {
       no: 64,
-      static: [
-        'pg64ex10s1',
-        'pg64ex10s2',
-        'pg64ex10s3'
-      ]
+      static: 'pg64ex10s1',
+      staticTrigger: {
+        bottom: '65.5%',
+        top: '11%'
+      },
+      static2: 'pg64ex10s2',
+      static2Trigger: {
+        bottom: '51%',
+        top: '34.5%'
+      },
+      static3: 'pg64ex10s3',
+      static3Trigger: {
+        bottom: '33.5%',
+        top: '49%'
+      }
+    },
+    {
+      no: 65,
+      title: 'Ergänze, kreuze an und lies der Klasse vor!',
+      exTrigger: {
+        bottom: '53%',
+        top: '13%'
+      },
+      ex: {
+        name: 'typer',
+        bg: '65ex',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 33.3%; left: 72%; width: 15%',
+            model: '',
+            solution: null
+          },
+          {
+            identifier: 'two',
+            position: 'top: 41.7%; left: 66%; width: 33%',
+            model: '',
+            solution: null
+          }
+        ]
+      }
     },
     {
       no: 69,
-      static: 'pg69ex3'
+      static: 'pg69ex3',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     },
     {
       no: 70,
       title: 'Ergänze bei / beim / bei der und zum / zur!',
+      exTrigger: {
+        bottom: '4%',
+        top: '56%'
+      },
       ex: {
         name: 'typer',
         bg: '70ex',
@@ -853,21 +1154,41 @@ module.exports = function() {
     },
     {
       no: 71,
-      static: [
-        'pg71s1',
-        'pg71s2'
-      ]
+      static: 'pg71s1',
+      staticTrigger: {
+        bottom: '39.5%',
+        top: '18%'
+      },
+      static2: 'pg71s2',
+      static2Trigger: {
+        bottom: '4%',
+        top: '60.5%'
+      }
     },
     {
       no: 72,
-      static: [
-        'pg72ex1',
-        'pg72ex2'
-      ]
+      static: 'pg72ex1',
+      staticTrigger: {
+        bottom: '58.5%',
+        top: '12%'
+      },
+      static2: 'pg72ex2',
+      static2Trigger: {
+        bottom: '4%',
+        top: '48.5%'
+      }
     },
     {
       no: 74,
       static: 'pg74ex3',
+      staticTrigger: {
+        bottom: '39.5%',
+        top: '14%'
+      },
+      exTrigger: {
+        bottom: '4%',
+        top: '60.5%'
+      },
       ex: {
         name: 'dnd',
         bg: '',
@@ -920,7 +1241,11 @@ module.exports = function() {
     },
     {
       no: 75,
-      static: 'pg75ex5'
+      static: 'pg75ex5',
+      staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
     }
   ]
 }
