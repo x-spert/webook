@@ -65,7 +65,7 @@ new Vue({
 
     canGoForward: function() {
       if (this.rightpage.length != 0) {
-        if (this.rightpage + 2 < 90) {
+        if (this.rightpage + 2 < 94) {
           return true
         } else {
           return false
@@ -163,7 +163,7 @@ new Vue({
         return false;
       } else {
         this.staticpage = false;
-        if (this.jumpPage > 1 && this.jumpPage < 87) {
+        if (this.jumpPage > 1 && this.jumpPage < 93) {
           if (this.jumpPage % 2 == 0) {
             this.leftpage = parseInt(this.jumpPage);
             this.rightpage = parseInt(this.jumpPage) + 1;
@@ -174,6 +174,15 @@ new Vue({
         } else {
           return false;
         }
+      }
+    },
+    jumpToToc: function(page) {
+      if (page % 2 == 0) {
+        this.leftpage = page;
+        this.rightpage = page + 1;
+      } else {
+        this.leftpage = page - 1;
+        this.rightpage = page;
       }
     },
     selectModalContent: function() {

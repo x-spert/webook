@@ -5,6 +5,8 @@
   <div class="left-page">
     <img v-attr="src: './assets/img/' + leftpage + '.jpg'">
 
+    @@include('./toc.html')
+
     <div v-if="leftPageObject.hasMedia" class="left-page__content">
       <a v-if="leftPageObject.static" v-on="click: showLeftStaticModal" data-remodal-target="modal-static">
         <button v-on="click: showLeftStaticModal" v-attr="style: 'top: ' + leftPageObject.staticTrigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-static"><span class="wb-static"></span></button>
