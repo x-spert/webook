@@ -142,7 +142,7 @@ new Vue({
     showLeftStaticModal: function() {
       this.selectedPageObject = this.leftPageObject;
       this.selectModalContent();
-      staticSound.play();
+      window.staticSound.play();
     },
     showRightModal: function() {
       this.selectedPageObject = this.rightPageObject;
@@ -151,10 +151,10 @@ new Vue({
     showRightStaticModal: function() {
       this.selectedPageObject = this.rightPageObject;
       this.selectModalContent();
-      staticSound.play();
+      window.staticSound.play();
     },
     muteStaticSound: function() {
-      staticSound.stop();
+      window.staticSound.stop();
     },
     jumpToPage: function(event) {
       event.preventDefault();
