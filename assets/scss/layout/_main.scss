@@ -94,6 +94,7 @@
   }
 
   @include element(actionable) {
+    cursor: pointer;
     position: absolute;
     bottom: 4%;
     right: 4%;
@@ -117,6 +118,7 @@
   }
 
   @include element(actionable) {
+    cursor: pointer;
     position: absolute;
     bottom: 4%;
     left: 4%;

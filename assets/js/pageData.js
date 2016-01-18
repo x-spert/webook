@@ -9,18 +9,44 @@ module.exports = function() {
       }
     },
     {
-      no: 8,
-      static: 'pg8ex3',
-      staticTrigger: {
+      no: 6,
+      video: 'p6_v1.mp4',
+      videoTrigger: {
         bottom: '4%',
         top: '14%'
       }
     },
     {
+      no: 7,
+      video: 'p7_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 8,
+      video: 'p8_v1.mp4',
+      videoTrigger: {
+        bottom: '29%',
+        top: '14%'
+      },
+      static: 'pg8ex3',
+      staticTrigger: {
+        bottom: '4%',
+        top: '72%'
+      }
+    },
+    {
       no: 9,
       title: 'Hor zü, ergänze und sing!',
-      exTrigger: {
+      video: 'p9_v1.mp4',
+      videoTrigger: {
         bottom: '4%',
+        top: '55%'
+      },
+      exTrigger: {
+        bottom: '46%',
         top: '14%'
       },
       ex: {
@@ -103,9 +129,14 @@ module.exports = function() {
     },
     {
       no: 11,
+      video: 'p11_v1.mp4',
+      videoTrigger: {
+        bottom: '59%',
+        top: '14%'
+      },
       static: 'pg11ex8',
       staticTrigger: {
-        bottom: '4%',
+        bottom: '23%',
         top: '42%'
       }
     },
@@ -359,6 +390,46 @@ module.exports = function() {
       }
     },
     {
+      no: 18,
+      video: 'p18_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 19,
+      video: 'p19_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 20,
+      video: 'p20_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 21,
+      video: 'p21_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 22,
+      video: 'p22_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 23,
       title: 'Wo sind die Lebensmittel? Ergänze!',
       static: 'pg23ex5',
@@ -432,6 +503,14 @@ module.exports = function() {
       }
     },
     {
+      no: 24,
+      video: 'p24_v1.mp4',
+      videoTrigger: {
+        bottom: '31%',
+        top: '12%'
+      }
+    },
+    {
       no: 25,
       static: 'pg25ex8s1',
       staticTrigger: {
@@ -442,6 +521,14 @@ module.exports = function() {
       static2Trigger: {
         bottom: '4%',
         top: '60%'
+      }
+    },
+    {
+      no: 26,
+      video: 'p26_v1.mp4',
+      videoTrigger: {
+        bottom: '12%',
+        top: '14%'
       }
     },
     {
@@ -495,6 +582,14 @@ module.exports = function() {
       }
     },
     {
+      no: 28,
+      video: 'p28_v1.mp4',
+      videoTrigger: {
+        bottom: '57%',
+        top: '14%'
+      }
+    },
+    {
       no: 29,
       static: 'pg29ex14',
       staticTrigger: {
@@ -535,6 +630,14 @@ module.exports = function() {
       }
     },
     {
+      no: 34,
+      video: 'p34_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 35,
       title: 'Schreib die Wörter ins Kreuzworträtsel!',
       exTrigger: {
@@ -547,9 +650,387 @@ module.exports = function() {
         data: [
           {
             identifier: 'one',
-            position: 'top: 26.5%; left: 48.4%',
+            position: 'top: 26.5%; left: 48.5%',
             model: '',
             solution: 'e'
+          },
+          {
+            identifier: 'two',
+            position: 'top: 29.5%; left: 48.5%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'three',
+            position: 'top: 32.3%; left: 48.5%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'four',
+            position: 'top: 35%; left: 48.5%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'five',
+            position: 'top: 29.5%; left: 41.7%',
+            model: '',
+            solution: 'f'
+          },
+          {
+            identifier: 'six',
+            position: 'top: 32.2%; left: 41.7%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'seven',
+            position: 'top: 35%; left: 41.7%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'eight',
+            position: 'top: 37.9%; left: 41.7%',
+            model: '',
+            solution: 'c'
+          },
+          {
+            identifier: 'nine',
+            position: 'top: 40.7%; left: 41.7%',
+            model: '',
+            solution: 'h'
+          },
+          {
+            identifier: 'ten',
+            position: 'top: 35%; left: 46.3%',
+            model: '',
+            solution: 'b'
+          },
+          {
+            identifier: 'eleven',
+            position: 'top: 35%; left: 48.5%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'twelve',
+            position: 'top: 35%; left: 50.8%',
+            model: '',
+            solution: 'o'
+          },
+          {
+            identifier: 'thirteen',
+            position: 'top: 35%; left: 53.1%',
+            model: '',
+            solution: 't'
+          },
+          {
+            identifier: 'fourteen',
+            position: 'top: 43.5%; left: 55.4%',
+            model: '',
+            solution: 'p'
+          },
+          {
+            identifier: 'fifteen',
+            position: 'top: 46.2%; left: 55.4%',
+            model: '',
+            solution: 'f'
+          },
+          {
+            identifier: 'sixteen',
+            position: 'top: 49.2%; left: 55.4%',
+            model: '',
+            solution: 'l'
+          },
+          {
+            identifier: 'seventeen',
+            position: 'top: 52%; left: 55.4%',
+            model: '',
+            solution: 'a'
+          },
+          {
+            identifier: 'eighteen',
+            position: 'top: 54.8%; left: 55.4%',
+            model: '',
+            solution: 'u'
+          },
+          {
+            identifier: 'nineteen',
+            position: 'top: 57.6%; left: 55.4%',
+            model: '',
+            solution: 'm'
+          },
+          {
+            identifier: 'twenty',
+            position: 'top: 60.4%; left: 55.4%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'twentyone',
+            position: 'top: 46.4%; left: 37.2%',
+            model: '',
+            solution: 'w'
+          },
+          {
+            identifier: 'twentytwo',
+            position: 'top: 49.2%; left: 37.2%',
+            model: '',
+            solution: 'u'
+          },
+          {
+            identifier: 'twentythree',
+            position: 'top: 52%; left: 37.2%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'twentyfour',
+            position: 'top: 54.8%; left: 37.2%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'twentyfive',
+            position: 'top: 57.6%; left: 37.2%',
+            model: '',
+            solution: 't'
+          },
+          {
+            identifier: 'twentysix',
+            position: 'top: 60.4%; left: 37.2%',
+            model: '',
+            solution: 'c'
+          },
+          {
+            identifier: 'twnetyseven',
+            position: 'top: 63.2%; left: 37.2%',
+            model: '',
+            solution: 'h'
+          },
+          {
+            identifier: 'twentyeight',
+            position: 'top: 66.1%; left: 37.2%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'twentynine',
+            position: 'top: 68.9%; left: 37.2%',
+            model: '',
+            solution: 'n'
+          },
+          {
+            identifier: 'thirty',
+            position: 'top: 46.4%; left: 37.2%',
+            model: '',
+            solution: 'w'
+          },
+          {
+            identifier: 'thirtyone',
+            position: 'top: 46.4%; left: 39.5%',
+            model: '',
+            solution: 'a'
+          },
+          {
+            identifier: 'thirtytwo',
+            position: 'top: 46.4%; left: 41.7%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'thirtythree',
+            position: 'top: 46.4%; left: 44%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'thirtyfour',
+            position: 'top: 46.4%; left: 46.3%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'thirtyfive',
+            position: 'top: 46.4%; left: 48.6%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'thirtysix',
+            position: 'top: 46.4%; left: 48.6%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'thirtyseven',
+            position: 'top: 49.2%; left: 48.6%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'thirtyeight',
+            position: 'top: 52%; left: 48.6%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'thirtynine',
+            position: 'top: 54.8%; left: 48.6%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'forty',
+            position: 'top: 52%; left: 46.3%',
+            model: '',
+            solution: 'p'
+          },
+          {
+            identifier: 'fortyone',
+            position: 'top: 52%; left: 48.6%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'fortytwo',
+            position: 'top: 52%; left: 50.8%',
+            model: '',
+            solution: 'z'
+          },
+          {
+            identifier: 'fortythree',
+            position: 'top: 52%; left: 53.1%',
+            model: '',
+            solution: 'z'
+          },
+          {
+            identifier: 'fortyfour',
+            position: 'top: 52%; left: 55.4%',
+            model: '',
+            solution: 'a'
+          },
+          {
+            identifier: 'fortyfive',
+            position: 'top: 60.4%; left: 53.1%',
+            model: '',
+            solution: 'k'
+          },
+          {
+            identifier: 'fortysix',
+            position: 'top: 60.4%; left: 55.4%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'fortyseven',
+            position: 'top: 60.4%; left: 57.6%',
+            model: '',
+            solution: 'k'
+          },
+          {
+            identifier: 'fortyeight',
+            position: 'top: 60.4%; left: 59.8%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'fortynine',
+            position: 'top: 60.4%; left: 62.2%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'fifty',
+            position: 'top: 60.4%; left: 62.2%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'fiftyone',
+            position: 'top: 60.4%; left: 63.4%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'fiftytwo',
+            position: 'top: 60.4%; left: 66.2%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'fiftythree',
+            position: 'top: 66.1%; left: 53.1%',
+            model: '',
+            solution: 'g'
+          },
+          {
+            identifier: 'fiftyfour',
+            position: 'top: 66.1%; left: 55.3%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'fiftyfive',
+            position: 'top: 66.1%; left: 57.6%',
+            model: '',
+            solution: 'm'
+          },
+          {
+            identifier: 'fiftysix',
+            position: 'top: 66.1%; left: 59.8%',
+            model: '',
+            solution: 'u'
+          },
+          {
+            identifier: 'fiftyseven',
+            position: 'top: 66.1%; left: 62.1%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'fiftyeight',
+            position: 'top: 66.1%; left: 64.4%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'fiftynine',
+            position: 'top: 69%; left: 37.2%',
+            model: '',
+            solution: 'n'
+          },
+          {
+            identifier: 'sixty',
+            position: 'top: 69%; left: 39.5%',
+            model: '',
+            solution: 'u'
+          },
+          {
+            identifier: 'sixtyone',
+            position: 'top: 69%; left: 41.7%',
+            model: '',
+            solution: 'd'
+          },
+          {
+            identifier: 'sixtytwo',
+            position: 'top: 69%; left: 44%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'sixtythree',
+            position: 'top: 69%; left: 46.3%',
+            model: '',
+            solution: 'l'
+          },
+          {
+            identifier: 'sixtyfour',
+            position: 'top: 69%; left: 48.5%',
+            model: '',
+            solution: 'n'
           }
         ]
       }
@@ -568,6 +1049,43 @@ module.exports = function() {
       staticTrigger: {
         bottom: '4%',
         top: '14%'
+      }
+    },
+    {
+      no: 40,
+      video: 'p40_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 41,
+      video: 'p41_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 42,
+      video: 'p42_v1.mp4',
+      videoTrigger: {
+        bottom: '15%',
+        top: '14%'
+      }
+    },
+    {
+      no: 43,
+      video: 'p43_v1.mp4',
+      videoTrigger: {
+        bottom: '32%',
+        top: '11%'
+      },
+      video2: 'p43_v2.mp4',
+      video2Trigger: {
+        bottom: '4%',
+        top: '50%'
       }
     },
     {
@@ -596,6 +1114,14 @@ module.exports = function() {
       static: 'pg46ex8',
       staticTrigger: {
         bottom: '65%',
+        top: '14%'
+      }
+    },
+    {
+      no: 47,
+      video: 'p47_v1.mp4',
+      videoTrigger: {
+        bottom: '23%',
         top: '14%'
       }
     },
@@ -819,6 +1345,14 @@ module.exports = function() {
       }
     },
     {
+      no: 53,
+      video: 'p53_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 54,
       title: 'Hör zu und kreuze die richtige Antwort an!',
       title2: 'Welches ist die richtige Reihenfolge',
@@ -925,6 +1459,48 @@ module.exports = function() {
             position: 'top: 30%; left: 17%; width: 3.5%; height: 4.9%',
             model: '',
             solution: '3'
+          },
+        {
+            identifier: 'six',
+            position: 'top: 30%; left: 36.6%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '1'
+          },
+          {
+            identifier: 'seven',
+            position: 'top: 30%; left: 59.8%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '4'
+          },
+          {
+            identifier: 'eight',
+            position: 'top: 30%; left: 83.1%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '2'
+          },
+          {
+            identifier: 'nine',
+            position: 'top: 43.6%; left: 20.5%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '4'
+          },
+          {
+            identifier: 'ten',
+            position: 'top: 43.6%; left: 43.4%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '3'
+          },
+          {
+            identifier: 'eleven',
+            position: 'top: 43.6%; left: 60.3%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '1'
+          },
+          {
+            identifier: 'twelve',
+            position: 'top: 43.6%; left: 77.2%; width: 3.5%; height: 4.9%',
+            model: '',
+            solution: '2'
           }
         ]
       }
@@ -933,6 +1509,30 @@ module.exports = function() {
       no: 55,
       static: 'pg55',
       staticTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 56,
+      video: 'p56_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 57,
+      video: 'p57_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 58,
+      video: 'p58_v1.mp4',
+      videoTrigger: {
         bottom: '4%',
         top: '14%'
       }
@@ -1003,6 +1603,11 @@ module.exports = function() {
       staticTrigger: {
         bottom: '4%',
         top: '42%'
+      },
+      video: 'p61_v1.mp4',
+      videoTrigger: {
+        bottom: '57.5%',
+        top: '14%'
       }
     },
     {
@@ -1071,6 +1676,30 @@ module.exports = function() {
       }
     },
     {
+      no: 66,
+      video: 'p66_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 67,
+      video: 'p67_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 68,
+      video: 'p68_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 69,
       static: 'pg69ex3',
       staticTrigger: {
@@ -1081,6 +1710,11 @@ module.exports = function() {
     {
       no: 70,
       title: 'Ergänze bei / beim / bei der und zum / zur!',
+      video: 'p70_v1.mp4',
+      videoTrigger: {
+        bottom: '45%',
+        top: '12%'
+      },
       exTrigger: {
         bottom: '4%',
         top: '56%'

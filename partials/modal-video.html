@@ -1,7 +1,7 @@
 <div class="remodal" data-remodal-id="modal-video" data-remodal-options="closeOnOutsideClick: false">
-  <button data-remodal-action="close" class="remodal-close"></button>
+  <button v-on="click: stopVideo(selectedPageObject.no)" data-remodal-action="close" class="remodal-close"></button>
 
   <div class="remodal__video">
-    <video v-attr="src: './assets/video/' + selectedPageObject.video" width="630" controls preload></video>
+    <video id="{{ selectedPageObject.no }}" v-attr="src: './assets/video/' + selectedPageObject.video" width="630" controls preload></video>
   </div>
 </div>

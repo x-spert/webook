@@ -142,7 +142,7 @@ new Vue({
     showLeftStaticModal: function() {
       this.selectedPageObject = this.leftPageObject;
       this.selectModalContent();
-      staticSound.play();
+      window.staticSound.play();
     },
     showRightModal: function() {
       this.selectedPageObject = this.rightPageObject;
@@ -151,10 +151,10 @@ new Vue({
     showRightStaticModal: function() {
       this.selectedPageObject = this.rightPageObject;
       this.selectModalContent();
-      staticSound.play();
+      window.staticSound.play();
     },
     muteStaticSound: function() {
-      staticSound.stop();
+      window.staticSound.stop();
     },
     jumpToPage: function(event) {
       event.preventDefault();
@@ -174,6 +174,15 @@ new Vue({
         } else {
           return false;
         }
+      }
+    },
+    jumpToToc: function(page) {
+      if (page % 2 == 0) {
+        this.leftpage = page;
+        this.rightpage = page + 1;
+      } else {
+        this.leftpage = page - 1;
+        this.rightpage = page;
       }
     },
     selectModalContent: function() {
@@ -289,6 +298,11 @@ new Vue({
         console.log(bool + 'should be false');
         window.staticSoundFalse.play();
       }
+    },
+    stopVideo: function(id) {
+      console.log(id);
+      $('#' + id).trigger('pause');
+      $('#' + id).prop("currentTime", 0);
     }
   }
 });
