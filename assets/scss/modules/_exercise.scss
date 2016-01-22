@@ -184,94 +184,39 @@
     }
   }
 
-  @include modifier(9) {
-    width: 80%;
+  @include modifier(22) {
+    width: 70%;
+    background-color: rgba(tomato, .2);
   }
 
-  @include modifier(14) {
-    width: 80%;
-  }
-
-  @include modifier(15) {
-    width: 80%;
-  }
-
-  @include modifier(16) {
-    width: 20px;
-
-    @at-root .typer--16 + span {
-      position: absolute;
-      left: 4px;
-      top: -20px;
-    }
-
-    @at-root .typer--16[name="sixteen"] {
-      width: 80%;
-    }
-  }
-
-  @include modifier(23) {
-    width: 80%;
-  }
-
-  @include modifier(27) {
-    width: 79%;
-    -ms-transform: rotate(6.5deg); /* IE 9 */
-    -webkit-transform: rotate(6.5deg); /* Chrome, Safari, Opera */
-    transform: rotate(6.5deg);
-  }
-
-  @include modifier(35) {
-    font-size: 12px;
-    width: 16px;
-
-    &.correct {
-      background-color: rgba($tradewind, .3);
-    }
-
-    &.incorrect {
-      background-color: rgba($red-orange, .3);
-    }
-  }
-
-  @include modifier(49) {
+  @include modifier(25) {
     width: 70%;
   }
 
-  @include modifier(49_2) {
+  @include modifier(30) {
+    width: 70%;
+    font-size: 12px;
+  }
+
+  @include modifier(31) {
     width: 70%;
   }
 
-  @include modifier(51) {
-    width: 80%;
-    font-size: 14px;
-
-    &.typer__textarea {
-      line-height: 1.55;
-    }
-  }
-
-  @include modifier(54_2) {
-    font-size: 12px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-
-    &.correct {
-      background-color: rgba($tradewind, .3);
-    }
-
-    &.incorrect {
-      background-color: rgba($red-orange, .3);
-    }
+  @include modifier(61) {
+    width: 70%;
   }
 
   @include modifier(65) {
     width: 70%;
   }
+}
 
-  @include modifier(70) {
-    width: 70%;
+.mediumselect {
+  @include modifier(32) {
+
+    .labelMediumselect__answer {
+      width: 7%;
+    }
   }
 }
 
@@ -282,7 +227,7 @@
 
   @include element(dropzone-row) {
     lost-utility: clearfix;
-    padding: 0.5rem;
+    padding: 0.35rem;
 
     &:nth-of-type(2n) {
       background-color: rgba($grey, .1);
@@ -313,8 +258,8 @@
   }
 
   @include element(sandbox) {
-    line-height: 3;
-    padding: 1em;
+    line-height: 2.5;
+    padding: 0.5em;
   }
 
   @include element(answer-container) {

@@ -12,7 +12,7 @@
 
     <div
       v-repeat="row in selectedPageObject.ex.data"
-      class="exercise__row"
+      class="exercise__row mediumselect--{{ selectedPageObject.no }}"
       v-attr="style: row.position"
     >
       <input
