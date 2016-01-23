@@ -184,9 +184,34 @@
     }
   }
 
+  @include modifier(14) {
+    width: 70%;
+  }
+
+  @include modifier(15) {
+    width: 70%;
+  }
+
+  @include modifier(16) {
+    width: 70%;
+    font-size: 12px;
+  }
+
+  @include modifier(21) {
+    font-size: 12px;
+    width: 18px;
+
+    &.correct {
+      background-color: rgba($tradewind, .3);
+    }
+
+    &.incorrect {
+      background-color: rgba($red-orange, .3);
+    }
+  }
+
   @include modifier(22) {
     width: 70%;
-    background-color: rgba(tomato, .2);
   }
 
   @include modifier(25) {
