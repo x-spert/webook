@@ -35,6 +35,47 @@ module.exports = function() {
       staticTrigger: {
         top: '7%',
         bottom: '60%'
+      },
+      title: 'Hör zu und schreib die Nummern!',
+      exTrigger: {
+        bottom: '3%',
+        top: '41%'
+      },
+      ex: {
+        name: 'typerbg',
+        bg: '12ex',
+        data: [
+          {
+            identifier: 'one',
+            position: 'top: 89%; left: 56.9%; width: 4.5%; height: 5.9%',
+            model: '',
+            solution: '1'
+          },
+          {
+            identifier: 'two',
+            position: 'top: 55.8%; left: 19.4%; width: 4.5%; height: 5.9%',
+            model: '',
+            solution: '2'
+          },
+          {
+            identifier: 'three',
+            position: 'top: 55.8%; left: 63.3%; width: 4.5%; height: 5.9%',
+            model: '',
+            solution: '3'
+          },
+          {
+            identifier: 'four',
+            position: 'top: 89%; left: 26.2%; width: 4.5%; height: 5.9%',
+            model: '',
+            solution: '4'
+          },
+          {
+            identifier: 'five',
+            position: 'top: 55.8%; left: 42%; width: 4.5%; height: 5.9%',
+            model: '',
+            solution: '5'
+          }
+        ]
       }
     },
     {

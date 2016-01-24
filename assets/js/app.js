@@ -8,6 +8,7 @@ var pageData = require('./pageData.js');
 
 require('jquery-ui/draggable');
 require('jquery-ui/droppable');
+require('jquery-ui/position');
 
 Vue.config.debug = true;
 
@@ -241,16 +242,34 @@ new Vue({
         var target = '.target--' + this.selectedPageObject.ex.data[i].rowID;console.log(target);
         var targetScope = this.selectedPageObject.ex.data[i].rowID;
 
+        $(launch).addClass('hvr-wobble-horizontal-custom');
+
         $(launch).draggable({
-          addClasses: false,
-          scope: targetScope
+          stack: '.dnd__answer-container',
+          scope: targetScope,
+          revert: true,
+          start: function( event, ui ) {
+            if ($(this).hasClass('hvr-wobble-horizontal-custom')) {
+              $(this).removeClass('hvr-wobble-horizontal-custom');
+            }
+            ui.helper.addClass('on-drag');
+          },
+          stop: function( event, ui ) {
+            ui.helper.removeClass('on-drag');
+          }
         });
 
         $(target).droppable({
           accept: launch,
           scope: targetScope,
+          hoverClass: 'drop-hover',
           drop: function( event, ui ) {
-            $(this).addClass( "dropped");
+            var self = $(this);
+            self.addClass( "dropped");
+            ui.draggable.draggable( 'disable' );
+            $(this).droppable( 'disable' );
+            ui.draggable.position( { of: self, my: 'center', at: 'center' } );
+            ui.draggable.draggable( 'option', 'revert', false );
             window.staticSoundTrue.play();
           }
         });
