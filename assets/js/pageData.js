@@ -259,7 +259,7 @@ module.exports = function() {
           },
           {
             identifier: 'four',
-            position: 'top: 90%; left: 23.5%; width: 30%',
+            position: 'top: 90%; left: 21.5%; width: 37%',
             model: '',
             solution: 'im herbst ist es neblig und windig'
           }
@@ -369,7 +369,7 @@ module.exports = function() {
           },
           {
             identifier: 'sixteen',
-            position: 'top: 88.1%; left: 65.7%; width: 40%',
+            position: 'top: 92.8%; left: 25.3%; width: 18%',
             model: '',
             solution: 'geht ski fahren'
           }
@@ -950,13 +950,13 @@ module.exports = function() {
           },
           {
             identifier: 'fiftyone',
-            position: 'top: 60.4%; left: 63.4%',
+            position: 'top: 63.2%; left: 62.2%',
             model: '',
             solution: 'i'
           },
           {
             identifier: 'fiftytwo',
-            position: 'top: 60.4%; left: 66.2%',
+            position: 'top: 66.2%; left: 62.2%',
             model: '',
             solution: 's'
           },
@@ -1031,6 +1031,78 @@ module.exports = function() {
             position: 'top: 69%; left: 48.5%',
             model: '',
             solution: 'n'
+          },
+          {
+            identifier: 'sixtyfive',
+            position: 'top: 29.5%; left: 41.7%',
+            model: '',
+            solution: 'f'
+          },
+          {
+            identifier: 'sixtysix',
+            position: 'top: 29.5%; left: 44%',
+            model: '',
+            solution: 'l'
+          },
+          {
+            identifier: 'sixtyseven',
+            position: 'top: 29.5%; left: 46.3%',
+            model: '',
+            solution: 'e'
+          },
+          {
+            identifier: 'sixtyeight',
+            position: 'top: 29.5%; left: 48.5%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'sixtynine',
+            position: 'top: 29.5%; left: 50.8%',
+            model: '',
+            solution: 's'
+          },
+          {
+            identifier: 'seventy',
+            position: 'top: 29.5%; left: 53%',
+            model: '',
+            solution: 'c'
+          },
+          {
+            identifier: 'seventyone',
+            position: 'top: 29.5%; left: 55.4%',
+            model: '',
+            solution: 'h'
+          },
+          {
+            identifier: 'seventytwo',
+            position: 'top: 35%; left: 46.3%',
+            model: '',
+            solution: 'b'
+          },
+            {
+            identifier: 'seventythree',
+            position: 'top: 38%; left: 46.3%',
+            model: '',
+            solution: 'i'
+          },
+          {
+            identifier: 'seventyfour',
+            position: 'top: 40.8%; left: 46.3%',
+            model: '',
+            solution: 'r'
+          },
+          {
+            identifier: 'seventyfive',
+            position: 'top: 43.4%; left: 46.3%',
+            model: '',
+            solution: 'n'
+          },
+          {
+            identifier: 'seventysix',
+            position: 'top: 46.5%; left: 46.3%',
+            model: '',
+            solution: 'e'
           }
         ]
       }
@@ -1307,7 +1379,7 @@ module.exports = function() {
             textareaRows: 3,
             position: 'top: 52.8%; left: 26.6%; width: 25%',
             model: '',
-            solution: 'lieblingssendung ist eine sportsendung. sie kommt um viertel nach sechs.'
+            solution: 'lieblingssendung ist eine sportsendung. sie kommt um viertel nach sechs. / sie fängt um … an.'
           },
           {
             identifier: 'six',
@@ -1315,7 +1387,7 @@ module.exports = function() {
             textareaRows: 4,
             position: 'top: 52.8%; left: 58.6%; width: 28%',
             model: '',
-            solution: 'lieblingssendung ist eine dokumentarsendung. heute gibt es um halb neun einen dokumentarfilm.'
+            solution: 'marions lieblingssendung ist eine dokumentarsendung. heute gibt es um halb neun einen dokumentarfilm.'
           },
           {
             identifier: 'seven',
@@ -1331,7 +1403,7 @@ module.exports = function() {
             textareaRows: 3,
             position: 'top: 84.2%; left: 63.6%; width: 24%',
             model: '',
-            solution: 'lieblingssendung ist die tagesschau. sie kommt immer um acht uhr.'
+            solution: 'herrn fischers lieblingssendung ist die tagesschau. sie kommt immer um acht uhr.'
           }
         ]
       }
@@ -1578,7 +1650,7 @@ module.exports = function() {
             questionID: '2',
             questionText: '<span class="text--lightblue">Mein Zahn</span> tut weh.',
             answerID: 'c',
-            answerText: 'Dahan gehen wir <span class="text--pink">zur Zahnarztin</span>.'
+            answerText: 'Dahan gehen wir <span class="text--pink">zur Zahnärztin</span>.'
           },
           {
             rowID: 'three',
