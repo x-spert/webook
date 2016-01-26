@@ -49,6 +49,12 @@
 
         <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.ex2Trigger.bottom + '; top: ' + leftPageObject.ex2Trigger.top"></div>
       </a>
+
+      <a v-if="leftPageObject.ex3" v-on="click: showLeftModal" data-remodal-target="modal-ex3">
+        <button v-attr="style: 'top: ' + leftPageObject.ex3Trigger.top" class="button button--scale button--animated button--trigger" data-remodal-target="modal-ex3"><span class="wb-ex"></span></button>
+
+        <div class="left-page__actionable" v-attr="style: 'bottom: ' + leftPageObject.ex3Trigger.bottom + '; top: ' + leftPageObject.ex3Trigger.top"></div>
+      </a>
     </div>
   </div>
 

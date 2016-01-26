@@ -20,36 +20,40 @@ module.exports = function() {
         title: 'Cuprins',
         chapters: [
           {
-            title: 'Capitolul 1: Das Wetter',
-            pageno: '5'
+            title: 'Unit zero - Can you remember?',
+            pageno: '6'
           },
           {
-            title: 'Capitolul 2: Mein Lieblingsessen',
-            pageno: '17'
+            title: 'Module 1',
+            pageno: '8'
           },
           {
-            title: 'Capitolul 3: Fernsehen',
-            pageno: '39'
+            title: 'Module 2',
+            pageno: '20'
           },
           {
-            title: 'Capitolul 4: Wie geht\'s dir?',
-            pageno: '55'
+            title: 'Module 3',
+            pageno: '36'
           },
           {
-            title: 'Frohe Weihnachten',
+            title: 'Module 4',
+            pageno: '52'
+          },
+          {
+            title: 'Harvest Festivals',
+            pageno: '68'
+          },
+          {
+            title: 'New Year',
             pageno: '71'
           },
           {
-            title: 'Wiederholungstest',
-            pageno: '73'
+            title: 'Progress check!',
+            pageno: '74'
           },
           {
-            title: 'Glossar',
-            pageno: '77'
-          }          ,
-          {
-            title: 'Hörtexte',
-            pageno: '81'
+            title: 'Know-how!',
+            pageno: '80'
           }
         ]
       }

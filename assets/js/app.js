@@ -66,7 +66,7 @@ new Vue({
 
     canGoForward: function() {
       if (this.rightpage.length != 0) {
-        if (this.rightpage + 2 < 90) {
+        if (this.rightpage + 2 < 86) {
           return true
         } else {
           return false
@@ -164,7 +164,7 @@ new Vue({
         return false;
       } else {
         this.staticpage = false;
-        if (this.jumpPage > 1 && this.jumpPage < 87) {
+        if (this.jumpPage > 1 && this.jumpPage < 85) {
           if (this.jumpPage % 2 == 0) {
             this.leftpage = parseInt(this.jumpPage);
             this.rightpage = parseInt(this.jumpPage) + 1;
@@ -219,14 +219,18 @@ new Vue({
           this.selectedPageObject.ex2.data[i].model = this.selectedPageObject.ex2.data[i].solution;
         }
       }
+      if (this.selectedPageObject.ex3.name != 'mediumselect') {
+        for (var i = 0; i < this.selectedPageObject.ex3.data.length; i++) {
+          this.selectedPageObject.ex3.data[i].model = this.selectedPageObject.ex3.data[i].solution;
+        }
+      }
     },
     solveCheck: function() {
       if (this.selectedPageObject.ex.name == 'mediumselect') {
         for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
           this.selectedPageObject.ex.data[i].model = 'true';
         }
-      }
-      if (this.selectedPageObject.ex2.name == 'mediumselect') {
+      } else if (this.selectedPageObject.ex2.name == 'mediumselect') {
         for (var i = 0; i < this.selectedPageObject.ex2.data.length; i++) {
           this.selectedPageObject.ex2.data[i].model = 'true';
         }
