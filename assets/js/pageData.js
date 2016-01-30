@@ -1,6 +1,72 @@
 module.exports = function() {
   return [
     {
+      no: 6,
+      static: 'pg6play',
+      staticTrigger: {
+        bottom: '68%',
+        top: '11%'
+      }
+    },
+    {
+      no: 8,
+      static: 'pg8-9ex1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
+      no: 9,
+      static: 'pg9inthismodule',
+      staticTrigger: {
+        bottom: '81%',
+        top: '3%'
+      }
+    },
+    {
+      no: 12,
+      static: 'pg12ex1s1',
+      staticTrigger: {
+        bottom: '61%',
+        top: '19%'
+      },
+      static2: 'pg12ex1s2',
+      static2Trigger: {
+        bottom: '42%',
+        top: '39%'
+      }
+    },
+    {
+      no: 13,
+      static: 'pg13ex3',
+      staticTrigger: {
+        bottom: '30%',
+        top: '50%'
+      },
+      static2: 'pg13smartcheck',
+      static2Trigger: {
+        bottom: '1%',
+        top: '70%'
+      }
+    },
+    {
+      no: 14,
+      static: 'pg14smartcheck',
+      staticTrigger: {
+        bottom: '28%',
+        top: '41%'
+      }
+    },
+    {
+      no: 17,
+      static: 'pg17ex1',
+      staticTrigger: {
+        bottom: '34%',
+        top: '15%'
+      }
+    },
+    {
       no: 18,
       title1: '',
       title2: 'Listen and put a token on the correct answer.',
@@ -120,6 +186,48 @@ module.exports = function() {
       }
     },
     {
+      no: 19,
+      static: 'pg19ex4',
+      staticTrigger: {
+        bottom: '35%',
+        top: '2%'
+      }
+    },
+    {
+      no: 20,
+      static: 'pg20-21ex1',
+      staticTrigger: {
+        bottom: '10%',
+        top: '4%'
+      }
+    },
+    {
+      no: 21,
+      static: 'pg21inthismodule',
+      staticTrigger: {
+        bottom: '83%',
+        top: '1%'
+      },
+      static2: 'pg21smartcheck',
+      static2Trigger: {
+        bottom: '48%',
+        top: '17%'
+      }
+    },
+    {
+      no: 24,
+      static: 'pg24Doyouknow',
+      staticTrigger: {
+        bottom: '21%',
+        top: '60%'
+      },
+      static2: 'pg24smartcheck',
+      static2Trigger: {
+        bottom: '2%',
+        top: '79%'
+      }
+    },
+    {
       no: 25,
       title1: 'Look at the table and complete with CAN or CAN\'T.',
       exTrigger: {
@@ -191,6 +299,244 @@ module.exports = function() {
             solution: 'can\'t'
           }
         ]
+      }
+    },
+    {
+      no: 26,
+      static: 'pg26smartcheck',
+      staticTrigger: {
+        bottom: '10%',
+        top: '58%'
+      }
+    },
+    {
+      no: 27,
+      static: 'pg27smartcheck',
+      staticTrigger: {
+        bottom: '45%',
+        top: '33%'
+      }
+    },
+    {
+      no: 34,
+      static: 'pg34ex4',
+      staticTrigger: {
+        bottom: '61%',
+        top: '4%'
+      },
+      static2: 'pg34ex5',
+      static2Trigger: {
+        bottom: '3%',
+        top: '38%'
+      }
+    },
+    {
+      no: 36,
+      static: 'pg36-37ex1',
+      staticTrigger: {
+        bottom: '5%',
+        top: '8%'
+      }
+    },
+    {
+      no: 37,
+      static: 'pg37inthismodule',
+      staticTrigger: {
+        bottom: '82%',
+        top: '2%'
+      }
+    },
+    {
+      no: 40,
+      static: 'pg40smartcheck',
+      staticTrigger: {
+        bottom: '6%',
+        top: '70%'
+      }
+    },
+    {
+      no: 41,
+      static: 'pg41smartcheck',
+      staticTrigger: {
+        bottom: '34%',
+        top: '51%'
+      }
+    },
+    {
+      no: 43,
+      static: 'pg43ex6',
+      staticTrigger: {
+        bottom: '21%',
+        top: '6%'
+      }
+    },
+    {
+      no: 44,
+      static: 'pg44play',
+      staticTrigger: {
+        bottom: '77%',
+        top: '3%'
+      }
+    },
+    {
+      no: 46,
+      static: 'pg46smartcheck',
+      staticTrigger: {
+        bottom: '8%',
+        top: '67%'
+      }
+    },
+    {
+      no: 48,
+      static: 'pg48smartcheck',
+      staticTrigger: {
+        bottom: '20%',
+        top: '62%'
+      }
+    },
+    {
+      no: 50,
+      static: 'pg50smartcheck',
+      staticTrigger: {
+        bottom: '37%',
+        top: '42%'
+      }
+    },
+    {
+      no: 52,
+      static: 'pg52-53ex1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
+      no: 53,
+      static: 'pg53inthismodule',
+      staticTrigger: {
+        bottom: '85%',
+        top: '2%'
+      }
+    },
+    {
+      no: 56,
+      static: 'pg56ex2',
+      staticTrigger: {
+        bottom: '11%',
+        top: '53%'
+      }
+    },
+    {
+      no: 57,
+      static: 'pg57smartcheck',
+      staticTrigger: {
+        bottom: '42%',
+        top: '36%'
+      }
+    },
+    {
+      no: 59,
+      static: 'pg59play',
+      staticTrigger: {
+        bottom: '2%',
+        top: '5%'
+      }
+    },
+    {
+      no: 60,
+      static: 'pg60smartcheck',
+      staticTrigger: {
+        bottom: '12%',
+        top: '71%'
+      }
+    },
+    {
+      no: 64,
+      static: 'pg64smartcheck',
+      staticTrigger: {
+        bottom: '31%',
+        top: '49%'
+      }
+    },
+    {
+      no: 66,
+      static: 'pg66ex5',
+      staticTrigger: {
+        bottom: '11%',
+        top: '48%'
+      }
+    },
+    {
+      no: 67,
+      static: 'pg67ex7',
+      staticTrigger: {
+        bottom: '43%',
+        top: '4%'
+      }
+    },
+    {
+      no: 68,
+      static: 'pg68ex1s1',
+      staticTrigger: {
+        bottom: '58%',
+        top: '13%'
+      },
+      static2: 'pg68ex1s2',
+      static2Trigger: {
+        bottom: '5%',
+        top: '43%'
+      }
+    },
+    {
+      no: 69,
+      static: 'pg69ex2s1',
+      staticTrigger: {
+        bottom: '64%',
+        top: '14%'
+      },
+      static2: 'pg69smartcheck',
+      static2Trigger: {
+        bottom: '50%',
+        top: '35%'
+      },
+      static3: 'pg69ex2s2',
+      static3Trigger: {
+        bottom: '27%',
+        top: '50%'
+      }
+    },
+    {
+      no: 72,
+      static: 'pg72ex2s1',
+      staticTrigger: {
+        bottom: '67%',
+        top: '14%'
+      },
+      static2: 'pg72ex2s2',
+      static2Trigger: {
+        bottom: '36%',
+        top: '33%'
+      },
+      static3: 'pg72ex2s3',
+      static3Trigger: {
+        bottom: '4%',
+        top: '65%'
+      }
+    },
+    {
+      no: 75,
+      static: 'pg75ex3',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
+      no: 76,
+      static: 'pg76ex4',
+      staticTrigger: {
+        bottom: '37%',
+        top: '7%'
       }
     }
   ]

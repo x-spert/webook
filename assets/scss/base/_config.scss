@@ -27,6 +27,9 @@ $affair           : #733D88;
 $cerulean         : #0093E5;
 $la-palma         : #1D9116;
 $razzmatazz       : #E60A78;
+$pizazz           : #FF9600;
+$mariner          : #2675DE;
+
 
 // Color Palette Modifiers
 
@@ -49,8 +52,8 @@ $palettes: (
 // UI Colors
 
 $ui-colors: (
-  primary    : $tradewind,
-  secondary  : $red-orange
+  primary    : $mariner,
+  secondary  : $pizazz
 );
 
 // Label Colors
