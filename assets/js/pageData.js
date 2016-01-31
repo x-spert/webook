@@ -1,12 +1,54 @@
 module.exports = function() {
   return [
     {
+      no: 6,
+      static: 'pg6-7ex1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
+      no: 7,
+      static: 'pg7inthismodule',
+      staticTrigger: {
+        bottom: '82%',
+        top: '1%'
+      }
+    },
+    {
+      no: 10,
+      static: 'pg10ex2',
+      staticTrigger: {
+        bottom: '5%',
+        top: '58%'
+      }
+    },
+    {
+      no: 11,
+      static: 'pg11ex3',
+      staticTrigger: {
+        bottom: '75%',
+        top: '9%'
+      },
+      static2: 'pg11smartcheck',
+      static2Trigger: {
+        bottom: '36%',
+        top: '47%'
+      }
+    },
+    {
       no: 14,
       title: '',
       title2: 'Listen, number the pictures and then complete the sentences',
+      static: 'pg14smartcheck',
+      staticTrigger: {
+        bottom: '69%',
+        top: '16%'
+      },
       exTrigger: {
         bottom: '46%',
-        top: '11%'
+        top: '31%'
       },
       ex: {
         name: 'dnd',
@@ -87,6 +129,11 @@ module.exports = function() {
     {
       no: 15,
       title: 'Join the opposites and write the words',
+      static: 'pg15smartcheck',
+      staticTrigger: {
+        bottom: '3%',
+        top: '80%'
+      },
       exTrigger: {
         bottom: '44%',
         top: '9%'
@@ -144,6 +191,30 @@ module.exports = function() {
             solution: 'sad'
           }
         ]
+      }
+    },
+    {
+      no: 16,
+      static: 'pg16play',
+      staticTrigger: {
+        bottom: '72%',
+        top: '4%'
+      }
+    },
+    {
+      no: 17,
+      static: 'pg17smartcheck',
+      staticTrigger: {
+        bottom: '6%',
+        top: '70%'
+      }
+    },
+    {
+      no: 18,
+      static: 'pg18smartcheck',
+      staticTrigger: {
+        bottom: '31%',
+        top: '27%'
       }
     },
     {
@@ -253,6 +324,72 @@ module.exports = function() {
       }
     },
     {
+      no: 21,
+      static: 'pg21ex6',
+      staticTrigger: {
+        bottom: '37%',
+        top: '2%'
+      }
+    },
+    {
+      no: 22,
+      static: 'pg22-23ex1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
+      no: 23,
+      static: 'pg23inthismodule',
+      staticTrigger: {
+        bottom: '83%',
+        top: '1%'
+      }
+    },
+    {
+      no: 26,
+      static: 'pg26smartcheck',
+      staticTrigger: {
+        bottom: '30%',
+        top: '52%'
+      },
+      static2: 'pg26ex4',
+      static2Trigger: {
+        bottom: '2%',
+        top: '70%'
+      }
+    },
+    {
+      no: 27,
+      static: 'pg27smartcheck',
+      staticTrigger: {
+        bottom: '43%',
+        top: '3%'
+      }
+    },
+    {
+      no: 29,
+      static: 'pg29ex3',
+      staticTrigger: {
+        bottom: '2%',
+        top: '62%'
+      }
+    },
+    {
+      no: 31,
+      static: 'pg31ex3',
+      staticTrigger: {
+        bottom: '49%',
+        top: '10%'
+      },
+      static2: 'pg31smartcheck',
+      static2Trigger: {
+        bottom: '6%',
+        top: '81%'
+      }
+    },
+    {
       no: 32,
       title: 'Read and match the paragraphs to the photos',
       exTrigger: {
@@ -359,6 +496,14 @@ module.exports = function() {
       }
     },
     {
+      no: 34,
+      static: 'pg34ex5',
+      staticTrigger: {
+        bottom: '31%',
+        top: '52%'
+      }
+    },
+    {
       no: 36,
       title: 'Listen and put a token on the correct answer',
       exTrigger: {
@@ -441,6 +586,78 @@ module.exports = function() {
       }
     },
     {
+      no: 38,
+      static: 'pg38-39ex1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
+      no: 39,
+      static: 'pg39inthismodule',
+      staticTrigger: {
+        bottom: '81%',
+        top: '3%'
+      }
+    },
+    {
+      no: 42,
+      static: 'pg42ex2',
+      staticTrigger: {
+        bottom: '3%',
+        top: '54%'
+      }
+    },
+    {
+      no: 43,
+      static: 'pg43smartcheck',
+      staticTrigger: {
+        bottom: '46%',
+        top: '26%'
+      }
+    },
+    {
+      no: 44,
+      static: 'pg44ex6',
+      staticTrigger: {
+        bottom: '21%',
+        top: '65%'
+      }
+    },
+    {
+      no: 45,
+      static: 'pg45smartcheck',
+      staticTrigger: {
+        bottom: '4%',
+        top: '76%'
+      }
+    },
+    {
+      no: 48,
+      static: 'pg48ex2',
+      staticTrigger: {
+        bottom: '4%',
+        top: '64%'
+      }
+    },
+    {
+      no: 49,
+      static: 'pg49ex5',
+      staticTrigger: {
+        bottom: '9%',
+        top: '57%'
+      }
+    },
+    {
+      no: 50,
+      static: 'pg50play',
+      staticTrigger: {
+        bottom: '76%',
+        top: '4%'
+      }
+    },
+    {
       no: 52,
       title: 'Listen and put a token on the correct answer',
       exTrigger: {
@@ -497,6 +714,38 @@ module.exports = function() {
       }
     },
     {
+      no: 54,
+      static: 'pg54-55ex1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
+      no: 55,
+      static: 'pg55inthismodule',
+      staticTrigger: {
+        bottom: '86%',
+        top: '2%'
+      }
+    },
+    {
+      no: 58,
+      static: 'pg58ex2',
+      staticTrigger: {
+        bottom: '4%',
+        top: '51%'
+      }
+    },
+    {
+      no: 59,
+      static: 'pg59smartcheck',
+      staticTrigger: {
+        bottom: '44%',
+        top: '8%'
+      }
+    },
+    {
       no: 61,
       title: 'Circle the odd one out',
       exTrigger: {
@@ -544,6 +793,30 @@ module.exports = function() {
             answerTrue: 'right: 18.5%'
           }
         ]
+      }
+    },
+    {
+      no: 62,
+      static: 'pg62ex9',
+      staticTrigger: {
+        bottom: '75%',
+        top: '12%'
+      }
+    },
+    {
+      no: 64,
+      static: 'pg64play',
+      staticTrigger: {
+        bottom: '75%',
+        top: '3%'
+      }
+    },
+    {
+      no: 65,
+      static: 'pg65smartcheck',
+      staticTrigger: {
+        bottom: '4%',
+        top: '72%'
       }
     },
     {
@@ -603,7 +876,62 @@ module.exports = function() {
       }
     },
     {
+      no: 68,
+      static: 'pg68ex4',
+      staticTrigger: {
+        bottom: '53%',
+        top: '6%'
+      }
+    },
+    {
+      no: 70,
+      static: 'pg70ex1s1',
+      staticTrigger: {
+        bottom: '38%',
+        top: '11%'
+      },
+      static2: 'pg70ex1s2',
+      static2Trigger: {
+        bottom: '2%',
+        top: '62%'
+      }
+    },
+    {
+      no: 71,
+      static: 'pg71ex1s1',
+      staticTrigger: {
+        bottom: '52%',
+        top: '4%'
+      },
+      static2: 'pg71ex1s2',
+      static2Trigger: {
+        bottom: '2%',
+        top: '48%'
+      }
+    },
+    {
+      no: 72,
+      static: 'pg72ex2s1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '6%'
+      }
+    },
+    {
+      no: 73,
+      static: 'pg73ex2s1',
+      staticTrigger: {
+        bottom: '4%',
+        top: '10%'
+      }
+    },
+    {
       no: 74,
+      static: 'pg74ex1',
+      staticTrigger: {
+        bottom: '57%',
+        top: '15%'
+      },
       title: 'Listen and tick',
       exTrigger: {
         bottom: '5%',
@@ -659,7 +987,20 @@ module.exports = function() {
       }
     },
     {
+      no: 75,
+      static: 'pg75ex3',
+      staticTrigger: {
+        bottom: '4%',
+        top: '8%'
+      }
+    },
+    {
       no: 77,
+      static: 'pg77ex1',
+      staticTrigger: {
+        bottom: '55%',
+        top: '18%'
+      },
       title: 'Listen and tick',
       exTrigger: {
         bottom: '5%',
@@ -712,6 +1053,14 @@ module.exports = function() {
             answerFalse: 'right: 52.5%'
           }
         ]
+      }
+    },
+    {
+      no: 81,
+      static: 'pg81ex3',
+      staticTrigger: {
+        bottom: '37%',
+        top: '8%'
       }
     }
   ]
