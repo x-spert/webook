@@ -4,7 +4,7 @@
   <img v-attr="src: './assets/img/-2.jpg'">
 
   <form class="exercise__container">
-    <button class="button button--solve button--scale" type="button" v-on="click: selectedPageObject.ex.solution = true">
+    <button class="button button--solve button--scale" type="button" v-on="click: selectedPageObject.ex.solution = !selectedPageObject.ex.solution">
       <span class="wb-solve"></span>
     </button>
 

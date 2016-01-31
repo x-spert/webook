@@ -209,28 +209,28 @@ new Vue({
       }
     },
     solveForm: function() {
-      if (this.selectedPageObject.ex.name != 'mediumselect') {
+      if (this.selectedPageObject.ex.name != 'mediumselect' && this.selectedPageObject.ex.name != 'circleselect') {
         for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
           this.selectedPageObject.ex.data[i].model = this.selectedPageObject.ex.data[i].solution;
         }
       }
-      if (this.selectedPageObject.ex2.name != 'mediumselect') {
+      if (this.selectedPageObject.ex2.name != 'mediumselect' && this.selectedPageObject.ex.name != 'circleselect') {
         for (var i = 0; i < this.selectedPageObject.ex2.data.length; i++) {
           this.selectedPageObject.ex2.data[i].model = this.selectedPageObject.ex2.data[i].solution;
         }
       }
-      if (this.selectedPageObject.ex3.name != 'mediumselect') {
+      if (this.selectedPageObject.ex3.name != 'mediumselect' && this.selectedPageObject.ex.name != 'circleselect') {
         for (var i = 0; i < this.selectedPageObject.ex3.data.length; i++) {
           this.selectedPageObject.ex3.data[i].model = this.selectedPageObject.ex3.data[i].solution;
         }
       }
     },
     solveCheck: function() {
-      if (this.selectedPageObject.ex.name == 'mediumselect') {
+      if (this.selectedPageObject.ex.name == 'mediumselect' || this.selectedPageObject.ex.name == 'circleselect') {
         for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
           this.selectedPageObject.ex.data[i].model = 'true';
         }
-      } else if (this.selectedPageObject.ex2.name == 'mediumselect') {
+      } else if (this.selectedPageObject.ex2.name == 'mediumselect' || this.selectedPageObject.ex2.name == 'circleselect') {
         for (var i = 0; i < this.selectedPageObject.ex2.data.length; i++) {
           this.selectedPageObject.ex2.data[i].model = 'true';
         }

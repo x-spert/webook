@@ -12,6 +12,10 @@
       @@include('./exercise--mediumselect.html')
     </div>
 
+    <div v-if="selectedPageObject.ex.name == 'circleselect'">
+      @@include('./exercise--circleselect.html')
+    </div>
+
     <div v-if="selectedPageObject.ex.name == 'typer'">
       @@include('./exercise--typer.html')
     </div>

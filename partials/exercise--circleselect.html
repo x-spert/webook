@@ -1,4 +1,4 @@
-<div class="exercise exercise--mediumselect">
+<div class="exercise exercise--circleselect">
   <img v-attr="src: './assets/img/' + selectedPageObject.ex.bg + '.jpg'">
 
   <form class="exercise__container">
@@ -16,7 +16,7 @@
       v-attr="style: row.position"
     >
       <input
-        class="radio-input mediumselect--{{ this.selectedPageObject.no }}"
+        class="radio-input circleselect--{{ this.selectedPageObject.no }}"
         type="radio"
         name="{{ row.identifier }}"
         value="true"
@@ -27,24 +27,8 @@
 
       <label
         v-attr="style: row.answerTrue"
-        class="labelMediumselect__answer labelMediumselect__answer--true"
+        class="labelCircleselect__answer labelCircleselect__answer--true"
         for="{{ row.identifier }}true"
-      ></label>
-
-      <input
-        class="radio-input mediumselect--{{ this.selectedPageObject.no }}"
-        type="radio"
-        name="{{ row.identifier }}"
-        value="false"
-        id="{{ row.identifier }}false"
-        v-model="row.model"
-        v-on="click: playStaticSound('false')"
-      >
-
-      <label
-        v-attr="style: row.answerFalse"
-        class="labelMediumselect__answer labelMediumselect__answer--false"
-        for="{{ row.identifier }}false"
       ></label>
     </div>
   </form>
