@@ -9,11 +9,48 @@ module.exports = function() {
       }
     },
     {
+      no: 6,
+      video: 'p6_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },   
+    {
+      no: 7,
+      video: 'p7_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 8,
+      video: 'p8_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 9,
+      video: 'p9_v1.mp4',
+      videoTrigger: {
+        bottom: '34%',
+        top: '14%'
+      },
       static: 'pg9ex4',
       staticTrigger: {
         top: '66%',
         bottom: '4%'
+      }
+    },
+    {
+      no: 10,
+      video: 'p10_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
       }
     },
     {
@@ -76,6 +113,14 @@ module.exports = function() {
             solution: '5'
           }
         ]
+      }
+    },
+    {
+      no: 13,
+      video: 'p13_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
       }
     },
     {
@@ -255,6 +300,14 @@ module.exports = function() {
             solution: 'die staße'
           }
         ]
+      }
+    },
+    {
+      no: 17,
+      video: 'p17_v1.mp4',
+      videoTrigger: {
+        bottom: '28%',
+        top: '50%'
       }
     },
     {
@@ -750,6 +803,14 @@ module.exports = function() {
       }
     },
     {
+      no: 23,
+      video: 'p23_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 24,
       static: 'pg24ex4',
       staticTrigger: {
@@ -851,6 +912,22 @@ module.exports = function() {
       }
     },
     {
+      no: 28,
+      video: 'p28_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 29,
+      video: 'p29_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 30,
       title: 'Hör zu, schreib die Namen und sing!',
       exTrigger: {
@@ -891,6 +968,11 @@ module.exports = function() {
     {
       no: 31,
       title: 'Ergänze!',
+      video: 'p31_v1.mp4',
+      videoTrigger: {
+        bottom: '38%',
+        top: '14%'
+      },
       exTrigger: {
         bottom: '3%',
         top: '62%'
@@ -959,6 +1041,11 @@ module.exports = function() {
     {
       no: 32,
       title: 'Hör zu und kreuze die richtige Antwort an!',
+      video: 'p32_v1.mp4',
+      videoTrigger: {
+        bottom: '47%',
+        top: '10%'
+      },
       exTrigger: {
         bottom: '3%',
         top: '53%'
@@ -1066,6 +1153,14 @@ module.exports = function() {
       }
     },
     {
+      no: 36,
+      video: 'p36_v1.mp4',
+      videoTrigger: {
+        bottom: '77%',
+        top: '12%'
+      }
+    },
+    {
       no: 37,
       static: 'pg37nicht',
       staticTrigger: {
@@ -1123,6 +1218,30 @@ module.exports = function() {
       static2Trigger: {
         top: '50%',
         bottom: '3%'
+      }
+    },
+    {
+      no: 44,
+      video: 'p44_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 45,
+      video: 'p45_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 46,
+      video: 'p46_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
       }
     },
     {
@@ -1209,11 +1328,51 @@ module.exports = function() {
       }
     },
     {
+      no: 50,
+      video: 'p50_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 51,
+      video: 'p51_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
       no: 52,
       static: 'pg52nicht',
       staticTrigger: {
         top: '66%',
         bottom: '7%'
+      }
+    },
+    {
+      no: 53,
+      video: 'p53_v1.mp4',
+      videoTrigger: {
+        bottom: '45%',
+        top: '11%'
+      }
+    },
+    {
+      no: 54,
+      video: 'p54_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '13%'
+      }
+    },
+    {
+      no: 55,
+      video: 'p55_v1.mp4',
+      videoTrigger: {
+        bottom: '60%',
+        top: '14%'
       }
     },
     {
@@ -1226,6 +1385,11 @@ module.exports = function() {
     },
     {
       no: 57,
+      video: 'p57_v1.mp4',
+      videoTrigger: {
+        bottom: '34%',
+        top: '12%'
+      },
       static: 'pg57nicht',
       staticTrigger: {
         top: '66%',
@@ -1256,6 +1420,11 @@ module.exports = function() {
     {
       no: 61,
       title: 'Was haben die Kinder genacht? Wann? Schreib es!',
+      video: 'p61_v1.mp4',
+      videoTrigger: {
+        bottom: '40%',
+        top: '14%'
+      },
       exTrigger: {
         bottom: '4.5%',
         top: '59%'
@@ -1301,6 +1470,14 @@ module.exports = function() {
             solution: 'gegessen'
           }
         ]
+      }
+    },
+    {
+      no: 62,
+      video: 'p62_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
       }
     },
     {
@@ -1350,6 +1527,14 @@ module.exports = function() {
       }
     },
     {
+      no: 67,
+      video: 'p67_v1.mp4',
+      videoTrigger: {
+        bottom: '24%',
+        top: '20%'
+      }
+    },
+    {
       no: 66,
       static: 'pg66ostern',
       staticTrigger: {
@@ -1360,6 +1545,11 @@ module.exports = function() {
     {
       no: 68,
       title: 'Ergänze!',
+      video: 'p68_v1.mp4',
+      videoTrigger: {
+        bottom: '29%',
+        top: '31%'
+      },
       exTrigger: {
         bottom: '68.5%',
         top: '6%'
@@ -1411,6 +1601,62 @@ module.exports = function() {
             answerFalse: 'right: 26.3%'
           }
         ]
+      }
+    },
+    {
+      no: 71,
+      video: 'p71_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 75,
+      video: 'p75_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '14%'
+      }
+    },
+    {
+      no: 76,
+      video: 'p76_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '6%'
+      }
+    },
+    {
+      no: 77,
+      video: 'p77_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '6%'
+      }
+    },
+    {
+      no: 78,
+      video: 'p78_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '6%'
+      }
+    },
+    {
+      no: 79,
+      video: 'p79_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '6%'
+      }
+    },
+    {
+      no: 80,
+      video: 'p80_v1.mp4',
+      videoTrigger: {
+        bottom: '4%',
+        top: '6%'
       }
     },
     {

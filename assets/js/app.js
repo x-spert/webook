@@ -200,6 +200,11 @@ new Vue({
         }
       }
     },
+    stopVideo: function(id) {
+      console.log(id);
+      $('#' + id).trigger('pause');
+      $('#' + id).prop('currentTime', 0);        
+    },
     resetForm: function() {
       for (var i = 0; i < this.selectedPageObject.ex.data.length; i++) {
         this.selectedPageObject.ex.data[i].model = ''
