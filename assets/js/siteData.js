@@ -21,31 +21,27 @@ module.exports = function() {
         chapters: [
           {
             title: 'Unit zero - Can you remember?',
-            pageno: '6'
+            pageno: '5'
           },
           {
             title: 'Module 1',
-            pageno: '8'
+            pageno: '6'
           },
           {
             title: 'Module 2',
-            pageno: '20'
+            pageno: '22'
           },
           {
             title: 'Module 3',
-            pageno: '36'
+            pageno: '38'
           },
           {
             title: 'Module 4',
-            pageno: '52'
+            pageno: '54'
           },
           {
-            title: 'Harvest Festivals',
-            pageno: '68'
-          },
-          {
-            title: 'New Year',
-            pageno: '71'
+            title: 'Dick Whittington and his cat',
+            pageno: '70'
           },
           {
             title: 'Progress check!',
@@ -54,6 +50,10 @@ module.exports = function() {
           {
             title: 'Know-how!',
             pageno: '80'
+          },
+          {
+            title: 'Whizz quiz',
+            pageno: '82'
           }
         ]
       }

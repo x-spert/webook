@@ -15,6 +15,7 @@
   @include modifier(mediumselect) {
     .exercise__row {
       position: relative;
+      background-color: rgba(tomato, .2);
     }
 
     img {
@@ -219,19 +220,28 @@
     }
   }
 
-  @include modifier(18_3) {
-    width: 70%;
+  @include modifier(14_2) {
+    width: 50%;
   }
 
-  @include modifier(25) {
-    width: 70%;
+  @include modifier(15) {
+    width: 50%;
+    // background-color: rgba(tomato, .2);
+
+    &[name="five"],
+    &[name="six"],
+    &[name="seven"],
+    &[name="eight"] {
+      width: 80%;
+    }
   }
 
-  @include modifier(31) {
+  @include modifier(20) {
     font-size: 12px;
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    text-transform: uppercase;
 
     &.correct {
       background-color: rgba($tradewind, .3);
@@ -242,7 +252,39 @@
     }
   }
 
-  @include modifier(70) {
+  @include modifier(32) {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-transform: uppercase;
+
+    &.correct {
+      background-color: rgba($tradewind, .3);
+    }
+
+    &.incorrect {
+      background-color: rgba($red-orange, .3);
+    }
+  }
+
+  @include modifier(37) {
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-transform: uppercase;
+
+    &.correct {
+      background-color: rgba($tradewind, .3);
+    }
+
+    &.incorrect {
+      background-color: rgba($red-orange, .3);
+    }
+  }
+
+  @include modifier(xxx) {
     font-size: 13px;
     width: 92%;
     height: 24px;
@@ -257,49 +299,30 @@
       background-color: rgba($red-orange, .3);
     }
   }
-
-  @include modifier(71) {
-    font-size: 12px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-
-    &.correct {
-      background-color: rgba($tradewind, .3);
-    }
-
-    &.incorrect {
-      background-color: rgba($red-orange, .3);
-    }
-  }
-
-  @include modifier(80) {
-    width: 60%;
-  }
 }
 
 .mediumselect {
-  @include modifier(18) {
+  @include modifier(19) {
     & + .labelMediumselect__answer {
-      width: 20%;
+      width: 12%;
     }
   }
 
-  @include modifier(33) {
+  @include modifier(36) {
     & + .labelMediumselect__answer {
-      width: 14%;
+      width: 12%;
     }
   }
 
-  @include modifier(50) {
+  @include modifier(52) {
     & + .labelMediumselect__answer {
-      width: 14%;
+      width: 12%;
     }
   }
 
-  @include modifier(65) {
+  @include modifier(67) {
     & + .labelMediumselect__answer {
-      width: 14%;
+      width: 12%;
     }
   }
 }
