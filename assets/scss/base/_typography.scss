@@ -1,4 +1,8 @@
+$wb-pause: "\e034";
+$wb-stop: "\e047";
+$wb-help: "\e8fd";
 $wb-solve: "\e904";
+$wb-play: "\e905";
 $wb-static: "\e903";
 $wb-chevron-left: "\e900";
 $wb-chevron-right: "\e901";
@@ -38,9 +42,29 @@ $wb-ex: "\e808";
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wb-pause {
+    &:before {
+        content: $wb-pause;
+    }
+}
+.wb-stop {
+    &:before {
+        content: $wb-stop;
+    }
+}
+.wb-help {
+    &:before {
+        content: $wb-help;
+    }
+}
 .wb-solve {
     &:before {
         content: $wb-solve;
+    }
+}
+.wb-play {
+    &:before {
+        content: $wb-play;
     }
 }
 .wb-static {

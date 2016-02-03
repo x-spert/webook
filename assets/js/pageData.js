@@ -62,6 +62,8 @@ module.exports = function() {
       ex2: {
         name: 'typer',
         bg: '14ex2',
+        audio: 'stopped',
+        audioSrc: 'pg14ex2',
         data: [
           {
             identifier: 'one',
@@ -227,6 +229,8 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '19ex',
+        audio: 'stopped',
+        audioSrc: 'pg19ex2',
         data: [
           {
             identifier: 'one',
@@ -399,6 +403,8 @@ module.exports = function() {
       ex: {
         name: 'typerbg',
         bg: '32ex',
+        audio: 'stopped',
+        audioSrc: 'pg32-33ex1',
         data: [
           {
             identifier: 'one',
@@ -513,6 +519,8 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '36ex',
+        audio: 'stopped',
+        audioSrc: 'pg36ex2',
         data: [
           {
             identifier: 'one',
@@ -667,6 +675,8 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '52ex',
+        audio: 'stopped',
+        audioSrc: 'pg52ex5',
         data: [
           {
             identifier: 'one',
@@ -829,6 +839,8 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '67ex2',
+        audio: 'stopped',
+        audioSrc: 'pg67ex2',
         data: [
           {
             identifier: 'one',
@@ -940,6 +952,8 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '74ex',
+        audio: 'stopped',
+        audioSrc: 'pg74ex2',
         data: [
           {
             identifier: 'one',
@@ -1009,6 +1023,8 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '77ex',
+        audio: 'stopped',
+        audioSrc: 'pg77ex2',
         data: [
           {
             identifier: 'one',

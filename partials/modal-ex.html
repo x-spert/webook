@@ -1,12 +1,8 @@
 <div id="remodal" class="remodal" data-remodal-id="modal-ex" data-remodal-options="closeOnOutsideClick: false">
-  <button data-remodal-action="close" class="remodal-close"></button>
+  <button data-remodal-action="close" class="remodal-close" v-on="click: stopExSound(selectedPageObject.no, 'ex')"></button>
 
   <div class="remodal__exercise">
     <h1 v-if="selectedPageObject.title" v-text="selectedPageObject.title" class="remodal__title"></h1>
-
-    <div v-if="selectedPageObject.ex.name == 'bigselect'">
-      @@include('./exercise--bigselect.html')
-    </div>
 
     <div v-if="selectedPageObject.ex.name == 'mediumselect'">
       @@include('./exercise--mediumselect.html')
