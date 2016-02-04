@@ -3,6 +3,7 @@ module.exports = function() {
     {
       no: 6,
       static: 'pg6-7ex1',
+      staticAudioSrc: 'pg6-7ex1',
       staticTrigger: {
         bottom: '4%',
         top: '8%'
@@ -27,6 +28,7 @@ module.exports = function() {
     {
       no: 11,
       static: 'pg11ex3',
+      staticAudioSrc: 'pg11ex3',
       staticTrigger: {
         bottom: '75%',
         top: '9%'
@@ -338,6 +340,7 @@ module.exports = function() {
     {
       no: 22,
       static: 'pg22-23ex1',
+      staticAudioSrc: 'pg22-23ex1',
       staticTrigger: {
         bottom: '4%',
         top: '8%'
@@ -375,6 +378,7 @@ module.exports = function() {
     {
       no: 29,
       static: 'pg29ex3',
+      staticAudioSrc: 'pg29ex3',
       staticTrigger: {
         bottom: '2%',
         top: '62%'
@@ -504,6 +508,7 @@ module.exports = function() {
     {
       no: 34,
       static: 'pg34ex5',
+      staticAudioSrc: 'pg34ex5',
       staticTrigger: {
         bottom: '31%',
         top: '52%'
@@ -596,6 +601,7 @@ module.exports = function() {
     {
       no: 38,
       static: 'pg38-39ex1',
+      staticAudioSrc: 'pg38-39ex1',
       staticTrigger: {
         bottom: '4%',
         top: '8%'
@@ -628,6 +634,7 @@ module.exports = function() {
     {
       no: 44,
       static: 'pg44ex6',
+      staticAudioSrc: 'pg44ex6',
       staticTrigger: {
         bottom: '21%',
         top: '65%'
@@ -726,6 +733,7 @@ module.exports = function() {
     {
       no: 54,
       static: 'pg54-55ex1',
+      staticAudioSrc: 'pg54-55ex1',
       staticTrigger: {
         bottom: '4%',
         top: '8%'
@@ -808,6 +816,7 @@ module.exports = function() {
     {
       no: 62,
       static: 'pg62ex9',
+      staticAudioSrc: 'pg62ex9',
       staticTrigger: {
         bottom: '75%',
         top: '12%'

@@ -147,10 +147,18 @@ new Vue({
       }
       this.selectModalContent();
     },
-    showLeftStaticModal: function() {
+    showLeftStaticModal: function(order) {
       this.selectedPageObject = this.leftPageObject;
+      if (this.selectedPageObject[order + 'AudioSrc']) {
+        window[order + this.selectedPageObject.no] = new Howl({
+          urls: ['assets/audio/'+ this.selectedPageObject[order + 'AudioSrc'] +'.mp3'],
+          volume: 0.3
+        }).play();
+        console.log('Left Page: Loaded ' + order + ' audio - ' + this.selectedPageObject[order + 'AudioSrc']);
+      } else {
+        window.staticSound.play();
+      }
       this.selectModalContent();
-      window.staticSound.play();
     },
     showRightModal: function() {
       this.selectedPageObject = this.rightPageObject;
@@ -163,13 +171,25 @@ new Vue({
       }
       this.selectModalContent();
     },
-    showRightStaticModal: function() {
+    showRightStaticModal: function(order) {
       this.selectedPageObject = this.rightPageObject;
+      if (this.selectedPageObject[order + 'AudioSrc']) {
+        window[order + this.selectedPageObject.no] = new Howl({
+          urls: ['assets/audio/'+ this.selectedPageObject[order + 'AudioSrc'] +'.mp3'],
+          volume: 0.3
+        }).play();
+        console.log('Right Page: Loaded ' + order + ' audio - ' + this.selectedPageObject[order + 'AudioSrc']);
+      } else {
+        window.staticSound.play();
+      }
       this.selectModalContent();
-      window.staticSound.play();
     },
-    muteStaticSound: function() {
-      window.staticSound.stop();
+    muteStaticSound: function(order) {
+      if (this.selectedPageObject[order + 'AudioSrc']) {
+        window[order + this.selectedPageObject.no].stop();
+      } else {
+        window.staticSound.stop();
+      }
     },
     jumpToPage: function(event) {
       event.preventDefault();
