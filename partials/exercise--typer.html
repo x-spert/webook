@@ -57,9 +57,9 @@
         rows="{{ row.textareaRows }}"
       ></textarea>
 
-      <span v-if="row.model.length == row.solution.length && row.model.toLowerCase() == row.solution" class="wb-checkmark"></span>
+      <span v-if="row.model.length == row.solution.length && row.model == row.solution" class="wb-checkmark"></span>
 
-      <span v-if="row.model.length == row.solution.length && row.model.toLowerCase() != row.solution" class="wb-cancel"></span>
+      <span v-if="row.model.length == row.solution.length && row.model != row.solution" class="wb-cancel"></span>
     </div>
   </form>
 </div>
