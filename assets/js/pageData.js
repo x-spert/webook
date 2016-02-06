@@ -1157,7 +1157,7 @@ module.exports = function() {
       video2: 'p43_v2.mp4',
       video2Trigger: {
         bottom: '4%',
-        top: '50%'
+        top: '68%'
       }
     },
     {

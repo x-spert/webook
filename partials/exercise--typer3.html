@@ -1,26 +1,24 @@
-<div
-  class="exercise exercise--typer"
->
-  <img v-attr="src: './assets/img/' + selectedPageObject.ex.bg + '.jpg'">
+<div class="exercise exercise--typer">
+  <img v-attr="src: './assets/img/' + selectedPageObject.ex3.bg + '.jpg'">
 
   <form class="exercise__container">
     <button class="button button--solve button--scale" type="button" v-on="click: solveForm">
       <span class="wb-solve"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.help" class="button button--help button--scale" type="button" v-on="click: selectedPageObject.ex.help.toggle = !selectedPageObject.ex.help.toggle">
+    <button v-if="selectedPageObject.ex3.help" class="button button--help button--scale" type="button" v-on="click: selectedPageObject.ex3.help.toggle = !selectedPageObject.ex3.help.toggle">
       <span class="wb-help"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.audio === 'playing' || selectedPageObject.ex.audio === 'paused'" class="button button--stop button--scale" type="button" v-on="click: stopExSound(selectedPageObject.no, 'ex')">
+    <button v-if="selectedPageObject.ex3.audio === 'playing' || selectedPageObject.ex3.audio === 'paused'" class="button button--stop button--scale" type="button" v-on="click: stopExSound(selectedPageObject.no, 'ex3')">
       <span class="wb-stop"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.audio === 'playing'" class="button button--pause button--scale" type="button" v-on="click: pauseExSound(selectedPageObject.no, 'ex')">
+    <button v-if="selectedPageObject.ex3.audio === 'playing'" class="button button--pause button--scale" type="button" v-on="click: pauseExSound(selectedPageObject.no, 'ex3')">
       <span class="wb-pause"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.audio === 'stopped' || selectedPageObject.ex.audio === 'paused'" class="button button--play button--scale" type="button" v-on="click: playExSound(selectedPageObject.no, 'ex')">
+    <button v-if="selectedPageObject.ex3.audio === 'stopped' || selectedPageObject.ex3.audio === 'paused'" class="button button--play button--scale" type="button" v-on="click: playExSound(selectedPageObject.no, 'ex3')">
       <span class="wb-play"></span>
     </button>
 
@@ -28,12 +26,12 @@
       <span class="wb-reset"></span>
     </button>
 
-    <section v-show="selectedPageObject.ex.help.toggle" class="help">
-      <span v-text="selectedPageObject.ex.help.text"></span>
+    <section v-show="selectedPageObject.ex3.help.toggle" class="help">
+      <span v-text="selectedPageObject.ex3.help.text"></span>
     </section>
 
     <div
-      v-repeat="row in selectedPageObject.ex.data"
+      v-repeat="row in selectedPageObject.ex3.data"
       class="typer__wrapper"
       v-attr="style: row.position"
     >
@@ -41,7 +39,7 @@
         v-if="row.textarea == undefined"
         type="text"
         name="{{ row.identifier }}"
-        class="typer__input typer--{{ this.selectedPageObject.no }}"
+        class="typer__input typer--{{ this.selectedPageObject.no }}_3"
         v-model="row.model"
         maxlength="{{ row.solution.length }}"
         v-on="keyup:checkSolution(row.model, row.solution)"
@@ -50,11 +48,11 @@
       <textarea
         v-if="row.textarea != undefined"
         name="{{ row.identifier }}"
-        class="typer__input typer__textarea typer--{{ this.selectedPageObject.no }}"
+        class="typer__input typer__textarea typer--{{ this.selectedPageObject.no }}_3"
         v-model="row.model"
         maxlength="{{ row.solution.length }}"
         v-on="keyup:checkSolution(row.model, row.solution)"
-        rows="{{ row.textareaRows }}"
+        rows="3"
       ></textarea>
 
       <span v-if="row.model.length == row.solution.length && row.model == row.solution" class="wb-checkmark"></span>

@@ -1,10 +1,8 @@
-<div
-  class="exercise exercise--typer"
->
+<div class="exercise exercise--mediumselect">
   <img v-attr="src: './assets/img/' + selectedPageObject.ex2.bg + '.jpg'">
 
   <form class="exercise__container">
-    <button class="button button--solve button--scale" type="button" v-on="click: solveForm">
+    <button class="button button--solve button--scale" type="button" v-on="click: solveCheck">
       <span class="wb-solve"></span>
     </button>
 
@@ -34,21 +32,40 @@
 
     <div
       v-repeat="row in selectedPageObject.ex2.data"
-      class="typer__wrapper"
+      class="exercise__row"
       v-attr="style: row.position"
     >
       <input
-        type="text"
+        class="radio-input mediumselect--{{ this.selectedPageObject.no }}"
+        type="radio"
         name="{{ row.identifier }}"
-        class="typer__input typer--{{ this.selectedPageObject.no }}_2"
-        v-class="
-          correct: row.model.length == row.solution.length && row.model == row.solution,
-          incorrect: row.model.length == row.solution.length && row.model != row.solution
-        "
+        value="true"
+        id="{{ row.identifier }}true"
         v-model="row.model"
-        maxlength="{{ row.solution.length }}"
-        v-on="keyup:checkSolution(row.model, row.solution)"
+        v-on="click: playStaticSound('true')"
       >
+
+      <label
+        v-attr="style: row.answerTrue"
+        class="labelMediumselect__answer labelMediumselect__answer--true"
+        for="{{ row.identifier }}true"
+      ></label>
+
+      <input
+        class="radio-input mediumselect--{{ this.selectedPageObject.no }}"
+        type="radio"
+        name="{{ row.identifier }}"
+        value="false"
+        id="{{ row.identifier }}false"
+        v-model="row.model"
+        v-on="click: playStaticSound('false')"
+      >
+
+      <label
+        v-attr="style: row.answerFalse"
+        class="labelMediumselect__answer labelMediumselect__answer--false"
+        for="{{ row.identifier }}false"
+      ></label>
     </div>
   </form>
 </div>
