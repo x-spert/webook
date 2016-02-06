@@ -15,7 +15,7 @@ module.exports = function() {
         bottom: '4%',
         top: '14%'
       }
-    },   
+    },
     {
       no: 7,
       video: 'p7_v1.mp4',
@@ -138,7 +138,7 @@ module.exports = function() {
             identifier: 'one',
             position: 'top: 11.9%; left: 61.3%; width: 28%',
             model: '',
-            solution: 'wie komme ich'
+            solution: 'Wie komme ich'
           },
           {
             identifier: 'two',
@@ -150,13 +150,13 @@ module.exports = function() {
             identifier: 'three',
             position: 'top: 66.5%; left: 24.3%; width: 18%',
             model: '',
-            solution: 'die u-bahn'
+            solution: 'die U-bahn'
           },
           {
             identifier: 'four',
             position: 'top: 92.2%; left: 24.3%; width: 29%',
             model: '',
-            solution: 'auf wiedersehen'
+            solution: 'Auf Wiedersehen'
           }
         ]
       }
@@ -761,43 +761,43 @@ module.exports = function() {
             identifier: 'one',
             position: 'top: 12.8%; left: 33.3%; width: 25%',
             model: '',
-            solution: 'schule'
+            solution: 'Schule'
           },
           {
             identifier: 'two',
             position: 'top: 13.2%; left: 59.8%; width: 14%',
             model: '',
-            solution: 'apotheke'
+            solution: 'Apotheke'
           },
           {
             identifier: 'three',
             position: 'top: 13.2%; left: 79.3%; width: 15%',
             model: '',
-            solution: 'postamt'
+            solution: 'Postamt'
           },
           {
             identifier: 'four',
             position: 'top: 12.8%; left: 10.3%; width: 15%',
             model: '',
-            solution: 'park'
+            solution: 'Park'
           },
           {
             identifier: 'five',
             position: 'top: 44.2%; left: 30.3%; width: 22%',
             model: '',
-            solution: 'supermarkt'
+            solution: 'Supermarkt'
           },
           {
             identifier: 'six',
             position: 'top: 60.8%; left: 30.8%; width: 21%',
             model: '',
-            solution: 'schwimmbad'
+            solution: 'Schwimmbad'
           },
           {
             identifier: 'seven',
             position: 'top: 61.8%; left: 78.3%; width: 15%',
             model: '',
-            solution: 'kirche'
+            solution: 'Kirche'
           }
         ]
       }
@@ -942,25 +942,25 @@ module.exports = function() {
             identifier: 'one',
             position: 'top: 28.8%; left: 68%; width: 9%',
             model: '',
-            solution: 'anja'
+            solution: 'Anja'
           },
           {
             identifier: 'two',
             position: 'top: 38%; left: 52%; width: 9%',
             model: '',
-            solution: 'samir'
+            solution: 'Samir'
           },
           {
             identifier: 'three',
             position: 'top: 57.7%; left: 66.5%; width: 9%',
             model: '',
-            solution: 'jan'
+            solution: 'Jan'
           },
           {
             identifier: 'four',
             position: 'top: 65.1%; left: 52%; width: 9%',
             model: '',
-            solution: 'yuko'
+            solution: 'Yuko'
           }
         ]
       }
