@@ -52,6 +52,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '9ex',
+        help: {
+          toggle: false,
+          text: 'Asculta si completeaza cu unul din cuvintele aflate in caseta galbena. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -63,7 +67,7 @@ module.exports = function() {
             identifier: 'two',
             position: 'top: 26%; left: 14%; width: 30%',
             model: '',
-            solution: 'regnerisch'
+            solution: 'Regnerisch'
           },
           {
             identifier: 'three',
@@ -166,12 +170,16 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '14ex',
+        help: {
+          toggle: false,
+          text: 'Priveste imaginile de la stanga la dreapta si raspunde cum este vremea. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 74%; left: 44%; width: 15%',
             model: '',
-            solution: 'regnerisch'
+            solution: 'Regnerisch'
           },
           {
             identifier: 'two',
@@ -183,7 +191,7 @@ module.exports = function() {
             identifier: 'three',
             position: 'top: 78.5%; left: 44%; width: 15%',
             model: '',
-            solution: 'es schneit'
+            solution: 'Es schneit'
           },
           {
             identifier: 'four',
@@ -195,7 +203,7 @@ module.exports = function() {
             identifier: 'five',
             position: 'top: 83%; left: 44%; width: 15%',
             model: '',
-            solution: 'es ist wolkig'
+            solution: 'Es ist wolkig'
           },
           {
             identifier: 'six',
@@ -207,7 +215,7 @@ module.exports = function() {
             identifier: 'seven',
             position: 'top: 87.5%; left: 44%; width: 15%',
             model: '',
-            solution: 'es ist sonnig'
+            solution: 'Es ist sonnig'
           },
           {
             identifier: 'eight',
@@ -238,30 +246,34 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '15ex',
+        help: {
+          toggle: false,
+          text: 'Raspunde la fiecare intrebare alegand cuvantul potrivit din caseta alaturata. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 12%; left: 24.5%; width: 30%',
             model: '',
-            solution: 'brauche einen schirm'
+            solution: 'brauche einen Schirm'
           },
           {
             identifier: 'two',
             position: 'top: 38%; left: 24.5%; width: 30%',
             model: '',
-            solution: 'ziehe die stiefel an'
+            solution: 'ziehe die Stiefel an'
           },
           {
             identifier: 'three',
             position: 'top: 64%; left: 24.5%; width: 30%',
             model: '',
-            solution: 'gehe nach hause'
+            solution: 'gehe nach Hause'
           },
           {
             identifier: 'four',
             position: 'top: 90%; left: 21.5%; width: 37%',
             model: '',
-            solution: 'im herbst ist es neblig und windig'
+            solution: 'Im Herbst ist es neblig und windig'
           }
         ]
       }
@@ -276,12 +288,16 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '16ex',
+        help: {
+          toggle: false,
+          text: 'Ca sa afli ce face Eric iarna trebuie sa completezi literele lipsa din lanturile de cuvinte si sa le scrii pe randul de jos, in ordinea aparitiei lor (de sus in jos). Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 4.6%; left: 38.2%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'two',
@@ -317,7 +333,7 @@ module.exports = function() {
             identifier: 'seven',
             position: 'top: 41.6%; left: 47.8%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'eight',
@@ -365,7 +381,7 @@ module.exports = function() {
             identifier: 'fifteen',
             position: 'top: 88.1%; left: 65.7%',
             model: '',
-            solution: 'e'
+            solution: 'n'
           },
           {
             identifier: 'sixteen',
@@ -444,60 +460,64 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '23ex',
+        help: {
+          toggle: false,
+          text: 'Alege din caseta albastra cuvantul potrivit si completeaza propozitia. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 13.5%; left: 31.5%',
             model: '',
-            solution: 'kühlschrank'
+            solution: 'Kühlschrank'
           },
           {
             identifier: 'two',
             position: 'top: 22.5%; left: 31.5%',
             model: '',
-            solution: 'pfanne'
+            solution: 'Pfanne'
           },
           {
             identifier: 'three',
             position: 'top: 31.5%; left: 31.5%',
             model: '',
-            solution: 'backofen'
+            solution: 'Backofen'
           },
           {
             identifier: 'four',
             position: 'top: 40.5%; left: 31.5%',
             model: '',
-            solution: 'schüssel'
+            solution: 'Schüssel'
           },
           {
             identifier: 'five',
             position: 'top: 49.5%; left: 31.5%',
             model: '',
-            solution: 'boden'
+            solution: 'Boden'
           },
           {
             identifier: 'six',
             position: 'top: 58.5%; left: 31.5%',
             model: '',
-            solution: 'teller'
+            solution: 'Teller'
           },
           {
             identifier: 'seven',
             position: 'top: 67.5%; left: 31.5%',
             model: '',
-            solution: 'glas'
+            solution: 'Glas'
           },
           {
             identifier: 'eight',
             position: 'top: 76.3%; left: 31.5%',
             model: '',
-            solution: 'flasche'
+            solution: 'Flasche'
           },
           {
             identifier: 'nine',
             position: 'top: 85.5%; left: 55.5%; width: 35%',
             model: '',
-            solution: 'tablett'
+            solution: 'Tablett'
           }
         ]
       }
@@ -541,42 +561,46 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '27ex',
+        help: {
+          toggle: false,
+          text: 'Asculta, priveste imaginile si scrie numele copilului. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 17%; left: 32%; width: 12%',
             model: '',
-            solution: 'paul'
+            solution: 'Paul'
           },
           {
             identifier: 'two',
             position: 'top: 39%; left: 32%; width: 12%',
             model: '',
-            solution: 'sandra'
+            solution: 'Sandra'
           },
           {
             identifier: 'three',
             position: 'top: 62.5%; left: 32%; width: 12%',
             model: '',
-            solution: 'stefan'
+            solution: 'Stefan'
           },
           {
             identifier: 'four',
             position: 'top: 17%; left: 59.5%; width: 12%',
             model: '',
-            solution: 'marie'
+            solution: 'Marie'
           },
           {
             identifier: 'five',
             position: 'top: 39%; left: 59.5%; width: 12%',
             model: '',
-            solution: 'robert'
+            solution: 'Robert'
           },
           {
             identifier: 'six',
             position: 'top: 62.5%; left: 59.5%; width: 12%',
             model: '',
-            solution: 'lara'
+            solution: 'Lara'
           }
         ]
       }
@@ -647,462 +671,466 @@ module.exports = function() {
       ex: {
         name: 'typerbg',
         bg: '35ex',
+        help: {
+          toggle: false,
+          text: 'Completeaza careul cu cuvintele corespunzatoare imaginilor. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 26.5%; left: 48.5%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'two',
             position: 'top: 29.5%; left: 48.5%',
             model: '',
-            solution: 'i'
+            solution: 'I'
           },
           {
             identifier: 'three',
             position: 'top: 32.3%; left: 48.5%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'four',
             position: 'top: 35%; left: 48.5%',
             model: '',
-            solution: 'r'
+            solution: 'R'
           },
           {
             identifier: 'five',
             position: 'top: 29.5%; left: 41.7%',
             model: '',
-            solution: 'f'
+            solution: 'F'
           },
           {
             identifier: 'six',
             position: 'top: 32.2%; left: 41.7%',
             model: '',
-            solution: 'i'
+            solution: 'I'
           },
           {
             identifier: 'seven',
             position: 'top: 35%; left: 41.7%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'eight',
             position: 'top: 37.9%; left: 41.7%',
             model: '',
-            solution: 'c'
+            solution: 'C'
           },
           {
             identifier: 'nine',
             position: 'top: 40.7%; left: 41.7%',
             model: '',
-            solution: 'h'
+            solution: 'H'
           },
           {
             identifier: 'ten',
             position: 'top: 35%; left: 46.3%',
             model: '',
-            solution: 'b'
+            solution: 'B'
           },
           {
             identifier: 'eleven',
             position: 'top: 35%; left: 48.5%',
             model: '',
-            solution: 'r'
+            solution: 'R'
           },
           {
             identifier: 'twelve',
             position: 'top: 35%; left: 50.8%',
             model: '',
-            solution: 'o'
+            solution: 'O'
           },
           {
             identifier: 'thirteen',
             position: 'top: 35%; left: 53.1%',
             model: '',
-            solution: 't'
+            solution: 'T'
           },
           {
             identifier: 'fourteen',
             position: 'top: 43.5%; left: 55.4%',
             model: '',
-            solution: 'p'
+            solution: 'P'
           },
           {
             identifier: 'fifteen',
             position: 'top: 46.2%; left: 55.4%',
             model: '',
-            solution: 'f'
+            solution: 'F'
           },
           {
             identifier: 'sixteen',
             position: 'top: 49.2%; left: 55.4%',
             model: '',
-            solution: 'l'
+            solution: 'L'
           },
           {
             identifier: 'seventeen',
             position: 'top: 52%; left: 55.4%',
             model: '',
-            solution: 'a'
+            solution: 'A'
           },
           {
             identifier: 'eighteen',
             position: 'top: 54.8%; left: 55.4%',
             model: '',
-            solution: 'u'
+            solution: 'U'
           },
           {
             identifier: 'nineteen',
             position: 'top: 57.6%; left: 55.4%',
             model: '',
-            solution: 'm'
+            solution: 'M'
           },
           {
             identifier: 'twenty',
             position: 'top: 60.4%; left: 55.4%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'twentyone',
             position: 'top: 46.4%; left: 37.2%',
             model: '',
-            solution: 'w'
+            solution: 'W'
           },
           {
             identifier: 'twentytwo',
             position: 'top: 49.2%; left: 37.2%',
             model: '',
-            solution: 'u'
+            solution: 'U'
           },
           {
             identifier: 'twentythree',
             position: 'top: 52%; left: 37.2%',
             model: '',
-            solution: 'r'
+            solution: 'R'
           },
           {
             identifier: 'twentyfour',
             position: 'top: 54.8%; left: 37.2%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'twentyfive',
             position: 'top: 57.6%; left: 37.2%',
             model: '',
-            solution: 't'
+            solution: 'T'
           },
           {
             identifier: 'twentysix',
             position: 'top: 60.4%; left: 37.2%',
             model: '',
-            solution: 'c'
+            solution: 'C'
           },
           {
             identifier: 'twnetyseven',
             position: 'top: 63.2%; left: 37.2%',
             model: '',
-            solution: 'h'
+            solution: 'H'
           },
           {
             identifier: 'twentyeight',
             position: 'top: 66.1%; left: 37.2%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'twentynine',
             position: 'top: 68.9%; left: 37.2%',
             model: '',
-            solution: 'n'
+            solution: 'N'
           },
           {
             identifier: 'thirty',
             position: 'top: 46.4%; left: 37.2%',
             model: '',
-            solution: 'w'
+            solution: 'W'
           },
           {
             identifier: 'thirtyone',
             position: 'top: 46.4%; left: 39.5%',
             model: '',
-            solution: 'a'
+            solution: 'A'
           },
           {
             identifier: 'thirtytwo',
             position: 'top: 46.4%; left: 41.7%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'thirtythree',
             position: 'top: 46.4%; left: 44%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'thirtyfour',
             position: 'top: 46.4%; left: 46.3%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'thirtyfive',
             position: 'top: 46.4%; left: 48.6%',
             model: '',
-            solution: 'r'
+            solution: 'R'
           },
           {
             identifier: 'thirtysix',
             position: 'top: 46.4%; left: 48.6%',
             model: '',
-            solution: 'r'
+            solution: 'R'
           },
           {
             identifier: 'thirtyseven',
             position: 'top: 49.2%; left: 48.6%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'thirtyeight',
             position: 'top: 52%; left: 48.6%',
             model: '',
-            solution: 'i'
+            solution: 'I'
           },
           {
             identifier: 'thirtynine',
             position: 'top: 54.8%; left: 48.6%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'forty',
             position: 'top: 52%; left: 46.3%',
             model: '',
-            solution: 'p'
+            solution: 'P'
           },
           {
             identifier: 'fortyone',
             position: 'top: 52%; left: 48.6%',
             model: '',
-            solution: 'i'
+            solution: 'I'
           },
           {
             identifier: 'fortytwo',
             position: 'top: 52%; left: 50.8%',
             model: '',
-            solution: 'z'
+            solution: 'Z'
           },
           {
             identifier: 'fortythree',
             position: 'top: 52%; left: 53.1%',
             model: '',
-            solution: 'z'
+            solution: 'Z'
           },
           {
             identifier: 'fortyfour',
             position: 'top: 52%; left: 55.4%',
             model: '',
-            solution: 'a'
+            solution: 'A'
           },
           {
             identifier: 'fortyfive',
             position: 'top: 60.4%; left: 53.1%',
             model: '',
-            solution: 'k'
+            solution: 'K'
           },
           {
             identifier: 'fortysix',
             position: 'top: 60.4%; left: 55.4%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'fortyseven',
             position: 'top: 60.4%; left: 57.6%',
             model: '',
-            solution: 'k'
+            solution: 'K'
           },
           {
             identifier: 'fortyeight',
             position: 'top: 60.4%; left: 59.8%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'fortynine',
             position: 'top: 60.4%; left: 62.2%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'fifty',
             position: 'top: 60.4%; left: 62.2%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'fiftyone',
             position: 'top: 63.2%; left: 62.2%',
             model: '',
-            solution: 'i'
+            solution: 'I'
           },
           {
             identifier: 'fiftytwo',
             position: 'top: 66.2%; left: 62.2%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'fiftythree',
             position: 'top: 66.1%; left: 53.1%',
             model: '',
-            solution: 'g'
+            solution: 'G'
           },
           {
             identifier: 'fiftyfour',
             position: 'top: 66.1%; left: 55.3%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'fiftyfive',
             position: 'top: 66.1%; left: 57.6%',
             model: '',
-            solution: 'm'
+            solution: 'M'
           },
           {
             identifier: 'fiftysix',
             position: 'top: 66.1%; left: 59.8%',
             model: '',
-            solution: 'u'
+            solution: 'U'
           },
           {
             identifier: 'fiftyseven',
             position: 'top: 66.1%; left: 62.1%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'fiftyeight',
             position: 'top: 66.1%; left: 64.4%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'fiftynine',
             position: 'top: 69%; left: 37.2%',
             model: '',
-            solution: 'n'
+            solution: 'N'
           },
           {
             identifier: 'sixty',
             position: 'top: 69%; left: 39.5%',
             model: '',
-            solution: 'u'
+            solution: 'U'
           },
           {
             identifier: 'sixtyone',
             position: 'top: 69%; left: 41.7%',
             model: '',
-            solution: 'd'
+            solution: 'D'
           },
           {
             identifier: 'sixtytwo',
             position: 'top: 69%; left: 44%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'sixtythree',
             position: 'top: 69%; left: 46.3%',
             model: '',
-            solution: 'l'
+            solution: 'L'
           },
           {
             identifier: 'sixtyfour',
             position: 'top: 69%; left: 48.5%',
             model: '',
-            solution: 'n'
+            solution: 'N'
           },
           {
             identifier: 'sixtyfive',
             position: 'top: 29.5%; left: 41.7%',
             model: '',
-            solution: 'f'
+            solution: 'F'
           },
           {
             identifier: 'sixtysix',
             position: 'top: 29.5%; left: 44%',
             model: '',
-            solution: 'l'
+            solution: 'L'
           },
           {
             identifier: 'sixtyseven',
             position: 'top: 29.5%; left: 46.3%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           },
           {
             identifier: 'sixtyeight',
             position: 'top: 29.5%; left: 48.5%',
             model: '',
-            solution: 'i'
+            solution: 'I'
           },
           {
             identifier: 'sixtynine',
             position: 'top: 29.5%; left: 50.8%',
             model: '',
-            solution: 's'
+            solution: 'S'
           },
           {
             identifier: 'seventy',
             position: 'top: 29.5%; left: 53%',
             model: '',
-            solution: 'c'
+            solution: 'C'
           },
           {
             identifier: 'seventyone',
             position: 'top: 29.5%; left: 55.4%',
             model: '',
-            solution: 'h'
+            solution: 'H'
           },
           {
             identifier: 'seventytwo',
             position: 'top: 35%; left: 46.3%',
             model: '',
-            solution: 'b'
+            solution: 'B'
           },
             {
             identifier: 'seventythree',
             position: 'top: 38%; left: 46.3%',
             model: '',
-            solution: 'i'
+            solution: 'I'
           },
           {
             identifier: 'seventyfour',
             position: 'top: 40.8%; left: 46.3%',
             model: '',
-            solution: 'r'
+            solution: 'R'
           },
           {
             identifier: 'seventyfive',
             position: 'top: 43.4%; left: 46.3%',
             model: '',
-            solution: 'n'
+            solution: 'N'
           },
           {
             identifier: 'seventysix',
             position: 'top: 46.5%; left: 46.3%',
             model: '',
-            solution: 'e'
+            solution: 'E'
           }
         ]
       }
@@ -1221,30 +1249,34 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '49ex1',
+        help: {
+          toggle: false,
+          text: 'Gandeste-te la emisiunea preferata si completeaza randurile punctate. Daca apesi pe cheita ai o varianta ajutatoare. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 35.2%; left: 42.3%; width: 41%',
             model: '',
-            solution: 'kriminalfilme'
+            solution: 'Kriminalfilme'
           },
           {
             identifier: 'two',
             position: 'top: 40.5%; left: 25.3%; width: 24%',
             model: '',
-            solution: 'fernsehen'
+            solution: 'Fernsehen'
           },
           {
             identifier: 'three',
             position: 'top: 40.5%; left: 59.3%; width: 30%',
             model: '',
-            solution: 'montag'
+            solution: 'Montag'
           },
           {
             identifier: 'four',
             position: 'top: 46.3%; left: 14.3%; width: 36%',
             model: '',
-            solution: '20 uhr'
+            solution: '20 Uhr'
           },
           {
             identifier: 'five',
@@ -1267,60 +1299,64 @@ module.exports = function() {
       ex2: {
         name: 'typer',
         bg: '49ex2',
+        help: {
+          toggle: false,
+          text: 'Gandeste-te la un prieten sau o prietena si completeaza spatiile punctate. Daca apesi pe cheita ai o varianta ajutatoare. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 37.9%; left: 18.3%; width: 31%',
             model: '',
-            solution: null
+            solution: 'Klaus/Clara'
           },
           {
             identifier: 'two',
             position: 'top: 37.9%; left: 58.3%; width: 37.5%',
             model: '',
-            solution: null
+            solution: 'Spielshows'
           },
           {
             identifier: 'three',
             position: 'top: 43.2%; left: 18.3%; width: 80%',
             model: '',
-            solution: null
+            solution: 'Sportsendungen'
           },
           {
             identifier: 'four',
             position: 'top: 48.2%; left: 18.3%; width: 11%',
             model: '',
-            solution: null
+            solution: 'Er/Sie'
           },
           {
             identifier: 'five',
             position: 'top: 53.3%; left: 18.3%; width: 11%',
             model: '',
-            solution: null
+            solution: 'Er/Sie'
           },
           {
             identifier: 'six',
             position: 'top: 48.2%; left: 35.3%; width: 26%',
             model: '',
-            solution: null
+            solution: 'auch Kriminal'
           },
           {
             identifier: 'seven',
             position: 'top: 53.3%; left: 35.3%; width: 26%',
             model: '',
-            solution: null
+            solution: 'sie interessant'
           },
           {
             identifier: 'eight',
             position: 'top: 48.2%; left: 61.8%; width: 38%',
             model: '',
-            solution: null
+            solution: 'Dokumentarfilme'
           },
           {
             identifier: 'nine',
             position: 'top: 53.3%; left: 61.8%; width: 38%',
             model: '',
-            solution: null
+            solution: 'spannend'
           }
         ]
       }
@@ -1348,24 +1384,28 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '51ex',
+        help: {
+          toggle: false,
+          text: 'Priveste imaginea si scrie care este emisiunea preferata de fiecare copil. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
             position: 'top: 26.3%; left: 21.3%; width: 24%',
             model: '',
-            solution: 'musiksendung'
+            solution: 'Musiksendung'
           },
           {
             identifier: 'two',
             position: 'top: 29.8%; left: 30.3%; width: 16%',
             model: '',
-            solution: 'viertel nach vier'
+            solution: 'Viertel nach vier'
           },
           {
             identifier: 'three',
             position: 'top: 26.3%; left: 56.3%; width: 20%',
             model: '',
-            solution: 'liebesfilme'
+            solution: 'Liebesfilme'
           },
           {
             identifier: 'four',
@@ -1379,7 +1419,7 @@ module.exports = function() {
             textareaRows: 3,
             position: 'top: 52.8%; left: 26.6%; width: 25%',
             model: '',
-            solution: 'lieblingssendung ist eine sportsendung. sie kommt um viertel nach sechs. / sie fängt um … an.'
+            solution: 'Lieblingssendung ist eine Sportsendung. Sie kommt um Viertel nach sechs. / Sie fängt um ... an.'
           },
           {
             identifier: 'six',
@@ -1387,7 +1427,7 @@ module.exports = function() {
             textareaRows: 4,
             position: 'top: 52.8%; left: 58.6%; width: 28%',
             model: '',
-            solution: 'marions lieblingssendung ist eine dokumentarsendung. heute gibt es um halb neun einen dokumentarfilm.'
+            solution: 'Lieblingssendung ist eine Dokumentarsendung. Heute gibt es um halb neun einen Dokumentarfilm.'
           },
           {
             identifier: 'seven',
@@ -1395,7 +1435,7 @@ module.exports = function() {
             textareaRows: 4,
             position: 'top: 84.2%; left: 24.6%; width: 32%',
             model: '',
-            solution: 'lieblingsfilme sind krimis. heute kommt ein krimi um zehn nach neun. heute gibt es um zehn nach neun einen.'
+            solution: 'Lieblingsfilme sind Krimis. Heute kommt ein Krimi um zehn nach neun. Heute gibt es um zehn nach neun einen.'
           },
           {
             identifier: 'eight',
@@ -1403,7 +1443,7 @@ module.exports = function() {
             textareaRows: 3,
             position: 'top: 84.2%; left: 63.6%; width: 24%',
             model: '',
-            solution: 'herrn fischers lieblingssendung ist die tagesschau. sie kommt immer um acht uhr.'
+            solution: 'Herrn Fischers Lieblingssendung ist die Tagesschau. Sie kommt immer um acht Uhr.'
           }
         ]
       }
@@ -1439,6 +1479,12 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '54ex1',
+        help: {
+          toggle: false,
+          text: 'Asculta fiecare enunt si bifeaza cu R daca este adevarat si cu F daca este gresit.  . Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
+        audio: 'stopped',
+        audioSrc: 'pg54ex4',
         data: [
           {
             identifier: 'one',
@@ -1501,6 +1547,10 @@ module.exports = function() {
       ex2: {
         name: 'typerbg',
         bg: '54ex2',
+        help: {
+          toggle: false,
+          text: 'Numeroteaza in cerc  ordinea corecta a cuvintelor in propozitie. Completeaza ultimul enunt si apoi numeroteaza ordinea cuvintelor. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1636,6 +1686,10 @@ module.exports = function() {
       ex: {
         name: 'dnd',
         bg: '',
+        help: {
+          toggle: false,
+          text: 'Apasa butonul Incepe si trage apoi fiecare text la locul potrivit pentru a forma o propozitie. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         solution: false,
         data: [
           {
@@ -1794,6 +1848,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '70ex',
+        help: {
+          toggle: false,
+          text: 'Citeste enunturile si completeaza spatiile punctate cu unul din cuvintele date: bei, beim, bei der, zum, zur. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1898,6 +1956,10 @@ module.exports = function() {
       ex: {
         name: 'dnd',
         bg: '',
+        help: {
+          toggle: false,
+          text: 'Apasa butonul Incepe si trage apoi fiecare raspuns la locul potrivit. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         solution: false,
         data: [
           {
