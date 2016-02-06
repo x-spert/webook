@@ -1,24 +1,24 @@
 <div class="exercise exercise--mediumselect">
-  <img v-attr="src: './assets/img/' + selectedPageObject.ex.bg + '.jpg'">
+  <img v-attr="src: './assets/img/' + selectedPageObject.ex2.bg + '.jpg'">
 
   <form class="exercise__container">
     <button class="button button--solve button--scale" type="button" v-on="click: solveCheck">
       <span class="wb-solve"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.help" class="button button--help button--scale" type="button" v-on="click: selectedPageObject.ex.help.toggle = !selectedPageObject.ex.help.toggle">
+    <button v-if="selectedPageObject.ex2.help" class="button button--help button--scale" type="button" v-on="click: selectedPageObject.ex2.help.toggle = !selectedPageObject.ex2.help.toggle">
       <span class="wb-help"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.audio === 'playing' || selectedPageObject.ex.audio === 'paused'" class="button button--stop button--scale" type="button" v-on="click: stopExSound(selectedPageObject.no, 'ex')">
+    <button v-if="selectedPageObject.ex2.audio === 'playing' || selectedPageObject.ex2.audio === 'paused'" class="button button--stop button--scale" type="button" v-on="click: stopExSound(selectedPageObject.no, 'ex2')">
       <span class="wb-stop"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.audio === 'playing'" class="button button--pause button--scale" type="button" v-on="click: pauseExSound(selectedPageObject.no, 'ex')">
+    <button v-if="selectedPageObject.ex2.audio === 'playing'" class="button button--pause button--scale" type="button" v-on="click: pauseExSound(selectedPageObject.no, 'ex2')">
       <span class="wb-pause"></span>
     </button>
 
-    <button v-if="selectedPageObject.ex.audio === 'stopped' || selectedPageObject.ex.audio === 'paused'" class="button button--play button--scale" type="button" v-on="click: playExSound(selectedPageObject.no, 'ex')">
+    <button v-if="selectedPageObject.ex2.audio === 'stopped' || selectedPageObject.ex2.audio === 'paused'" class="button button--play button--scale" type="button" v-on="click: playExSound(selectedPageObject.no, 'ex2')">
       <span class="wb-play"></span>
     </button>
 
@@ -26,12 +26,12 @@
       <span class="wb-reset"></span>
     </button>
 
-    <section v-show="selectedPageObject.ex.help.toggle" class="help">
-      <span v-text="selectedPageObject.ex.help.text"></span>
+    <section v-show="selectedPageObject.ex2.help.toggle" class="help">
+      <span v-text="selectedPageObject.ex2.help.text"></span>
     </section>
 
     <div
-      v-repeat="row in selectedPageObject.ex.data"
+      v-repeat="row in selectedPageObject.ex2.data"
       class="exercise__row"
       v-attr="style: row.position"
     >
