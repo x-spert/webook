@@ -11,6 +11,7 @@ module.exports = function() {
     {
       no: 8,
       static: 'pg8-9ex1',
+      staticAudioSrc: 'p8-9ex1',
       staticTrigger: {
         bottom: '4%',
         top: '8%'
@@ -61,6 +62,7 @@ module.exports = function() {
     {
       no: 17,
       static: 'pg17ex1',
+      staticAudioSrc: 'pg17ex1',
       staticTrigger: {
         bottom: '34%',
         top: '15%'
@@ -68,7 +70,7 @@ module.exports = function() {
     },
     {
       no: 18,
-      title1: '',
+      title: '',
       title2: 'Listen and put a token on the correct answer.',
       title3: 'Look at pages 10-11 and complete the sentences.',
       exTrigger: {
@@ -78,6 +80,10 @@ module.exports = function() {
       ex: {
         name: 'dnd',
         bg: '18ex1',
+        help: {
+          toggle: false,
+          text: 'Trage fiecare cuvant sub titlul potrivit. Succes!'
+        },
         data: []
       },
       ex2Trigger: {
@@ -87,6 +93,12 @@ module.exports = function() {
       ex2: {
         name: 'mediumselect',
         bg: '18ex2',
+        help: {
+          toggle: false,
+          text: 'Asculta cu atentie si bifeaza raspunsul corect. Succes!'
+        },
+        audio: 'stopped',
+        audioSrc: 'pg18ex2',
         data: [
           {
             identifier: 'one',
@@ -139,6 +151,10 @@ module.exports = function() {
       ex3: {
         name: 'typer',
         bg: '18ex3',
+        help: {
+          toggle: false,
+          text: 'Citeste propozitiile si scrie cuvintele care lipsesc.'
+        },
         data: [
           {
             identifier: 'one',
@@ -196,6 +212,7 @@ module.exports = function() {
     {
       no: 20,
       static: 'pg20-21ex1',
+      staticAudioSrc: 'pg20-21ex1',
       staticTrigger: {
         bottom: '10%',
         top: '4%'
@@ -229,7 +246,7 @@ module.exports = function() {
     },
     {
       no: 25,
-      title1: 'Look at the table and complete with CAN or CAN\'T.',
+      title: 'Look at the table and complete with CAN or CAN\'T.',
       exTrigger: {
         bottom: '28%',
         top: '6%'
@@ -237,6 +254,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '25ex',
+        help: {
+          toggle: false,
+          text: 'Studiaza tabelul si citeste propozitiile. Acum completeaza forma corecta: CAN sau CAN\'T.  Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -327,6 +348,12 @@ module.exports = function() {
       ex: {
         name: 'typerbg',
         bg: '31ex',
+        help: {
+          toggle: false,
+          text: 'Asculta cu atentie si citeste textul. Acum uneste cu o linie propozitiile cu imaginile potrivite. Succes!'
+        },
+        audio: 'stopped',
+        audioSrc: 'pg31-32ex1',
         data: [
           {
             identifier: 'one',
@@ -371,6 +398,12 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '33ex',
+        help: {
+          toggle: false,
+          text: 'Asculta cu atentie si bifeaza raspunsul corect. Succes!'
+        },
+        audio: 'stopped',
+        audioSrc: 'pg33ex2',
         data: [
           {
             identifier: 'one',
@@ -431,8 +464,18 @@ module.exports = function() {
       }
     },
     {
+      no: 35,
+      ex: {
+        help: {
+          toggle: false,
+          text: 'Citeste textele si trage jumatatea potrivita sub fiecare text. Succes!'
+        }
+      }
+    },
+    {
       no: 36,
       static: 'pg36-37ex1',
+      staticAudioSrc: 'pg36-37ex1',
       staticTrigger: {
         bottom: '5%',
         top: '8%'
@@ -500,6 +543,10 @@ module.exports = function() {
       ex: {
         name: 'dnd',
         bg: '',
+        help: {
+          toggle: false,
+          text: 'Citeste intrebarile si alege raspunsul corect. Succes!'
+        },
         solution: false,
         data: [
           {
@@ -548,6 +595,12 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '50ex',
+        help: {
+          toggle: false,
+          text: 'Asculta cu atentie si bifeaza raspunsul corect. Succes!'
+        },
+        audio: 'stopped',
+        audioSrc: 'pg50ex3',
         data: [
           {
             identifier: 'one',
@@ -597,6 +650,7 @@ module.exports = function() {
     {
       no: 52,
       static: 'pg52-53ex1',
+      staticAudioSrc: 'pg52-53ex1',
       staticTrigger: {
         bottom: '4%',
         top: '8%'
@@ -657,6 +711,10 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '64ex',
+        help: {
+          toggle: false,
+          text: 'Citeste fiecare enunt si apasa pe V daca este adevarat si pe F daca este fals. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -713,6 +771,12 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '65ex',
+        help: {
+          toggle: false,
+          text: 'Asculta cu atentie si bifeaza raspunsul corect. Succes!'
+        },
+        audio: 'stopped',
+        audioSrc: 'pg65ex3',
         data: [
           {
             identifier: 'one',
@@ -816,6 +880,10 @@ module.exports = function() {
       ex: {
         name: 'typerbg',
         bg: '70ex',
+        help: {
+          toggle: false,
+          text: 'Priveste imaginile si completeaza literele care lipsesc. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1040,6 +1108,10 @@ module.exports = function() {
       ex: {
         name: 'typerbg',
         bg: '71ex',
+        help: {
+          toggle: false,
+          text: 'Citeste textul si uneste cu o linie paragrafele cu imaginile potrivite. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1090,6 +1162,10 @@ module.exports = function() {
       ex: {
         name: 'circleselect',
         bg: '74ex',
+        help: {
+          toggle: false,
+          text: 'Citeste seriile de cuvinte si incercuieste cuvantul care nu se potriveste in fiecare serie. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1180,6 +1256,10 @@ module.exports = function() {
       ex: {
         name: 'circleselect',
         bg: '77ex',
+        help: {
+          toggle: false,
+          text: 'Citeste textul si incercuieste cuvantul corect din fiecare pereche de cuvinte. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1210,7 +1290,7 @@ module.exports = function() {
     },
     {
       no: 80,
-      title1: 'Choose the correct item:',
+      title: 'Choose the correct item:',
       exTrigger: {
         bottom: '53%',
         top: '12%'
@@ -1218,6 +1298,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '80ex',
+        help: {
+          toggle: false,
+          text: 'Citeste propozitiile si incercuieste varianta corecta. Succes!'
+        },
         data: [
           {
             identifier: 'one',

@@ -144,6 +144,42 @@
     color: map_get($ui-colors, secondary);
   }
 
+  @include modifier(help) {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 1;
+    font-size: em(30px);
+    color: map_get($ui-colors, secondary);
+  }
+
+  @include modifier(stop) {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    z-index: 1;
+    font-size: em(30px);
+    color: map_get($ui-colors, secondary);
+  }
+
+  @include modifier(pause) {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    z-index: 1;
+    font-size: em(30px);
+    color: map_get($ui-colors, secondary);
+  }
+
+  @include modifier(play) {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    z-index: 1;
+    font-size: em(30px);
+    color: map_get($ui-colors, secondary);
+  }
+
   @include modifier(reset) {
     position: absolute;
     top: 0;

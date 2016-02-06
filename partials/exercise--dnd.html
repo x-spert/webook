@@ -8,9 +8,29 @@
       <span class="wb-solve"></span>
     </button>
 
+    <button v-if="selectedPageObject.ex.help" class="button button--help button--scale" type="button" v-on="click: selectedPageObject.ex.help.toggle = !selectedPageObject.ex.help.toggle">
+      <span class="wb-help"></span>
+    </button>
+
+    <button v-if="selectedPageObject.ex.audio === 'playing' || selectedPageObject.ex.audio === 'paused'" class="button button--stop button--scale" type="button" v-on="click: stopExSound(selectedPageObject.no, 'ex')">
+      <span class="wb-stop"></span>
+    </button>
+
+    <button v-if="selectedPageObject.ex.audio === 'playing'" class="button button--pause button--scale" type="button" v-on="click: pauseExSound(selectedPageObject.no, 'ex')">
+      <span class="wb-pause"></span>
+    </button>
+
+    <button v-if="selectedPageObject.ex.audio === 'stopped' || selectedPageObject.ex.audio === 'paused'" class="button button--play button--scale" type="button" v-on="click: playExSound(selectedPageObject.no, 'ex')">
+      <span class="wb-play"></span>
+    </button>
+
     <button class="button button--reset button--scale" type="reset" v-on="click: resetDnd">
       <span class="wb-reset"></span>
     </button>
+
+    <section v-show="selectedPageObject.ex.help.toggle" class="help">
+      <span v-text="selectedPageObject.ex.help.text"></span>
+    </section>
 
     <section class="remodal__navigation">
       <button
