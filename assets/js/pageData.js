@@ -1373,6 +1373,11 @@ module.exports = function() {
       videoTrigger: {
         bottom: '60%',
         top: '14%'
+      },
+      video2: 'p55_v2.mp4',
+      video2Trigger: {
+        bottom: '4%',
+        top: '41%'
       }
     },
     {
@@ -1602,15 +1607,7 @@ module.exports = function() {
           }
         ]
       }
-    },
-    {
-      no: 71,
-      video: 'p71_v1.mp4',
-      videoTrigger: {
-        bottom: '4%',
-        top: '14%'
-      }
-    },
+    },    
     {
       no: 75,
       video: 'p75_v1.mp4',
