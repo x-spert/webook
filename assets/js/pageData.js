@@ -297,7 +297,7 @@ module.exports = function() {
             identifier: 'eleven',
             position: 'top: 96.2%; left: 20.3%; width: 22%',
             model: '',
-            solution: 'die staße'
+            solution: 'die Straße'
           }
         ]
       }
@@ -985,55 +985,55 @@ module.exports = function() {
             identifier: 'one',
             position: 'top: 38%; left: 25%; width: 46%',
             model: '',
-            solution: 'frankreich'
+            solution: 'Frankreich'
           },
           {
             identifier: 'two',
             position: 'top: 43%; left: 29%; width: 40%',
             model: '',
-            solution: 'griechenland'
+            solution: 'Griechenland'
           },
           {
             identifier: 'three',
             position: 'top: 47.8%; left: 18%; width: 56%',
             model: '',
-            solution: 'deutschland'
+            solution: 'Deutschland'
           },
           {
             identifier: 'four',
             position: 'top: 52.6%; left: 26%; width: 44.5%',
             model: '',
-            solution: 'brasilien'
+            solution: 'Brasilien'
           },
           {
             identifier: 'five',
             position: 'top: 57.5%; left: 24%; width: 47.3%',
             model: '',
-            solution: 'marokko'
+            solution: 'Marokko'
           },
           {
             identifier: 'six',
             position: 'top: 62.2%; left: 39.5%; width: 25%',
             model: '',
-            solution: 'spanien'
+            solution: 'Spanien'
           },
           {
             identifier: 'seven',
             position: 'top: 67%; left: 21%; width: 51.5%',
             model: '',
-            solution: 'china'
+            solution: 'China'
           },
           {
             identifier: 'eight',
             position: 'top: 72%; left: 20%; width: 53%',
             model: '',
-            solution: 'italien'
+            solution: 'Italien'
           },
           {
             identifier: 'nine',
             position: 'top: 76.7%; left: 24%; width: 47.2%',
             model: '',
-            solution: 'russland'
+            solution: 'Russland'
           }
         ]
       }
@@ -1454,7 +1454,7 @@ module.exports = function() {
             identifier: 'three',
             position: 'top: 64.5%; left: 42%; width: 25%',
             model: '',
-            solution: 'vier uhr'
+            solution: 'vier Uhr'
           },
           {
             identifier: 'four',
