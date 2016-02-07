@@ -67,7 +67,7 @@ module.exports = function() {
             identifier: 'two',
             position: 'top: 26%; left: 14%; width: 30%',
             model: '',
-            solution: 'Regnerisch'
+            solution: 'regnerisch'
           },
           {
             identifier: 'three',
