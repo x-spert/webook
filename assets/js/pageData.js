@@ -81,6 +81,10 @@ module.exports = function() {
       ex: {
         name: 'typerbg',
         bg: '12ex',
+        help: {
+          toggle: false,
+          text: 'Asculta, priveste imaginile si scrie numarul corespunzator. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -133,6 +137,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '14ex',
+        help: {
+          toggle: false,
+          text: 'Asculta si completeaza. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -176,6 +184,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '15ex',
+        help: {
+          toggle: false,
+          text: 'Asculta si completeaza. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -232,6 +244,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '16ex',
+        help: {
+          toggle: false,
+          text: 'Asculta si completeaza. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -364,6 +380,10 @@ module.exports = function() {
       ex: {
         name: 'typerbg',
         bg: '21ex',
+        help: {
+          toggle: false,
+          text: 'Completeaza careul cu cuvintele corespunzatoare imaginilor respectand numerotarea. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -756,6 +776,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '22ex',
+        help: {
+          toggle: false,
+          text: 'Citeste, scrie numele cladirilor si deseneaza drumul. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -828,6 +852,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '25ex',
+        help: {
+          toggle: false,
+          text: 'Completeaza cu formele verbelor “müssen” si “wollen”. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -937,6 +965,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '30ex',
+        help: {
+          toggle: false,
+          text: 'Asculta, scrie numele copiilor si canta. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -980,6 +1012,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '31ex',
+        help: {
+          toggle: false,
+          text: 'Citeste si completeaza cu numele tarilor din caseta. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1053,6 +1089,10 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '32ex',
+        help: {
+          toggle: false,
+          text: 'Asculta si bifeaza raspunsul correct! Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1253,6 +1293,10 @@ module.exports = function() {
       ex: {
         name: 'dnd',
         bg: '',
+        help: {
+          toggle: false,
+          text: 'Trage raspunsul corespunzator in dreptul intrebarii corespunzatoare. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         solution: false,
         data: [
           {
@@ -1437,6 +1481,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '61ex',
+        help: {
+          toggle: false,
+          text: 'Completeaza enunturile cu ora indicate de ceas si verbul care exprima actiunea ilustrata. Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1503,6 +1551,10 @@ module.exports = function() {
       ex: {
         name: 'typer',
         bg: '65ex',
+        help: {
+          toggle: false,
+          text: 'Priveste imaginile si completeaza cu forma corespunzatoare a adjectivului.  Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
@@ -1562,6 +1614,10 @@ module.exports = function() {
       ex: {
         name: 'mediumselect',
         bg: '68ex',
+        help: {
+          toggle: false,
+          text: 'Citeste propozitiile si bifeaza R (correct) sau F (gresit). Cand ai terminat apasa pe cheita si verifica. Succes!'
+        },
         data: [
           {
             identifier: 'one',
