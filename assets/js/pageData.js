@@ -56,6 +56,8 @@ module.exports = function() {
           toggle: false,
           text: 'Asculta si completeaza cu unul din cuvintele aflate in caseta galbena. Cand ai terminat apasa pe cheita si verifica. Succes!'
         },
+        audio: 'stopped',
+        audioSrc: 'pg9ex4',
         data: [
           {
             identifier: 'one',
@@ -533,11 +535,13 @@ module.exports = function() {
     {
       no: 25,
       static: 'pg25ex8s1',
+      staticAudioSrc: 'pg25-1',
       staticTrigger: {
         bottom: '41%',
         top: '14%'
       },
       static2: 'pg25ex8s2',
+      static2AudioSrc: 'pg25-2',
       static2Trigger: {
         bottom: '4%',
         top: '60%'
@@ -565,6 +569,8 @@ module.exports = function() {
           toggle: false,
           text: 'Asculta, priveste imaginile si scrie numele copilului. Cand ai terminat apasa pe cheita si verifica. Succes!'
         },
+        audio: 'stopped',
+        audioSrc: 'pg27',
         data: [
           {
             identifier: 'one',
@@ -1191,11 +1197,13 @@ module.exports = function() {
     {
       no: 44,
       static: 'pg44ex6s1',
+      staticAudioSrc: 'pg44-1',
       staticTrigger: {
         bottom: '31%',
         top: '14%'
       },
       static2: 'pg44ex6s2',
+      static2AudioSrc: 'pg44-2',
       static2Trigger: {
         bottom: '4%',
         top: '69%'
@@ -1212,6 +1220,7 @@ module.exports = function() {
     {
       no: 46,
       static: 'pg46ex8',
+      staticAudioSrc: 'pg46-8',
       staticTrigger: {
         bottom: '65%',
         top: '14%'
@@ -1623,6 +1632,12 @@ module.exports = function() {
             position: 'top: 43.6%; left: 77.2%; width: 3.5%; height: 4.9%',
             model: '',
             solution: '2'
+          },
+          {
+            identifier: 'thirteen',
+            position: 'top: 38.6%; left: 12.2%; width: 18.5%; height: 3.9%',
+            model: '',
+            solution: null
           }
         ]
       }
@@ -1662,6 +1677,7 @@ module.exports = function() {
     {
       no: 59,
       static: 'pg59ex3s1',
+      staticAudioSrc: 'pg59',
       staticTrigger: {
         bottom: '36%',
         top: '14%'
@@ -1726,6 +1742,7 @@ module.exports = function() {
     {
       no: 61,
       static: 'pg61ex7',
+      staticAudioSrc: 'pg61',
       staticTrigger: {
         bottom: '4%',
         top: '42%'
@@ -1760,16 +1777,19 @@ module.exports = function() {
     {
       no: 64,
       static: 'pg64ex10s1',
+      staticAudioSrc: 'pg64-1',
       staticTrigger: {
         bottom: '65.5%',
         top: '11%'
       },
       static2: 'pg64ex10s2',
+      static2AudioSrc: 'pg64-2',
       static2Trigger: {
         bottom: '51%',
         top: '34.5%'
       },
       static3: 'pg64ex10s3',
+      static3AudioSrc: 'pg64-3',
       static3Trigger: {
         bottom: '33.5%',
         top: '49%'
